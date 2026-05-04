@@ -1,0 +1,3 @@
+ALTER TABLE  `oc_product` ADD  `is_archived` TINYINT( 1 ) NOT NULL DEFAULT  '0',
+ADD  `archived_date` DATETIME NOT NULL ,
+ADD INDEX (  `is_archived` ) ;

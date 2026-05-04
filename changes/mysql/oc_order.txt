@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `cform_submit` ENUM('no_submit','will_submit','submitted') NOT NULL DEFAULT 'no_submit' AFTER `date_modified`;

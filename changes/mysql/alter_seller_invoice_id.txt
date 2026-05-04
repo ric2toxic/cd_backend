@@ -1,0 +1,1 @@
+ALTER TABLE `oc_seller_invoice` ADD PRIMARY KEY(`seller_invoice_id`);

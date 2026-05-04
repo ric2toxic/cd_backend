@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_note` ADD `advance_collected` decimal(10,2) NOT NULL AFTER `cod_failed_penalty`, ADD `cash_discount` decimal(10,2) NOT NULL AFTER `advance_collected`, ADD `less_cash_discount` decimal(10,2) NOT NULL AFTER `cash_discount`;

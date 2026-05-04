@@ -1,0 +1,4 @@
+ALTER TABLE `oc_order_payment` CHANGE `payment_type` `payment_type` ENUM('advance','full','refund','others','cod') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'others';
+
+ALTER TABLE `oc_order_payment` CHANGE `payment_gateway` `payment_gateway` ENUM('citrus','razorpay','bank_transfer','cash','paytm','fedex','gati_kwe','gati_ltd') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+

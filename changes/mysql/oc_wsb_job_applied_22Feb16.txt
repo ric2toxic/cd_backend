@@ -1,0 +1,1 @@
+ALTER TABLE `oc_wsb_job_applied` CHANGE `phone` `phone` VARCHAR(30) NOT NULL;

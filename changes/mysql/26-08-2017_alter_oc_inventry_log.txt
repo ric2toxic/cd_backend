@@ -1,0 +1,1 @@
+ALTER TABLE `oc_inventory_import_log` ADD `checkboxs_status` VARCHAR(255) NOT NULL AFTER `csv_name`;

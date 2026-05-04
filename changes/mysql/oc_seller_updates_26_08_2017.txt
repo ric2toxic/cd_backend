@@ -1,0 +1,4 @@
+ALTER TABLE `oc_seller_updates` CHANGE `update_group` `update_group` ENUM('profile','business','agreement','rating') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+
+ALTER TABLE `oc_seller_updates` CHANGE `update_group` `update_group` ENUM('profile','business','agreement','rating') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

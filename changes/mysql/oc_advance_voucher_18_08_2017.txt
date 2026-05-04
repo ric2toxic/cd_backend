@@ -1,0 +1,1 @@
+ALTER TABLE `oc_advance_voucher` ADD `status` TINYINT(1) NOT NULL DEFAULT '1' AFTER `user_id`, ADD `locked` TINYINT(1) NOT NULL DEFAULT '0' AFTER `status`, ADD INDEX (`status`), ADD INDEX (`locked`);

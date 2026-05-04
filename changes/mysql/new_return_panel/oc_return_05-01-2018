@@ -1,0 +1,16 @@
+ALTER TABLE `oc_return` ADD `active_row` TINYINT(1) NOT NULL DEFAULT '1' AFTER `credit_note_id`;
+
+UPDATE
+  oc_return r1
+LEFT JOIN
+  (
+  SELECT
+    MAX(return_id) AS return_id
+  FROM
+    oc_return
+  GROUP BY
+    order_product_id,
+    master_return_id
+) AS r2 ON r1.return_id = r2.return_id
+SET r1.active_row = 0
+WHERE r2.return_id IS NULL;

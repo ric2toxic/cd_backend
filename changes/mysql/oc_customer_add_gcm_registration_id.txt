@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `ws_gcm_registration_id` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `ws_access_token`; 

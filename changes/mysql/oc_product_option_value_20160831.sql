@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product_option_value` ADD `option_image` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

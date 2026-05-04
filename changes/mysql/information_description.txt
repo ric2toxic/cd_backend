@@ -1,0 +1,1 @@
+ALTER TABLE `oc_information_description` CHANGE `description` `description` LONGBLOB NOT NULL;

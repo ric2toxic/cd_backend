@@ -1,0 +1,12 @@
+$email_ids = array(
+    'ashish' => array(
+                        'email_id' => 'ashish.pancholi@wholesalebox.co',
+                        'name'     => 'Ashish PAncholi'    
+                    ),
+    'vikas' => array(
+                        'email_id' => 'vikas.agrawal@wholesalebox.co',
+                        'name'     => 'Vikas Agrawal'    
+                    )
+
+);
+define('EMAIL_IDS', $email_ids);

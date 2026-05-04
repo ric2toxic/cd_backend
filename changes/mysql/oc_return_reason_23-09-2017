@@ -1,0 +1,4 @@
+INSERT INTO oc_return_reason (`return_reason_id`, `language_id`, `name`) VALUES ('14', '1', 'Transfer to WSB Books');
+
+INSERT INTO oc_return_reason (`return_reason_id`, `language_id`, `name`) VALUES ('15', '1', 'Cancelled By Customer');
+

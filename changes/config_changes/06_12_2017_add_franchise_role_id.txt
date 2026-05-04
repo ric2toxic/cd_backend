@@ -1,0 +1,1 @@
+define('CRM_FRANCHISE_ROLE_ID', 13);

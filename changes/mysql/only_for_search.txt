@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `only_for_search` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `exclusive`;

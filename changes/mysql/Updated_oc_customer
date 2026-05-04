@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `referral_code` VARCHAR(20) NOT NULL AFTER `referred_by`;

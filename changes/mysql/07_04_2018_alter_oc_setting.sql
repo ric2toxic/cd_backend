@@ -1,0 +1,1 @@
+INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES (NULL, '0', 'coupon', 'wsb_topay_coupon', 'topay', '0'), (NULL, '0', 'coupon', 'self_pickup_coupon', 'sp#123', '0'), (NULL, '0', 'coupon', 'coupon_bl_on_store', 'blazkon', '0');

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `default_share_template` INT(20) NOT NULL DEFAULT 1 COMMENT 'default share template for android' AFTER `is_dropshipper`;

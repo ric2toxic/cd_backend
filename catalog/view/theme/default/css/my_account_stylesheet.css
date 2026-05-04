@@ -1,0 +1,59 @@
+/*---my Order Page---*/
+.order_subtitle{color:#d21f30;}
+.order_content{padding:10px 0px; }
+.order_btn_left{padding-left: 0px;}
+.order_btn_left fieldset{border: 1px solid #17319f; padding: 5px; margin-bottom: 10px;}
+.order_btn_left fieldset .order_btn_header{ border-bottom: 1px solid #ddd; padding:10px 0px;   font-size: 17px;   text-transform: uppercase; color: #17319f; }
+.order_btn_left fieldset .order_btn_header span{float: left; display: block; width: 30px; height: 30px; margin-right: 8px;}
+.order_btn_header .icono-plus:before, .order_btn_header .icono-plus:after {background-color: #ddd;}
+.order_btn_header .icono-minus:before, .order_btn_header .icono-minus:after {background-color: #ddd;}
+.order_icon{background:url("https://cdnimages.net/sprite_icons.png") no-repeat scroll -21px -228px; display: block;}
+.Profile_icon{background:url("https://cdnimages.net/sprite_icons.png") no-repeat scroll -72px -228px; display: block;}
+.help_icon{background:url("https://cdnimages.net/sprite_icons.png") no-repeat scroll -123px -227px; display: block;}
+.order_btn_left fieldset .left_navigation{padding: 0px; margin: 0px;list-style: none;}
+.order_btn_left fieldset .left_navigation li{padding: 1px 0px; margin: 0px; display: block; list-style: none;}
+.order_btn_left fieldset .left_navigation li a{color: #565656; display: block; text-decoration: none; font-size: 16px;}
+.order_btn_left fieldset .left_navigation li .blue_teg{color: #17319f;}
+.order_btn_left fieldset .left_navigation li a:hover{color: #17319f;}
+.order_btn_left fieldset .left_navigation .active a{color: #17319f;}
+.order_contact_right{padding-right: 0px;}
+.order_contact_right .opt{padding: 10px; border:1px solid #727272; margin-bottom: 15px;}
+.page_mail_title{padding: 0 0 10px; position: relative;}
+.page_mail_title h3{font-size: 22px; margin: 0px; display: inline-block;}
+.credit_balance{display: inline-block; text-align: right; font-size: 20px; float: right;}
+.credit_balance_money{color: #d41a21; font-size: 22px;}
+.credit_report{ float: right; margin-left: 20px;}
+.credit_report a{ font-size:  16px; float: right; padding: 3px 5px; border: 1px solid #17319f;}
+.credit_report a:hover{ background:#17319f; color: #fff; }
+.credit_report_left{ float: left;}
+.credit_report_left a{ font-size:  16px; float: right; padding:3px 5px; border: 1px solid #17319f;}
+.credit_report_left a:hover{ background:#17319f; color: #fff; }
+.black_color{  font-size: 18px;font-weight: bold; display: block;}
+.Amount_box{color:#17319f;font-size: 18px; }
+.collapse_box{text-align: right;display: block; padding:10px 0px 0px;}
+.collapse_box .collapse_btn{background: #17319f; border: 1px solid #17319f; padding:4px 6px; color: #fff; font-size: 16px; cursor: pointer;}
+/*.collapse_box .collapse_btn:hover{background: #fff; border: 1px solid #17319f; padding:4px 6px; color: #17319f;}*/
+.otp{margin-bottom: 15px;}
+.collapse_btn .icono-plus:before, .collapse_btn .icono-plus:after {background-color: #fff;}
+.collapse_btn .icono-minus:before, .collapse_btn .icono-minus:after {background-color: #fff;}
+.icono-plus{ position: relative; width: 16px;height: 30px;}
+.icono-plus:before, .icono-plus:after{  content: "";position: absolute; transition: transform 0.25s ease-out;}
+.icono-plus:before{height: 38%;left: 31%;margin-left: -2px;top: 18px; width: 2px;}
+.icono-plus:after{ height: 2px;left: -2px;margin-top: -2px;top: 80%; width: 70%;}
+.icono-minus{ position: relative; width: 16px;height: 30px;}
+.icono-minus:before, .icono-plus:after{  content: "";position: absolute; background-color: #fff;  transition: transform 0.25s ease-out;}
+.icono-minus:before{height: 2px;left: -2px;margin-top: -2px;top: 80%; width: 70%;}
+.sub_oreder{padding: 10px 0px; display: block;  margin-top: 7px;}
+.sub_oreder_progress_box{border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; display: block;  margin-top: 7px;}
+.sub_oreder_progress_box .approved_box{display:block; float: left; width: 70%; }
+.sub_oreder .sub_oreder_progress_box .approved_box ul{display: block; padding: 0px; margin: 0px; list-style: none; width: 100%}
+.sub_oreder .sub_oreder_progress_box .approved_box  ul li{display:block; width: 25%; border-right: 1px solid #ddd; padding: 6px 10px; background: #e7ebfa;text-align: center; font-size: 16px; color: #17319f; list-style: none; text-transform: uppercase; float: left;}
+.sub_oreder .sub_oreder_progress_box .approved_box .sub_oreder_progress{display: block; width: 100%; padding: 10px; border-right: 1px solid #ddd; border-top: 1px solid #ddd; border-left: 1px solid #ddd;}
+.oreder_progress{ height: 7px; margin-bottom: 0;}
+.suborder_amount{display: block; float: left; width: 30%; font-size: 16px;   line-height: 4; color: #17319f; text-align: center; }
+.suborder_btn_box{display: block; padding: 10px; width: 100%;}
+.progress {overflow: visible; height: 10px;margin-bottom: 8px;}
+.progress-bar {-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.progress-bar:after {content:"";background-color: darkgreen;width: 17px; height: 17px; margin-right: -7px;margin-top: -3px;border-radius: 15px; float: right;}
+.sub_oreder .sub_oreder_progress_box .approved_box ul .pending_amount{color: #d41a21;}
+.customer_account_section .panel-default>.active{color: #fff;}

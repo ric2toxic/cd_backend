@@ -1,0 +1,2 @@
+$temp_purchase_days = array('30' => 30, '90' => 90, 'SUPER' => 120);
+define('STORE_PURCHASED_DAYS', array('JP' => $temp_purchase_days, 'BL' => $temp_purchase_days));

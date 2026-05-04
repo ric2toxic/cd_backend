@@ -1,0 +1,5 @@
+ALTER TABLE `oc_customer_wsb_credit` ADD `nach_schedule_crontab` VARCHAR(64) NULL DEFAULT NULL AFTER `credit_limit`;
+
+ALTER TABLE `oc_customer_wsb_credit` ADD `days_before_nach_start` INT(5) NOT NULL DEFAULT '4' AFTER `nach_schedule_crontab`;
+
+ALTER TABLE `oc_customer_wsb_credit` ADD `schedule_days_for_nach` INT(5) NOT NULL DEFAULT '20' COMMENT 'Default Working days to complete NACH against Order at customer level' AFTER `days_before_nach_start;

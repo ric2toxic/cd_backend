@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `store_voucher` VARCHAR(8) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `weight_class_id`;

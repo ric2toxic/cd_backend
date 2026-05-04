@@ -1,0 +1,60 @@
+.error-page-404{
+    background: #12339C;
+}
+.error-card-box{
+    width: 1000px;
+    margin: auto;
+}
+.error-404{
+    background: #133596;
+    padding: 20px;
+}
+.error-card-box #logo-error img{
+    margin: 30px auto 0;
+}
+.error-404 .error-msg{
+    height:480px;
+    background: #f2f2f2 url("../image/404-error.png") no-repeat 0px 0px ;
+    border-radius:5px ;
+}
+.error-404 .error-content{
+    /*margin-left: -20px;*/
+    /*margin-top: 10px;*/
+    margin-top: 5px;
+    position: absolute;
+    right: 25px;
+}
+.error-404 .error-content p{
+    text-align: justify;
+}
+.error-404 .error-content .menu-links{
+    margin-left: -15px;
+}
+.error-404 .error-content .menu-links ul{
+    list-style: none;
+    margin-left: -40px;
+}
+
+.error-404 .error-content .menu-links ul li{
+    padding:3px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.error-404 .social-links{
+    margin-left: -30px;
+    margin-top: 8px;
+}
+.error-404 .social-links ul {
+    list-style: none;
+    padding: 0;
+}
+.error-404 .social-links ul li {
+    font-size: 22px;
+    display: inline;
+    padding: 3px;
+}
+.error-404 .social-links .menu-links li {
+    font-size: 14px;
+    display: inline;
+    padding: 3px;
+}

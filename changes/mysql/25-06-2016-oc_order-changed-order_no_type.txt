@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` CHANGE `order_no` `order_no` VARCHAR(255) NOT NULL COMMENT 'Order number based on yyyymmxxxxx format';

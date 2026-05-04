@@ -1,0 +1,66 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 30, 2019 at 04:26 PM
+-- Server version: 5.7.25-0ubuntu0.16.04.2
+-- PHP Version: 7.1.22-1+ubuntu16.04.1+deb.sury.org+1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `wholesalebox`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_customer_credit_preapproved`
+--
+
+CREATE TABLE `oc_customer_credit_preapproved` (
+  `id` int(11) NOT NULL,
+  `retailer_id` int(11) NOT NULL,
+  `retailer_name` varchar(100) DEFAULT NULL,
+  `firm_name` varchar(100) DEFAULT NULL,
+  `pan` varchar(20) DEFAULT NULL,
+  `approval_date` date DEFAULT NULL,
+  `approved_limit` decimal(10,2) DEFAULT NULL,
+  `roi` varchar(20) DEFAULT NULL,
+  `pre_approved_limit_expiry_date` date DEFAULT NULL,
+  `approved_by` enum('RBL','WHOLESALEBOX','THIRDPARTY','') DEFAULT NULL,
+  `date_added` date DEFAULT NULL,
+  `date_updated` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `oc_customer_credit_preapproved`
+--
+ALTER TABLE `oc_customer_credit_preapproved`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `retailer_id` (`retailer_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oc_customer_credit_preapproved`
+--
+ALTER TABLE `oc_customer_credit_preapproved`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

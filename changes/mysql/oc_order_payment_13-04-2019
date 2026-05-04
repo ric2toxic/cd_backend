@@ -1,0 +1,5 @@
+ALTER TABLE `oc_order_payment` DROP `payment_type`;
+
+
+(Add wsb_credit_nach ENUM to payment_gateway)
+ALTER TABLE `oc_order_payment` CHANGE `payment_gateway` `payment_gateway` ENUM('citrus','razorpay','bank_transfer','cash','paytm','fedex','gati_kwe','gati_ltd','upi','paytabs','wsb_credit','meesho','wsb_credit_nach') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL; 

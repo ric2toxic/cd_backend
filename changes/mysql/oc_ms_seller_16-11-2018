@@ -1,0 +1,4 @@
+ALTER TABLE `oc_ms_seller` 
+ADD `product_name_prefix` VARCHAR(8) NULL DEFAULT NULL AFTER `company`, 
+ADD `prefix_mode` TINYINT(1) NOT NULL DEFAULT '0' AFTER `product_name_prefix`, 
+ADD UNIQUE `product_name_prefix` (`product_name_prefix`);

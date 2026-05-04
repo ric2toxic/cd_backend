@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer` ADD `otp` VARCHAR( 8 ) NULL DEFAULT NULL ;
+ALTER TABLE `oc_customer` ADD `signup_from` VARCHAR( 20 ) NULL DEFAULT NULL ;

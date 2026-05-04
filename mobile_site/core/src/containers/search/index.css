@@ -1,0 +1,74 @@
+.search_btn_drawer {
+    background-color : #333;
+}
+.nav_singles_store_btn_drawer {
+    font-size: 20px;
+    font-weight: bold;
+    width: 5%;
+    float: left;
+    margin-top: 7px;
+    margin-left: 2%;
+}
+.nav_singles_store_cross_btn
+{
+    font-size: 30px;
+    float: right;
+    margin-top: -3px;
+    margin-right: 5%;  
+}
+
+.nav_singles_store_btn_drawer a {
+    background: #fff;
+    color: #aba9a9;
+}
+
+.nav_singles_store_btn_drawer span {
+    background: #fff;
+    color: #aba9a9;
+}
+
+.nav_singles_store_cross_btn a {
+    background: #fff;
+    color: #aba9a9;
+}
+
+.nav_singles_store_cross_btn span {
+    background: #fff;
+    color: #aba9a9;
+}
+
+.clear_search_input a{
+    background: #fff;
+    color: grey;
+}
+
+.search_bar_drawer {
+    /*margin-top : 30px !important;*/
+}
+.search_menu_list{margin-left: 12px;}
+
+.searchMenuOnClick > div > div {
+    margin-left : 15px !important;
+}
+.search_full_box{border-bottom: 1px solid #ccc; width: 100%;}
+#search_input_box_drawer
+{
+    color: #525151 !important;
+    width: 80%;
+    height: 36px;
+    border: none;
+    font-size: 14px; 
+    margin-left: 2%;
+    padding-left: 8px;
+}
+#search_input_box_drawer:focus, #search_input_box_drawer:active{ outline: none;}
+
+.search_menu{padding: 0px 0px 0px 4% !important;}
+.search_menu span b{color: #171616 !important;}
+.search_item{    
+    width: 100%;
+    padding: 4% 6%;
+    }
+.search_item a {font-size: 14px; color: #717171; width: 90%; display: block; float: left; height: 45px;}
+.search_item a b{color: #000;}
+.search_item_icon{float: right; font-size: 16px; color: #aba9a9;}    

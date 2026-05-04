@@ -1,0 +1,1 @@
+ALTER TABLE `oc_searched_terms` ADD `search_history` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `has_result`;

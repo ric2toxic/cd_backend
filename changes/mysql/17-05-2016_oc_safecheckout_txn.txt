@@ -1,0 +1,53 @@
+-- phpMyAdmin SQL Dump
+-- version 4.3.11
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 18, 2016 at 01:37 PM
+-- Server version: 5.6.24
+-- PHP Version: 5.6.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `wholesalebox_16`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_wsb_safecheckout_txns`
+--
+
+CREATE TABLE IF NOT EXISTS `oc_wsb_safecheckout_txns` (
+  `id` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL,
+  `txn_status` varchar(50) DEFAULT NULL,
+  `txn_message` text,
+  `full_response` text,
+  `created_date` datetime DEFAULT NULL,
+  `txn_id` varchar(255) DEFAULT NULL,
+  `page_reached` varchar(50) DEFAULT NULL,
+  `request_data` text
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `oc_wsb_safecheckout_txns`
+--
+ALTER TABLE `oc_wsb_safecheckout_txns`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oc_wsb_safecheckout_txns`
+--
+ALTER TABLE `oc_wsb_safecheckout_txns`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;

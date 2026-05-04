@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_product` ADD `pickup_status` ENUM('Not_Given','Picked_Up','Received','Issue') NOT NULL DEFAULT 'Not_Given' AFTER `hsn_code`, ADD `pickeup_last_modified` DATETIME NOT NULL AFTER `pickup_status`, ADD `pickup_history` TEXT NOT NULL AFTER `pickeup_last_modified`;

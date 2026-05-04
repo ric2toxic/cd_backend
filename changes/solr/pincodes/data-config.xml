@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+
+
+
+    <dataSource type="JdbcDataSource"
+  driver="com.mysql.jdbc.Driver"
+  url="jdbc:mysql://localhost/wholesalebox"
+  batchSize="-1"
+  convertType="true"
+  user="root"
+  password="root"
+  zeroDateTimeBehavior="convertToNull"
+ />
+ 
+ 
+
+ <document name="wholesalebox">
+  <entity name="pincodes" transformer="RegexTransformer"
+  query="SELECT p.id, p.pin_code as pincode, p.taluka, p.city_id,p.city, p.zone_id, z.name as zone, p.country_id, c.name as country, p.status 
+			FROM `oc_pincodes` as p 
+			LEFT JOIN `oc_zone` as z ON p.zone_id = z.zone_id 
+			LEFT JOIN oc_country as c ON p.country_id = c.country_id 
+			" >
+    
+        
+     <field column="id" sourceColName="id" />
+    <field column="city_id" name="city_id"/>
+    <field column="city" name="city"/>
+    <field column="zone_id" name="zone_id"/>
+    <field column="zone" name="zone"/>
+    <field column="country_id" name="country_id"/>
+    <field column="country" name="country"/>
+    <field column="status" name="status"/>
+    <field column="pincode" name="pincode"/>
+    <field column="taluka" name="taluka"/>
+   
+  </entity>
+ </document>
+ 
+ 
+</dataConfig>

@@ -1,0 +1,2 @@
+ALTER TABLE `oc_product` ADD `expected_dispatch_date` DATE NOT NULL AFTER `date_out_of_stock`;
+ALTER TABLE `oc_product` CHANGE `expected_dispatch_date` `expected_dispatch_date` DATE NULL DEFAULT NULL;

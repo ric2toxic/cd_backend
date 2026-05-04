@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `customer_type_id` INT NOT NULL;

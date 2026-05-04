@@ -1,0 +1,25 @@
+/*---About pages---*/
+
+.stores h3 {
+    background: #fff;
+    text-align: center;
+    padding: 8px;
+    color: #282828;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    margin: 6px 8px!important;
+    font-size: 14px;
+}
+
+
+.direction-popup {
+    background: #fff no-repeat right bottom;
+    padding: 10px 0px !important;
+}
+
+.direction-popup p {
+    line-height: 2;
+    font-size: 12px;
+}
+
+.marker_img{margin-left: -14px; margin-top: -45px;}

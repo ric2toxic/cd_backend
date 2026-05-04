@@ -1,0 +1,3 @@
+1. add value to field_name ENUM = 
+
+'nach_schedule_crontab', 'days_before_nach_start', 'schedule_days_for_nach', 'account_name', 'account_no', 'umrn_no', 'frequency', 'deduction_percentage'

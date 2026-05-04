@@ -1,0 +1,3 @@
+ALTER TABLE  `oc_wsb_prefixes` CHANGE  `prefix_type`  `prefix_type` ENUM(  'DEBIT_NOTE',  'CREDIT_NOTE',  'SELLER_INVOICE', 'BUYER_INVOICE',  'FRANCHISE_INVOICE' ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+
+

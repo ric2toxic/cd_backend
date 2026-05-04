@@ -1,0 +1,1 @@
+define('WSB_STOCK_DISPLAY_CITY_PRIORITY', array(1 => 'JP', 2 => 'ST', 3 => 'MU', 4 => 'BL', 5 => 'KL'));

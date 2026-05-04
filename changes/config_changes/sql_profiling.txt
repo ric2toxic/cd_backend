@@ -1,0 +1,4 @@
+//for sql profiling changes in backend config
+//For sql profiling get parameter value
+
+define('DEBUG_SQL_PROFILE', 'wsb@xyz123');

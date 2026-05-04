@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `wsb_credit_payment` ENUM('CLEARED','NOT_CLEARED','NOT_APPLICABLE') NOT NULL DEFAULT 'NOT_APPLICABLE' AFTER `payment_cleared`;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_ms_seller` ADD `cod_available` TINYINT(1) NOT NULL DEFAULT '1' AFTER `vacation_mode`;

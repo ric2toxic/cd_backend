@@ -1,0 +1,1 @@
+INSERT INTO `wholesalebox_8`.`oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES (NULL, '1', 'Delivered');

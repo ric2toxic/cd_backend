@@ -1,0 +1,171 @@
+
+header{/*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);*/color: #fff;display: block; padding: 10px 4px 4px 4px; background: #17319f;}
+header .navbar-toggle{display: inline-block;float: left;margin: 0;text-align: left;}
+header .navbar-toggle{color: #fff;}
+header .navbar-toggle .icon-bar{ background: #fff;}
+.head_right_icon{display: inline-block; padding: 2px 10px;  cursor: pointer;  margin-right:0px; vertical-align: top;}
+.head_right_icon a{color: #fff; font-size: 20px; padding: 0px;}
+.head_right_icon_box{display: inline-block; padding: 9px 10px 3px;  cursor: pointer;}
+.head_right_icon_box .head_right_btn{font-size: 15px; color: #fff;}
+.head_margin{margin-top: 48px; padding: 0px;}
+.swiper-container {width: 100%!important;height: auto;}
+.swiper-slide { background: #fff;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+
+/*---------- css for new header page ----------------*/
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #f03140;
+    margin-bottom: 6px;
+}
+.header_top{background:#f03140; color: #fff;}
+.header_top .discounts_title{ text-align: center;padding-top: 5px; }
+.header_top .discounts_title .down {border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #f00;bottom: -11px;display: block;height: 0;left: 46.3%;position: absolute;width: 0;z-index: 10;}
+.header_top .header_top_right_icon{padding-left: 20px;}
+.top_header_contant{    margin-bottom: 0;margin-top: 0; list-style: none;}
+.top_header_contant li{ padding: 3px 10px; display: inline-block; margin: 0px; list-style: none;}
+.top_header_contant li a{color: #fff;}
+.discounts_text{text-align: center; padding-top:5px; cursor: pointer;   font-size: 14px;}
+.icon_details {margin-bottom: 0;margin-top: 0; list-style: none; padding-left: 0px;}
+.icon_details li {font-size: 13px;     padding-top: 5px;}
+.icon_details li .manufacturer{ background-position: -10px 0;height: 38px;width: 40px;}
+.icon_details li .returns{ background-position: -55px 0;height: 38px;width: 40px;}
+.icon_details li .delivery{ background-position: -101px 0;height: 38px;width: 45px;}
+.icon_details li .payment_pic{ background-position: -142px 0;height: 38px;width: 45px;}    
+.login_right{text-align: right;}
+.logo_box{float: left;margin: 0;padding-left: 0px;padding-right: 0;padding-top: 4px;width: 134px;}
+
+/*---css for right navigation(start)---*/
+.side-collapse-container_right{width:100%;position:relative;right:0;transition:right .4s;}
+.side-collapse_right {top:50px;bottom:0;right:0;width:100%;position:fixed;overflow:hidden;transition:width .4s;margin-bottom: 0px; background: rgba(0, 0, 0, 0.8);}
+.side-collapse_right.in {width:0;}
+.side-collapse_right .mobile_nav_colllapse{background: #fff;  color: #565656; width:70%; position: absolute; right: 0;}
+.login_name{background:#17319f; padding: 10px;color: #fff; font-size: 18px; }
+.contact_input_box .account_info_input{border: 1px solid #ccc; font-size: 14px;margin: 0;outline: medium none;padding: 5px;width: 66%;}
+.address_edit_btn{color:#000; opacity: 1px; padding: 6px 25px;}
+.address_edit_btn:hover, .address_edit_btn:focus{color:#17319f; opacity: 1px; box-shadow: none;}
+.new_address_box{margin: 0px; text-decoration: none;}
+.add_btn_new_popup{width: 100%; display: block !important; background:#17319f; padding: 10px !important; color: #fff; text-align: center !important;}
+.add_btn_new_popup:hover{background:#17319f; color: #fff; opacity: 1;}
+.account_info input, .account_info textarea { width: 100%;}
+.cart_amount {
+    background: #fff;
+    border-radius: 50px;
+    background-color: #d41a21;
+    font-size: 10px;
+    height: 18px;
+    position: absolute;
+    right: 40px;
+    margin-top: -8px;
+    width: 18px;
+    z-index: 999;
+    border: 1px solid #fff;
+    text-align: center;
+    padding-top: 3px;
+     }
+.wishlist_count {
+    background: #fff; 
+    border-radius: 50px;  
+    color: #fff;
+    background-color: #d41a21;  
+    font-size: 10px;  
+    height: 18px;  
+    position: absolute; 
+    right:78px;  
+    margin-top: -8px; 
+    width: 18px; 
+    z-index: 999; 
+    border: 1px solid #ddd;
+    text-align: center; 
+    padding-top: 3px;
+     }
+.accountMenuLiSeprater{padding: 0px; border-bottom: 1px solid #eae9e9; width: 100%; height: 1px; float: right;}
+
+.search_bar {
+    display: inline-table;
+    float: left!important;
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 4px;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.search_bar_header{width: 94%;}
+
+.search_bar_header > div, .search_bar_header div div{
+    width : 100% !important;
+}
+
+.serch_input_box {
+    /*border: 1px solid #ccc;*/
+    font-size: 14px !important;
+    margin: 0px 10px !important;
+    outline: medium none !important;
+    height : 40px !important;
+}
+
+.serch_input_box_drawer{
+    /*border: 1px solid #ccc;*/
+    font-size: 14px !important;
+    margin: 0px 5px !important;
+    outline: medium none !important;
+    height : 40px !important;
+}
+.serch_input_box div , .serch_input_box input {
+    color : #878787 !important;
+}
+
+.full_header input {
+    border-radius: 0;
+}
+.serch_btn {
+    position: absolute;
+    right: -8px;
+    top: 1px;
+    width: 38px;
+}
+
+#search_magnifier {
+	height: 32px;
+	z-index: 0 !important;
+}
+.ui-autocomplete{z-index: 1050 !important;}
+.search_bar .serch_btn{position: absolute;}
+
+.drawerShow{
+    width:100% !important; 
+    transform: translate(0px, 0px) !important;
+}
+
+
+.drawerCollapse {
+     width:100% !important;
+    transform: translate(-100%, 0px) !important;
+}
+
+.header_search_icon {
+    height : 0px !important;
+    width : 0px !important;
+    padding: 2px 13px !important;
+    margin-top: -10px !important;
+    color : #fff !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@media screen and (max-width: 320px) {
+  .head_margin {
+    margin-top : 85px !important;
+  }
+}
+.menu_div{font-size: 14px;}
+
+.serch_input_box{background-color: #fff !important; padding-left: 10px !important; line-height:normal !important;}
+.serch_input_box hr {display: none;}
+.mb_right_menu li a {font-size: 14px;}
+.mb_right_menu li i {margin-right: 5px;}
+.logout_btn{position: relative;
+    display: block;
+    padding: 10px 15px; font-size: 14px; color: #000;}

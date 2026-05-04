@@ -1,0 +1,40 @@
+data-config.xml
+--------------------------------
+
+//////////// Change: add sor_type, sor_days and LEFT JOIN in entity products ////////////////////
+<entity name="products"
+
+	   pst.sor_type,
+	   pst.sor_days,
+
+       LEFT JOIN oc_product_sor_terms AS pst ON pst.product_id = p.product_id
+
+
+//////////// Change: add sor_type, sor_days and LEFT JOIN in deltaImportQuery ////////////////////
+deltaImportQuery="SELECT
+
+	   pst.sor_type,
+	   pst.sor_days,
+
+
+       LEFT JOIN oc_product_sor_terms AS pst ON pst.product_id = p.product_id
+	   
+	   
+//////////// Change: add sor_type, sor_days fields ////////////////////
+    <field column="sor_type" sourceColName="sor_type" />
+    <field column="sor_days" sourceColName="sor_days" />
+
+
+
+
+
+
+
+managed-schema.xml
+--------------------------------
+
+///////////////put below lines after <!-- oc_ms_seller --> fields block ///////////////////////////////////
+
+<!-- oc_product_sor_terms -->
+<field name="sor_type" type="text_general" indexed="true" stored="true"  />
+<field name="sor_days" type="int" indexed="true" stored="true"  />

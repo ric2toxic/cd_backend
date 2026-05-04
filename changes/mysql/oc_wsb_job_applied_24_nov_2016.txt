@@ -1,0 +1,2 @@
+ALTER TABLE `oc_wsb_job_applied` ADD `current_ctc` VARCHAR(10) NOT NULL AFTER `resume`;
+ALTER TABLE `oc_wsb_job_applied` ADD `expected_ctc` VARCHAR(10) NOT NULL AFTER `current_ctc`;

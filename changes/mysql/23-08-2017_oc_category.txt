@@ -1,0 +1,1 @@
+ALTER TABLE `oc_category` ADD `commission_rules` TEXT NULL AFTER `non_mandatory_filter_groups`;

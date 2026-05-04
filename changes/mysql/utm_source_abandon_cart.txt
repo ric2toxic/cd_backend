@@ -1,0 +1,2 @@
+ALTER TABLE `oc_abandoned_cart` ADD `utm_source` VARCHAR(100) NULL DEFAULT NULL , ADD `utm_medium` VARCHAR(100) NULL DEFAULT NULL , ADD `utm_campgain` VARCHAR(100) NULL DEFAULT NULL ;
+ALTER TABLE `oc_abandoned_cart` ADD `landing_page` TEXT NULL DEFAULT NULL ;

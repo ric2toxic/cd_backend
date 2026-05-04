@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_product` ADD `store_pickup` TINYINT(1) NOT NULL DEFAULT '0' AFTER `store_sales`;

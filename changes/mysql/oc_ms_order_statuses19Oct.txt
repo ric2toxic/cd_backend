@@ -1,0 +1,35 @@
+
+CREATE TABLE IF NOT EXISTS `oc_ms_order_status` (
+  `order_status_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `oc_ms_order_status`
+--
+
+INSERT INTO `oc_ms_order_status` (`order_status_id`, `language_id`, `name`) VALUES
+(1, 1, 'Accepted'),
+(2, 1, 'Denied'),
+(3, 1, 'Processed');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `oc_ms_order_status`
+--
+ALTER TABLE `oc_ms_order_status`
+  ADD PRIMARY KEY (`order_status_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oc_ms_order_status`
+--
+ALTER TABLE `oc_ms_order_status`
+  MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;

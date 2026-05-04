@@ -1,0 +1,76 @@
+.image_banner{  width: 100%; background-color: #ff223f; height: 334px; margin-top: -20px; padding-top: 20px;
+}
+.text_manuf_con{
+    text-align: center;
+}
+.text_manuf{
+    color: white;
+    margin-bottom: 5px !important;
+}
+
+.texr_authen{ font-size: 16px; color: black; font-weight: 600; background-color: white; height: 50px; line-height: 50px; text-align: left; padding-left: 2px;
+}
+
+.font_size{
+    font-size: 20px!important;
+}
+
+.text_manuf1{
+    margin-bottom: -16px!important;
+}
+
+.right_text{
+    margin-top: 20px;
+}
+
+.text_manuf2{
+    margin-bottom: -16px!important;
+}
+
+.benefit{
+    text-align: left;
+    background-color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.list_bens{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.text_how_container{
+    background-color: #133595;
+    height: 280px;
+    padding-left: 15px;
+    padding-top: 1px;
+    width: 100%;
+}
+
+.d1{
+    font-weight: 700!important;
+    font-size: 24px!important;
+    color: #cd061b!important;
+}
+
+.d2{
+    font-weight: 700!important;
+    font-size: 24px!important;
+    color: #133595!important;
+}
+
+.text_howtosell{
+    color:white;
+    text-align: center!important;
+}
+
+.color_white_font{
+    color: white;
+}
+
+.arrow_ben{
+    text-align: center;
+
+}

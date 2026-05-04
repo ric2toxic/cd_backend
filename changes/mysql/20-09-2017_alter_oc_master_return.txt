@@ -1,0 +1,2 @@
+ALTER TABLE `oc_master_return` ADD `source` ENUM('app','fornt_end','back_end','crm') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `order_id`;
+ALTER TABLE `oc_master_return` CHANGE `source` `source` ENUM('app','fornt_end','back_end','crm') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'back_end';

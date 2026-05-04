@@ -1,0 +1,1 @@
+ALTER TABLE `oc_sales_staff` ADD `date_added` DATETIME NOT NULL AFTER `crm_user_id`, ADD `date_modified` DATETIME NOT NULL AFTER `date_added`;

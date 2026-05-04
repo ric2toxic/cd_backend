@@ -1,0 +1,1 @@
+ALTER TABLE `oc_user_changelog` CHANGE `change_type` `change_type` ENUM('order_apply_credit','customer_add_credit','order_edit_shipping','order_apply_advance','cashback_expired') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

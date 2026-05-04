@@ -1,0 +1,43 @@
+ALTER TABLE `oc_credit_application` CHANGE `occupied_since` `occupied_since` VARCHAR(10) NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application` CHANGE `residing_date` `residing_date` VARCHAR(10) NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application` CHANGE `business_since` `business_since` VARCHAR(10) NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application_share` ADD `credit_response_redirect_url` TEXT NOT NULL AFTER `credit_response_applicant_id`;
+
+ALTER TABLE `oc_credit_application_share` ADD `epaylater_otp_flag` TINYINT(1) NOT NULL DEFAULT '0' AFTER `credit_response_redirect_url`;
+
+ALTER TABLE `oc_credit_application` ADD `permanent_residing_date` VARCHAR(10) NOT NULL AFTER `permanent_resident_premises`;
+
+
+ALTER TABLE `oc_credit_application_share` ADD `epaylater_kyc_otp_flag` TINYINT(1) NOT NULL DEFAULT '0' AFTER `epaylater_otp_flag`;
+
+ALTER TABLE `oc_credit_application` ADD `mother_name` VARCHAR(255) NOT NULL AFTER `father_name`;
+
+ALTER TABLE `oc_credit_application` ADD `marital_status` ENUM('','Single','Married','Divorced','Widowed') NOT NULL AFTER `mother_name`;
+
+ALTER TABLE `oc_credit_application` ADD `business_segment` VARCHAR(255) NOT NULL AFTER `nature_of_business`, ADD `business_vintage` INT(11) NOT NULL AFTER `business_segment`;
+
+ALTER TABLE `oc_credit_application` ADD `business_ownership` VARCHAR(100) NOT NULL AFTER `nature_of_business`;
+
+ALTER TABLE `oc_credit_application` CHANGE `company_identification_number` `gst` VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `oc_credit_application` ADD `months_in_current_business` VARCHAR(11) NOT NULL AFTER `business_premises`;
+
+ALTER TABLE `oc_credit_application` CHANGE `current_resident_premises` `current_resident_premises` ENUM('Self Owned','Rented','Family Owned','Leased') NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application` CHANGE `permanent_resident_premises` `permanent_resident_premises` ENUM('Self Owned','Rented','Family Owned','Leased') NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application` CHANGE `business_premises` `business_premises` ENUM('Self Owned','Rented','Family Owned','Leased') NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application` CHANGE `nature_of_business` `nature_of_business` ENUM('jewellery','garment','footwear','gift_store','Retail') NULL DEFAULT NULL;
+
+ALTER TABLE `oc_credit_application` ADD `months_in_current_location` INT(11) NULL AFTER `months_in_current_business`; 
+
+ALTER TABLE `oc_credit_application` ADD `business_start_year` INT(11) NULL AFTER `months_in_current_location`; 
+
+ALTER TABLE `oc_credit_application_document` CHANGE `name` `name` SET('pancard','aadhaar_card','photo','voter_id','driving_license','passport','electricity_bill','phone_landline_bill','registered_leave_license_agreement','maintenance_receipt','rental_agreement','six_months_bank_statement','last_quarter_vat_transactions','income_tax_returns','business_pan_no','vat_return','business_entity_address_proof','certificate_of_registration','shop_photo','selfie_with_shop','address_proof_document') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE `oc_credit_application` ADD `payment_cycle` ENUM('monday','tuesday','wednesday','thursday','friday','biweekly','monthly','daily') NULL AFTER `last_modified`;
+

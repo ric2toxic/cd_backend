@@ -1,0 +1,2 @@
+-- added 'duplicate' enum
+ALTER TABLE `oc_credit_application` CHANGE `document_status` `document_status` SET('document_awaited','under_process','approved','rejected','customer_not_interested','approved_but_agreement_pending','approved_document_received','approved_without_bank_statement','document_in_transit','limit_issue','need_more_information','approved_but_not_interested', 'activated_by_rbl','duplicate') NOT NULL;

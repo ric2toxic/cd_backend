@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer_nach_details` ADD `bank_type` ENUM('STANC','YES_BANK') NOT NULL DEFAULT 'STANC' AFTER `status`;
+ALTER TABLE `oc_customer_nach_details` ADD `lan_no` VARCHAR(64) NULL DEFAULT NULL AFTER `umrn_no`;

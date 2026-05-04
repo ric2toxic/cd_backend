@@ -1,0 +1,8 @@
+ALTER TABLE `oc_customer_wsb_credit` CHANGE `status` `credit_status` TINYINT(1) NOT NULL DEFAULT '0';
+
+
+ALTER TABLE `oc_customer_wsb_credit` ADD `status` ENUM('DISABLED','ENABLED','BLOCKED','REJECTED','ON_HOLD','PENDING_APPROVAL') NOT NULL DEFAULT 'DISABLED' AFTER `credit_status`;
+
+UPDATE `oc_customer_wsb_credit` SET status = CASE WHEN credit_status = '0' THEN 'DISABLED' WHEN credit_status = '1' THEN 'ENABLED' END;
+
+ALTER TABLE `oc_customer_wsb_credit` DROP `credit_status`;

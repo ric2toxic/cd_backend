@@ -1,0 +1,53 @@
+Note:  follow all queries one by one
+
+ALTER TABLE `oc_admin_change_log` ADD `table_id` INT NOT NULL AFTER `log_id`;
+
+ALTER TABLE `oc_admin_change_log` ADD `user_id` INT NOT NULL AFTER `table_id`;
+
+ALTER TABLE `oc_admin_change_log` ADD `name` VARCHAR(255) NULL AFTER `user_id`;
+
+
+ALTER TABLE `oc_admin_change_log` ADD `source_field` ENUM('product_edit','break_suborder','product_list','not_applicable') NOT NULL DEFAULT 'not_applicable' AFTER `table_name`;
+
+
+ALTER TABLE `oc_admin_change_log` CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set','set_description','store_sales','exclusive','custom_rating','seller_change','only_for_search','hsn_code','options','sort_order','stock_status_id','status','shipping','date_available','subtract','minimum','expected_dispatch_date','is_single','mrp','cod_available','is_archived','shipping_collected','cod_failed_penalty') CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;
+
+
+ALTER TABLE `oc_admin_change_log` DROP `user`
+
+
+ALTER TABLE `oc_admin_change_log` CHANGE `name` `name` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `table_name` `table_name` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `source_field` `source_field` ENUM('product_edit','break_suborder','product_list','not_applicable') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'not_applicable', CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set','set_description','store_sales','exclusive','custom_rating','seller_change','only_for_search','hsn_code','options','sort_order','stock_status_id','status','shipping','date_available','subtract','minimum','expected_dispatch_date','is_single','mrp','cod_available','is_archived','shipping_collected','cod_failed_penalty') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `ref_url` `ref_url` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `old_value` `old_value` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `new_value` `new_value` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `comment` `comment` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `user_agent` `user_agent` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `ip_address` `ip_address` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+
+ALTER TABLE `oc_admin_change_log` CHANGE `old_value` `old_value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `new_value` `new_value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+ALTER TABLE `oc_admin_change_log` ADD `username` VARCHAR(64) NULL AFTER `name`;
+
+ALTER TABLE `oc_admin_change_log` CHANGE `username` `username` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+
+-------------------------------------------------------
+// hit below url
+
+index.php?route=test/kstest/updatAdminChangeLog
+
+
+--------------------------------------------oc_admin_info_log------------------------------------------------------------
+ALTER TABLE `oc_admin_change_log` ADD `file_location` TEXT NULL AFTER `ip_address`, ADD `user_type` VARCHAR(20) NULL AFTER `file_location`;
+
+ALTER TABLE `oc_admin_change_log` CHANGE `file_location` `file_location` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `user_type` `user_type` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+ALTER TABLE `oc_admin_change_log` CHANGE `table_id` `table_id` INT(11) NULL;
+
+ALTER TABLE `oc_admin_change_log` CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set','set_description','store_sales','exclusive','custom_rating','seller_change','only_for_search','hsn_code','options','sort_order','stock_status_id','status','shipping','date_available','subtract','minimum','expected_dispatch_date','is_single','mrp','cod_available','is_archived','shipping_collected','cod_failed_penalty','email', 'telephone') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+--------------------------------------------------------------------------
+// hit below url
+
+index.php?route=test/kstest/updateAdminInfoLog
+index.php?route=test/kstest/updateAdminCustomerchangeLog
+
+------------------------delete tables-------------------------
+DROP TABLE oc_admin_customer_change_log
+DROP TABLE oc_admin_info_log
+DROP TABLE oc_admin_product_change_log

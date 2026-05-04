@@ -1,0 +1,3 @@
+ALTER TABLE `oc_credit_note` ADD `payment_cleared` ENUM('YES','NO','PENDING_APPROVAL','NOT_APPLICABLE','ON_HOLD') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'NO' AFTER `is_cod_failed`;
+
+ALTER TABLE `oc_tentative_refund` CHANGE `is_approved` `is_approved` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0' COMMENT '0->No, 1->yes, 2->rejected, 3->OnHold';

@@ -1,0 +1,21 @@
+body.popup{background: #fff;}
+body.popup .product_page #content{border-radius:none;box-shadow:none;}
+.thumbnails > li{margin-left:0;}
+.addedincart_popup{position:fixed; top:50%; left:40%; width:280px; z-index: 10000;background: #fff;box-shadow: 0 7px 5px rgba(0, 0, 0, 0.2); color:#000;padding:10px; font-size:12px;border-radius: 4px; font-size: 14px;border:1px solid #ddd;}
+.addedincart_popup .action_btn{margin:10px 0;}
+.addedincart_popup_close {
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    width: 36px;
+    z-index: 8040;
+    background-image: url("../image/fancybox/fancybox_sprite.png")!important;
+    opacity:1!important;
+}
+
+@media (max-width: 768px) {
+    .addedincart_popup{left:7px; width:260px;}
+
+}

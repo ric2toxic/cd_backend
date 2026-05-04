@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `has_website` TINYINT(1) NULL DEFAULT '0' AFTER `self_order`;

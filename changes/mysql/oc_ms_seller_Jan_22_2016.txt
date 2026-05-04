@@ -1,0 +1,1 @@
+ALTER TABLE `oc_ms_seller` ADD `non_returnable` TINYINT(1) NOT NULL AFTER `tan`; 

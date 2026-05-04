@@ -1,0 +1,6 @@
+ALTER TABLE `oc_seller_promotion` 
+ADD COLUMN `product_ids` TEXT NULL DEFAULT NULL AFTER `status`;
+
+ALTER TABLE `oc_seller_promotion` 
+ADD COLUMN `modified_date` DATETIME NULL DEFAULT NULL AFTER `added_date`;
+

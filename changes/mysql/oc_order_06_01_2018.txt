@@ -1,0 +1,3 @@
+ALTER TABLE `oc_order` ADD `operations_status` ENUM('none','good_to_process','good_to_dispatch','dont_dispatch') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `franchise_id`;
+
+ALTER TABLE `oc_order` CHANGE `operations_status` `operations_status` ENUM('none','good_to_process','good_to_dispatch','dont_dispatch') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'none';

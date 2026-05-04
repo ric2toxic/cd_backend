@@ -1,0 +1,1 @@
+ALTER TABLE `oc_tentative_refund` ADD `rejected_comment` TEXT NULL DEFAULT NULL AFTER `user`;

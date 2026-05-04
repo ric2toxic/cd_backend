@@ -1,0 +1,7 @@
+ALTER TABLE `oc_searched_terms` ADD `count` INT NOT NULL AFTER `customer_id`, ADD `has_results` TINYINT NOT NULL AFTER `count`, ADD `is_model` BOOLEAN NOT NULL AFTER `has_results`;
+
+ALTER TABLE `oc_searched_terms` CHANGE `customer_id` `customer_id` TEXT NOT NULL;
+
+ALTER TABLE `oc_searched_terms` DROP `ip`;
+
+ALTER TABLE `oc_searched_terms` DROP `browser`;

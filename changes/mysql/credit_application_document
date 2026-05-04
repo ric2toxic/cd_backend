@@ -1,0 +1,7 @@
+ALTER TABLE `oc_credit_application_document` CHANGE `name` `name` SET('pancard','aadhaar_card','photo','voter_id','driving_license','passport','electricity_bill','phone_landline_bill','registered_leave_license_agreement','maintenance_receipt','rental_agreement','six_months_bank_statement','last_quarter_vat_transactions','income_tax_returns','business_pan_no','vat_return','business_entity_address_proof','certificate_of_registration','shop_photo') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+
+ALTER TABLE `oc_credit_application_document` CHANGE `name` `name` SET('pancard','aadhaar_card','photo','voter_id','driving_license','passport','electricity_bill','phone_landline_bill','registered_leave_license_agreement','maintenance_receipt','rental_agreement','six_months_bank_statement','last_quarter_vat_transactions','income_tax_returns','business_pan_no','vat_return','business_entity_address_proof','certificate_of_registration','shop_photo','selfie_with_shop') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+
+ALTER TABLE `oc_credit_application` ADD `last_modified` datetime NULL AFTER `created_date`; 

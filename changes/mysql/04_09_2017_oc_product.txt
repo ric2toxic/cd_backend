@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `sor_product` TINYINT(1) NOT NULL DEFAULT '0' AFTER `archived_date`;

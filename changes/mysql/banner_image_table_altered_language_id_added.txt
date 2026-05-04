@@ -1,0 +1,1 @@
+ALTER TABLE `oc_banner_image` ADD `language_id` INT NOT NULL AFTER `banner_id`;

@@ -1,0 +1,1 @@
+define('DEFAULT_SHARE_MARGIN', 50);

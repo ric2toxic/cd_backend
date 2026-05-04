@@ -1,0 +1,42 @@
+{
+  "name": "test-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "^4.7.2",
+    "jquery": "^3.2.1",
+    "prop-types": "^15.5.10",
+    "ra-data-json-server": "^2.0.0-RC2",
+    "ra-data-simple-rest": "^2.0.0-RC2",
+    "react": "^16.3.2",
+    "react-admin": "^2.0.0-RC2",
+    "react-dom": "^16.3.2",
+    "react-flags-select": "^1.1.0",
+    "react-helmet": "^5.2.0",
+    "react-input-range": "^1.2.2",
+    "react-redux": "^5.0.6",
+    "react-responsive-carousel": "^3.1.30",
+    "react-router": "^2.7.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-last-location": "^1.1.0",
+    "react-router-redux": "next",
+    "react-scripts": "^1.1.5",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "sanitize.css": "^5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "5.0.1",
+    "eslint-plugin-react": "7.0.1"
+  }
+}

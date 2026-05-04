@@ -1,0 +1,2 @@
+ALTER TABLE `oc_ms_seller` ADD `seller_agreement` TINYINT(1) NOT NULL AFTER `sor_enabled`;
+ALTER TABLE `oc_ms_seller` ADD `seller_agreement_acceptance_date` DATETIME NOT NULL AFTER `seller_agreement`;

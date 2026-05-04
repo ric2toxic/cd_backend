@@ -1,0 +1,8 @@
+SELECT CONCAT(oc.firstname, " ", oc.lastname) as Name, oa.company as Company, oa.city as City, oa.postcode as Postcode, oc.email as Email, oc.telephone as Phone
+FROM `oc_customer` oc
+LEFT JOIN oc_ms_seller ms
+ON oc.customer_id = ms.seller_id
+INNER JOIN oc_address oa
+ON oc.customer_id = oa.customer_id
+WHERE ms.seller_id IS NULL
+ORDER BY name ASC;

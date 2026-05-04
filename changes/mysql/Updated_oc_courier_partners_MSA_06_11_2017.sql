@@ -1,0 +1,1 @@
+INSERT INTO `oc_courier_partners` (`id`, `courier_name`, `courier_telephone`, `tracking_url`) VALUES (NULL, 'DotZot', NULL, 'http://dotzot-test.azurewebsites.net/RestService/DocketTrackingService.svc/Get DocketTrackingDetails');

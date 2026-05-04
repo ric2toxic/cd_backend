@@ -1,0 +1,1 @@
+ALTER TABLE `oc_wsb_purchase` ADD `purchase_bill_image` VARCHAR(255) NULL AFTER `sor_purchase`;

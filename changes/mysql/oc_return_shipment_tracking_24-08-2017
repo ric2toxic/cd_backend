@@ -1,0 +1,3 @@
+ALTER TABLE  `oc_return_shipment_tracking` ADD  `status` VARCHAR( 100 ) NULL DEFAULT NULL AFTER  `value` ;
+
+ALTER TABLE  `oc_return_shipment_tracking` ADD  `equivalent_status` ENUM(  'Generated',  'Picked Up',  'In Transit',  'Problem',  'Delivered' ) NOT NULL DEFAULT  'Generated' AFTER  `status` ;

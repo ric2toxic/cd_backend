@@ -1,0 +1,3 @@
+ALTER TABLE `oc_menu_item` ADD `promotion` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `language_id`;
+
+ALTER TABLE `oc_menu_item` CHANGE `promotion` `promotion` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;

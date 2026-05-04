@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` CHANGE `ws_gcm_registration_id` `ws_gcm_registration_id` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;

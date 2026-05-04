@@ -1,0 +1,81 @@
+/* mini reset */
+.menu,
+.menu a,
+.menu form,
+.menu input,
+.menu li,
+.menu ul {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+}
+.menu li {
+  list-style: none;
+}
+
+/* menu container */
+.menu,
+input {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.menu {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  z-index: 500;
+}
+
+/* menu list */
+.menu > li {
+  float: left;
+}
+
+.menu > li:first-child > a {
+  border-left: none;
+  border-radius: 3px 0 0 3px;
+}
+
+/* menu dropdown */
+.mega-menu_kurtis {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  transition: all .3s ease .15s;
+  width: 748px;
+  height: 353px;
+  background: rgba(0,0,0,0) url('../image/menu/kurtis_dropdown-img.jpg') no-repeat scroll 0 0;
+}
+
+/* menu content */
+.menu-column {
+  float: left;
+  padding: 2.5%;
+  width: 20%;
+}
+.menu-column a {
+  color: #212121;
+  display: block;
+  line-height: 26px;
+}
+.menu-column a:hover {
+  color: #f03140;
+}
+.orange {
+  color: #f03140;
+  font-size: 17px;
+  line-height: 18px;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+.menuitem{
+  font-size: 13px;
+}
+.menuitem a:hover {
+  color: #133596;
+}

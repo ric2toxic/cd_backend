@@ -1,0 +1,1 @@
+define('COMMON_REACT_JS', 'js/web/react-bundle.js?v=2.2');

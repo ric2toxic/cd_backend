@@ -1,0 +1,216 @@
+.MuiTable-root {
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.MuiTableRow-root {
+    color: inherit;
+    height: 48px;
+    display: table-row;
+    vertical-align: middle;
+}
+
+
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 4px 56px 4px 24px;
+    text-align: left;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    vertical-align: inherit;
+}
+
+.MuiTableCell-head {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.Datagrid-headerCell{
+    padding: 0 12px;
+}
+
+.MuiTableRow-root.MuiTableRow-hover:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.MuiTableCell-body {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.8125rem;
+}
+
+.Datagrid-rowCell {
+    padding: 0 12px;
+    max-width: 150px;
+}
+
+.pd_approve_section {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0px;
+    margin: 0px;
+    color: #000;
+}
+
+.pickup_requested ul {
+    list-style: outside none none;
+    padding: 0px;
+    width: 100%;
+    font-size: 12px;
+    color: #000;
+}
+.pickup_requested ul li {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11px;
+}
+.complete, .complete:hover {
+    background: #d2f4dc!important;
+}
+.edit, .edit:hover {
+    background: #e6ebff!important;
+}
+.cancel, .cancel:hover {
+    background: #ffecee!important;
+}
+.processing, .processing:hover {
+    background: #ffedcf !important;
+}
+.edit {
+    background: #e6ebff;
+}
+.green {
+    color: #038c0b;
+    font-size: 13px !important;
+}
+.blue {
+    color: #17319f;
+    font-size: 13px !important;
+}
+.red {
+    color: #d52100;
+    font-size: 13px !important;
+}
+.orange {
+    color: #ffae2e;
+    font-size: 13px !important;
+}
+
+.green_full {
+    color: #038c0b;
+}
+.blue_full {
+    color: #17319f;
+}
+.red_full {
+    color: #d52100;
+}
+.orange_full {
+    color: #ffae2e;
+}
+
+.pd_action_btn_box {
+    display: block;
+    width: 100%;
+}
+.pd_action_btn_box ul {
+    list-style: none;
+    display: block;
+    padding: 20px 0px 0px;
+    margin: 0px;
+}
+.pd_action_btn_box ul li {
+    list-style: none;
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pickup_done_records_box, .pickup_done_records_box2 {
+    margin: 10px 0px 0px 0px;
+    display: block;
+    padding: 2px;
+    width: 100%;
+    text-align: right;
+}
+
+.invoice_box{width: 20% !important;}
+.invoice_box input{font-size: 13px!important;}
+.invoice_box input, .invoice_box label {font-size: 14px!important; font-weight: normal;}
+
+.invoice_date_box{width: 20% !important; margin-left: 3% !important; font-size: 13px!important; font-weight: normal;}
+
+.invoice_submit_btn{background-color: #2196f3 !important;
+    border: none !important;
+    color: white !important;
+    height: 28px !important;
+    width: 182px;
+    border-radius: 5px !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    padding: 0px !important;
+    font-size: 12px !important;
+    margin-left: 3% !important;}
+
+.change_invoice_btn{background-color: #f0ad4e !important;
+    border: none !important;
+    color: white !important;
+    height: 28px !important;
+    width: 126px;
+    border-radius: 5px !important;
+    min-width: auto !important;
+    min-height: auto !important;
+    padding: 0px !important;
+    font-size: 12px !important;
+    margin-left: 3% !important;}
+
+.cancel_change_invoice_btn{background-color: #d9534f !important;}    
+
+.quantity_box{width: 50px; border:1px solid #ccc; background-color: #fff; display: block;}
+.quantity_btn{
+    color: #fff;
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-top: 5px;
+    display: block;
+}
+.quantity_cancel_btn{
+    color: #fff;
+    background-color: #d9534f;
+    border: 1px solid #d43f3a;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-top: 5px;
+    display: block;
+}
+
+.download_box{margin-top: 10px; text-align: right;} 
+.invoice_link li {padding: 12px 0px 12px 0px;}   
+
+.pickup_parent_row th{font-size: 13px !important; text-align: center;}
+.pickup_inner_row thead{display: none;}
+.pickup_parent_row tr:first-child .pickup_inner_row thead {
+    display: table-caption;
+}
+
+.pickup_parent_row tr:first-child .pickup_inner_row tr th {
+    width: 33.33%;
+    font-size: 12px !important;
+    border-bottom: none;
+}
+
+.pickup_parent_row tr:first-child .pickup_inner_row tr:last-child td {
+    border-bottom: none;
+}
+.pickup_parent_row tr:first-child td:last-child a{display: none;}

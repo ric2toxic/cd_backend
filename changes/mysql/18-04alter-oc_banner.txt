@@ -1,0 +1,1 @@
+ALTER TABLE `oc_banner` ADD `css` VARCHAR(255) NULL DEFAULT NULL ;

@@ -1,0 +1,2 @@
+// Product Change Logs
+$registry->set('productchangelog', new ProductChangeLog($registry));

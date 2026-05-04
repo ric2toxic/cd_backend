@@ -1,0 +1,463 @@
+body.popup{background: #fff;}
+body.popup .product_page #content{border-radius:none;box-shadow:none;}
+.thumbnails > li{margin-left:0;}
+.addedincart_popup{position:fixed; top:50%; left:40%; width:280px; z-index: 10000;background: #fff;box-shadow: 0 7px 5px rgba(0, 0, 0, 0.2); color:#000;padding:10px; font-size:12px;border-radius: 4px; font-size: 14px;border:1px solid #ddd;}
+.addedincart_popup .action_btn{margin:10px 0;}
+.addedincart_popup_close {
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    width: 36px;
+    z-index: 8040;
+    background-image: url("../image/fancybox/fancybox_sprite.png")!important;
+    opacity:1!important;
+}
+
+@media (max-width: 768px) {
+    .addedincart_popup{left:7px; width:260px;}
+
+}
+#hr{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #c9c9c9;
+    margin-top: 320px;
+    z-index: 5;
+}
+
+
+.product_title_new{
+    font-size: large;
+    font-weight: 600;
+    color: #0e0e0e;
+}
+
+.product_title_margin{
+    margin-top: 15px;
+}
+
+.wishlist_top{
+    cursor: pointer;
+    margin-left: 77%;
+    margin-top: 4px;
+    position: absolute;
+    z-index: 10001;
+
+}
+
+#color_red{
+    background-color: lightpink;
+    border-radius: 100%;
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+#color_red_related{
+    background-color: lightpink;
+    border-radius: 100%;
+    display: none;
+    height: 50px;
+    margin-left: 6%;
+    position: absolute;
+    width: 50px;
+    z-index: 100;
+}
+
+.close_popup{
+    margin-top: 10px; margin-left: 90%; cursor: pointer; font-size: 18px !important; color: #CD061B; position: fixed; z-index: 10001;
+}
+
+
+#bottom_bar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 42px;
+    bottom: 0;
+    background-color: #ddd;
+   /* margin-left: -15px;*/
+}
+
+.new_addtocart{
+    border: 0px;
+    float: right;
+    height: 42px;
+    width: 49%;
+    background-color: #CD061B;
+    color: white;
+    font-weight: 600;
+    z-index: 10001;
+}
+
+.new_inupt_qyt{
+    border: 0px;
+    float: left;
+    height: 42px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #ddd;
+
+}
+
+input#input-quantity{
+    width: 98%;
+}
+
+.input-group-addon, .input-group-btn{
+    width: 20%;
+}
+
+.bootstrap-touchspin{
+    width:48%!important;
+}
+
+#bottom_bar button.bootstrap-touchspin-up {
+    background-color: #ddd !important;
+    background-image: none;
+    border: none;
+    color: darkgreen;
+}
+
+#bottom_bar button.bootstrap-touchspin-down {
+    background-color: #ddd !important;
+    background-image: none;
+    border: none;
+    color: #CD061B;
+
+}
+
+
+#bottom_bar .bootstrap-touchspin { margin-left: auto;}
+
+.heart_related{
+    margin-left: 35%;
+    position: absolute;
+}
+
+.size_heart{
+    font-size: 18px;
+}
+
+.related_product_con{
+    padding-top: 0 !important;
+}
+
+.tags_para{
+    margin-top: -25px; margin-left: 12px;}
+
+.caption_box_height{
+    height: 30%;
+}
+
+.addtowishlist1{
+    margin-left: 81% !important;
+    margin-top: 19px;
+}
+
+.addtowishlist {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: medium none;
+    cursor: pointer;
+    margin-left: 23px;
+    /*margin-top: 36px;*/
+    outline: medium none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+
+}
+.product-thumb .addtowishlist{ top:10px; right:10px;border:none; background: none;}
+
+.related_button{
+    margin-top: 30%;
+}
+/*--garvitjoshi
+home second popup quality expaction*/
+.quality_name span {
+    font-size: 16px;
+}
+/*.fancybox-wrap {
+  position: absolute;
+  top: 100px !important;
+}*/
+.quality_top{
+    font-size: 13px;
+}
+.quality_heading{
+    font-size: 22px;
+}
+.quality_bottom_text{
+    font-size: 17px;
+    margin-left: 2%;
+    margin-top: 113px;
+}
+.quality_checkbox{
+    margin-left: 19%;
+}
+
+.quality_name{
+    float: left;
+    font-size: 15px;
+}
+.second_skip{
+    bottom: 0px;
+}
+/*.fancybox-wrap {
+  position: absolute;
+  top: 100px !important;
+}*/
+
+.quality_bottom_text{
+    margin-left: 2%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.expectation_list div.checkbox{margin-bottom:0px;}
+ul.expectation_list{margin:10px auto; }
+ul.expectation_list li{margin:0; padding: 0; list-style: none; text-align: left; display: inline-block;}
+.btn-wsbred{background: #cd061b; border:1px solid #cd061b; color: #ffffff; padding:5px 10px;}
+
+/* ==================================================================== */
+/* CHECKBOX TYPE 7 ---------------------------------------------------- */
+/* ==================================================================== */
+ul.expectation_list li label{height:40px;}
+ul.expectation_list li input[type="checkbox"] {
+    display: none;
+}
+
+ul.expectation_list li input[type="checkbox"] + label {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+[id^="checkbox-7-"] + label {
+    background-color: #FFF;
+    padding: 6px 43px 8px 9px;
+    /*border-radius: 5px;*/
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    height: 17px;
+    overflow: hidden;
+    font-size: 1.3em !important;
+    color: #464E50;
+    -webkit-transition: all 0.3s linear, color 0 linear;
+    transition: all 0.3s linear, color 0 linear;
+}
+
+[id^="checkbox-7-"] + label:after {
+    content: ' ';
+    position: absolute;
+    background: #FFF;
+    top: 7px;
+    right: 3px;
+    width: 24px;
+    display: block;
+    font-size: 1em !important;
+    height: 25px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+    padding: 1px 0px;
+    text-align: center;
+    color: #496F7A;
+}
+
+[id^="checkbox-7-"]:checked + label {
+    color: #fff;
+}
+
+[id^="checkbox-7-"] + label > span {
+    position: relative;
+    z-index: 99999;
+    font-family: 'adelle-sans', sans-serif;
+}
+
+[id^="checkbox-7-"]:active + label:after {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+
+}
+
+[id^="checkbox-7-"]:checked + label:after {
+    content: '\2715';
+}
+
+[id^="checkbox-7-"] + label:before {
+    content: ' ';
+    position: absolute;
+    background: #12339C;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    left: 0;
+}
+
+[id^="checkbox-7-"]:checked + label:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    top: 0;
+    left: 0;
+}
+
+#checkbox-7-2 + label:before {
+    width: 100%;
+    height: 0;
+}
+#checkbox-7-2:checked + label:before {
+    width: 100%;
+    height: 100%;
+}
+
+#checkbox-7-3 + label:before {
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    top: auto;
+}
+#checkbox-7-3:checked + label:before {
+    width: 100%;
+    height: 100%;
+}
+
+#checkbox-7-4 + label:before {
+    width: 0;
+    height: 100%;
+    left: auto;
+    right: 0;
+}
+#checkbox-7-4:checked + label:before {
+    width: 100%;
+    height: 100%;
+}
+
+/* END  home second popup quality expaction*/
+
+div.payment_method_offers{padding:8px;position:relative;float:left;margin-top:0px;margin-bottom:10px;}
+div.DiscountText{text-align: center; cursor: pointer;}
+div.paymentBox{float: left; margin-left:10px;}
+
+    /* ==================================================================== */
+    /* CHECKBOX TYPE 2 ---------------------------------------------------- */
+    /* ==================================================================== */
+    .payment_method_offers input[type="radio"]{display:none;}
+    .payment_method_offers h3{text-transform:uppercase;}
+    .payment_method_offers h3 span{font-size:12px;}
+    input[id^="checkbox-2-"] + label {
+        background-color: #12339C;
+        padding: 10px 45px 10px 8px;
+        display: inline-block;
+        position: relative;
+        margin-right: 40px;
+        color: #FFF;
+        font-size: 1.5em;
+
+    }
+
+    [id^="checkbox-2-"] + label:hover  {
+        border-top: 1px solid #4caf50;
+        background: #4caf50;
+    }
+
+    [id^="checkbox-2-"] + label:active  {
+        border-top: none;
+        background: #4caf50;
+        padding: 10px 45px 10px 8px;
+    }
+
+    [id^="checkbox-2-"] + label:after {
+        content: ' ';
+        border-radius: 100px;
+        width: 32px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        box-shadow: inset 0px 16px 40px rgba(0, 0, 0, 0.4);
+        height: 32px;
+    }
+
+    [id^="checkbox-2-"] + label:before {
+        content: ' ';
+        border-radius: 100px;
+        width: 20px;
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        z-index: 999;
+        box-shadow: inset 0px 16px 40px #FFF;
+        height: 20px;
+        display: none;
+    }
+
+    [id^="checkbox-2-"]:checked + label:before {
+        display: block;
+    }
+
+.quality_top h3{font-size:16px;}
+
+/* new css by Kuldeep Singh */
+
+#product{
+    background-color: lightgray;
+}
+
+.row_hscroll{
+    background-color: white; margin-left:-14%; margin-right:-14%;
+}
+
+.row_marginten{
+    margin-top: 10px;
+}
+
+.padding_six{
+    padding-left: -6%;
+}
+
+.padding_top_zero{
+    padding-top: 0;
+}
+
+.row_hscroll2{
+    background-color: lightgrey; margin-left:-14%; margin-right:-14%;
+}
+
+.rating{
+    margin-top: 10px; background-color: white; width: 100%;
+}
+
+.margin_left_six{
+    margin-left: 6%
+}
+
+#tabs{
+    margin-bottom: 0; background-color: white;
+}
+
+.width_fifty{
+    width: 50%; padding-left: 3%
+}
+
+.margin_zero{
+    margin-right: 0;
+}
+
+.new_pad{
+    background-color:white; padding-left: 4%;
+}
+
+.tab-content{
+    background-color: white;
+}
+
+.header_margin{
+    margin-left: 10px;
+}

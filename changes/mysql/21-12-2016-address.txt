@@ -1,0 +1,1 @@
+ALTER TABLE `oc_address` CHANGE `address_1` `address_1` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

@@ -1,0 +1,5 @@
+$news = array();
+$news[0]['image'] = 'https://cdnimages.net/news/wholesalebox-rashtrapati-bhavan-event.jpeg';
+$news[0]['title'] = 'Wholesalebox at Rashtrapati bhavan';
+$news[0]['link'] = 'https://www.wholesalebox.in/blog/wholesalebox-raised-2-mn-at-pitchrashtrapati-bhavan-event/';
+define('NEWS', $news);

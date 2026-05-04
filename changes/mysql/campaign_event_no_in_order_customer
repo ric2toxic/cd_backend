@@ -1,0 +1,9 @@
+ALTER TABLE `oc_customer` ADD `campaign_event_no` VARCHAR(255) NULL DEFAULT NULL AFTER `coupon`; 
+
+ALTER TABLE `oc_order` ADD `campaign_event_no` VARCHAR(255) NULL DEFAULT NULL AFTER `stock_transfer`; 
+
+
+
+
+
+

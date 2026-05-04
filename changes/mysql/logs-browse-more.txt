@@ -1,0 +1,3 @@
+ALTER TABLE `oc_browsemore_usage` ADD `time_stamp` VARCHAR( 20 ) NULL DEFAULT NULL ;
+ALTER TABLE `oc_browsemore_usage` ADD `no_of_products` INT( 5 ) NULL DEFAULT NULL AFTER `category_id` ;
+

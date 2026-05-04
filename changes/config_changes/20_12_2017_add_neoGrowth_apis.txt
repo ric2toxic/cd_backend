@@ -1,0 +1,3 @@
+//NeoGrowth APIs
+define('NEOPAYLATER_BUYER_TRANSACTION_API', 'https://capdev.advancesuite.in:3018/neopaylater_buyer_transaction');
+define('NEOPAYLATER_TRANSACTION_STATUS_API', 'https://capdev.advancesuite.in:3018/get_neopaylater_transaction_status');

@@ -1,0 +1,1 @@
+RewriteRule ^razorpay/callbackPaymentLink /index.php?route=payment/razorpay/callbackPaymentLink [QSA,L]

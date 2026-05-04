@@ -1,0 +1,1 @@
+ALTER TABLE `oc_seller_change_log` CHANGE `updated_type` `updated_type` ENUM('price','set_description','piece_per_set','description') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;

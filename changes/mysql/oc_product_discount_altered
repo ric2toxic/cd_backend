@@ -1,0 +1,2 @@
+ALTER TABLE `oc_product_special` ADD `discount_type` ENUM('percentage','fix') NOT NULL AFTER `price`;
+ALTER TABLE `oc_product_special` ADD `discount_value` VARCHAR(20) NOT NULL AFTER `price`;

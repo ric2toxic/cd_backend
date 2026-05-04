@@ -1,0 +1,1 @@
+ALTER TABLE `oc_suborder` ADD `delivered_date` DATETIME NULL DEFAULT NULL AFTER `courier_partner_preference`;

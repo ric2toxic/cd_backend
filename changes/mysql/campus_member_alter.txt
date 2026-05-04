@@ -1,0 +1,5 @@
+ALTER TABLE `oc_campus_member` CHANGE `campus_id` `campus_id` INT(11) NOT NULL DEFAULT '0';
+
+ALTER TABLE `oc_campus_member` ADD `campus_name` VARCHAR(255) NULL DEFAULT NULL ;
+
+ALTER TABLE `oc_campus_member` ADD `team_member_id` VARCHAR(10) NULL DEFAULT NULL ;

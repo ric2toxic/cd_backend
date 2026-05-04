@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_application_status_remarks` CHANGE `status` `status` ENUM('document_awaited','under_process','approved','rejected','customer_not_interested','activated','approved_but_agreement_pending','sent_for_cif_creation') CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL;

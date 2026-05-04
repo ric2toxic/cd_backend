@@ -1,0 +1,1 @@
+INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`, `reason_type`, `status`) VALUES (18, '1', 'SOR (Return Under BuyBack)', 'RETURN', '1');

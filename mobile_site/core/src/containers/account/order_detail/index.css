@@ -1,0 +1,68 @@
+/*---css for order History page(start)---*/
+.order_history_box{box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1); background: #fff; padding: 8px; margin: 15px; }
+.order_history_text{display: block; text-align: left;}
+.order_history_text b{display: block; color: #000; width: 50%; float: left;}
+.order_history_text strong{display: block; width: 50%; float: left;}
+.order_history_amount{display: block; text-align: left; color:#d21a21; font-weight: bold;}
+.order_more_detai{display: block; padding: 6px 10px; text-align:  center; color:#17319f; background: #d3dbff;margin-top: 6px; cursor: pointer; }
+.view_more_detail{color: #474747;}
+.view_more_detail b{display:block; width: 40%; float: left;}
+.view_order_moredetail{ margin-top:5px;display: block; width: 100%; clear: both;}
+.view_order_moredetail a{ padding:6px 10px;display: block;text-align: center; color:#17319f; border-top: 1px solid #ddd;  }
+/*---css for order detail page(start)---*/
+.order_history_card_view {background: #fff;box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);margin:5px 15px 15px;}
+.order_detail_tab_btn{width: 100%; display: block; text-align: center; padding: 10px;}
+.order_detail_tab_btn ul{list-style: none;  border: 1px solid #ddd; padding: 0; width: 98%; margin: auto;}
+.order_detail_tab_btn ul li{list-style: none; padding: 6px 8px; margin: 0px; text-align: center; display: inline-block; width: 50%;
+    font-size: 16px; }
+.order_detail_tab_btn ul li:first-child{border-right: 1px solid #ddd;}
+.order_detail_tab_btn ul li.active{ background-color: #17319f;  color: #fff; border:none;}
+.order_detail_tab_btn ul li a{text-align: center; color:#565656; font-size: 16px; background: transparent; font-weight: bold;}
+.order_detail_tab_btn ul .active a{color: #17319f; background: transparent; }
+.cart_table_title_seller{background: #f9f9f9; display: block; padding: 8px;}
+.cart_table_title_seller h3 {display: inline-block;font-size: 14px;font-weight: 700;margin: 0;padding: 0;}
+.arr_down{transition: all 0.1s;-webkit-transition: all 0.1s;transform-origin: center;}
+.cart_table_title_seller.collapsed .arr_down{transform: rotate(-90deg);-webkit-transform: rotate(-90deg);}
+.pd_arrow_section{padding: 3px;}
+.filtar_section_content{padding: 8px; font-size:14px;}
+.filtar_section_content ul{list-style: none; padding: 10px 0px 0px; margin:0px;}
+.filtar_section_content ul li{display:block; padding-bottom: 10px; list-style: none; margin: 0px; word-break:break-word;}
+.filtar_section_content ul li span{ color:#000;font-weight: bold; display: inline-block; width: 40%;}
+.filtar_section_content ul li a {color: #333;}
+.status_history_table{border-collapse: collapse;  text-align: center; width: 90%; margin: auto; border-color: #ddd; margin-bottom: 10px;}
+.status_history_table thead td{font-weight: bold;border-color: #ddd;}
+.status_history_table td{padding:8px;text-align: center; border-color: #ddd;}
+.full-radius .fa-heart{color: #f13041;}
+.address_select_input{border: 1px solid #ccc;font-size: 14px;margin: 10px 10px 10px 0;outline: medium none;padding: 10px; width: 100%; }
+.detail_fl{float: left; width: 38%; text-align: center; border: 1px solid #ccc; padding: 5px}
+.detail_rt{float: right; width: 60%;}
+.detail_width_100{width: 100% !important;}
+.detail_fl img{width: 100%; height: auto; max-width: 85px;}
+.detail_total_detail_right{  margin-right: 10px; float: right;}
+@media (max-width: 768px) {
+    .information_section{padding: 0px; text-align: center; display: block;}
+  }
+
+@media (max-width: 480px) {
+  .home_category_btn li a{font-size: 0.9em;}
+  .home_category_box li a span{font-size:0.9em;}
+  .information_section{padding: 0px; text-align: center; display: block;}
+  .top_right_box .top-pincode { width: 135px;}
+
+}
+
+.order_payment_btn {
+    border: 1px solid #ddd;
+    color: #388e3c;
+    padding: 7px 20px;
+    font-weight: bold;
+}
+
+.order_payment_btn:hover {
+    border: 1px solid #ddd;
+    color: #fff;
+    background-color: #388e3c;
+    padding: 7px 20px;
+    font-weight: bold;
+}
+

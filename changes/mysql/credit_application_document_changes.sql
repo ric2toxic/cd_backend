@@ -1,0 +1,3 @@
+ALTER TABLE `oc_credit_application_status_remarks` CHANGE `status` `status` ENUM('document_awaited','under_process','approved','rejected','customer_not_interested','approved_but_agreement_pending','approved_without_bank_statement','document_in_transit','limit_issue','approved_document_received') NOT NULL;
+
+ALTER TABLE `oc_credit_application` CHANGE `document_status` `document_status` SET('document_awaited','under_process','approved','rejected','customer_not_interested','approved_but_agreement_pending','approved_without_bank_statement','document_in_transit','limit_issue','approved_document_received') NOT NULL;

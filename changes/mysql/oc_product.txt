@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `price_per_piece` DECIMAL(15,4) NOT NULL DEFAULT '0.0000' COMMENT 'This represents price of a single piece from the set.' AFTER `price`, ADD `piece_in_set` INT(7) NOT NULL DEFAULT '1' COMMENT 'This represents the number of pieces in a set.' AFTER `price_per_piece`;

@@ -1,0 +1,8 @@
+//Dummy Seller Code and ID for franchise 
+
+In config.php files
+
+define('DUMMY_SELLER_ID', 1);
+define('DUMMY_SELLER_CODE', 'wsb_fr');
+define('DIR_ADMIN', '/var/www/html/wholesalebox/khufiya_vibhag/');
+

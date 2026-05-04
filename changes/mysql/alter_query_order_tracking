@@ -1,0 +1,4 @@
+ALTER TABLE `oc_order_tracking` CHANGE `daily_status` `daily_status` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `oc_order_tracking` CHANGE `suborder_no` `suborder_id` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `oc_order_tracking` CHANGE `tracking_no` `tracking_no` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `oc_order_tracking` ADD `last_scrap_time` DATETIME NOT NULL AFTER `daily_status`;

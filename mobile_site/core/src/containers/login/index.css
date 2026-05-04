@@ -1,0 +1,263 @@
+.add_new_address .address_popup_head {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.hide {
+    display: none!important;
+}
+
+.success_msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 4px 4px 4px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none;
+}
+.danger_msg {
+    padding: 4px 4px 4px 4px;
+    font-weight: 500;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none;
+}
+.login_register_popup .otp_model {
+    margin: 0 auto;
+}
+#edit_reg_telephone {
+    display: none;
+}
+
+.mobile_details_panel .login_mobile_nmr {
+    display: inline-block;
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.mobile_details_panel {
+    display: block;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.mobile_details_panel .mobile_input {
+    width: 55%;
+    display: inline-block;
+}
+
+.add_new_address input, .add_new_address textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: 0;
+    font-size: 14px;
+    width: 96%;
+    margin: 0;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+.otp_model .password_box {
+    display: inline-block;
+    width: 100%;
+}
+.otp_agin {
+    margin-bottom: 10px;
+}
+.modal-body .otp_agin a {
+    margin: 0 10px;
+    font-size: 11px;
+    text-decoration: underline;
+    color: #17319f;
+}
+
+.modal-body .otp_agin span {
+    margin: 0 10px;
+    font-size: 11px;
+    text-decoration: underline;
+    color: #17319f;
+}
+
+#login_verify_popup {
+    z-index: 999999;
+}
+
+.flag-select{width: 28%;}
+.selected--flag--option{font-size: 14px !important;}
+.flag_area{ margin-right: 10px;}
+.flag_area img {width: 30px; height: 30px;}
+
+.checkbox_information_full {
+    width: 100%!important;
+}
+.checkbox_information label {
+    cursor: pointer;
+    display: block;
+}
+.checkbox_information {
+    background: #f0f3ff;
+    display: inline-block;
+    margin: 15px 15px 15px 0;
+    width: 46%;
+    padding: 5px 5px 5px 30px;
+    position: relative;
+}
+.checkbox_information input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.width92 {
+    width: 92%!important;
+    background-color: #fff!important;
+}
+
+.password_box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: 0;
+    font-size: 14px;
+    width: 96%;
+    margin: 10px;
+}
+.control__indicator {
+    background: 0 0;
+    height: 15px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 15px;
+    border: 1px solid #504f4f;
+}
+.checkbox_information input:checked~.control__indicator {
+    background: #504f4f;
+}
+.control__indicator::after {
+    content: "";
+    display: none;
+    position: absolute;
+}
+.control__indicator::after {
+    border-color: #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    height: 11px;
+    left: 5px;
+    top: 0;
+    transform: rotate(45deg);
+    width: 5px;
+}
+.modal-body .show-password {
+    margin-top: -42px;
+    position: absolute;
+    right: 26px;
+}
+.modal-body .show-password a {
+    margin: 0 10px;
+    font-size: 11px;
+    text-decoration: underline;
+    color: #17319f;
+}
+.error{color: #ff0000;}
+.popup_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    opacity: 1;
+    font-size: 30px;
+    line-height: normal;
+    text-shadow: none;
+    font-weight: normal;}
+
+.mobile_details_panel{ display: block; }
+/*.mobile_details_panel span{display:inline-block; margin:0px  10px; }*/
+.mobile_details_panel span img{display: inline-block;}
+.mobile_details_panel .country_code{border-radius: 0px; width: 70%; float: right; display: inline-block;border: 1px solid #ccc;outline: none;font-size: 14px;  height: 42px; padding: 6px;}
+.mobile_details_panel .mobile_input{ width: 70%; display: inline-block; margin-top:20px; }
+.modal-body .otp_input{width:95%; display:block;}
+.modal-body .otp_agin a{margin:0px  10px; font-size: 11px; text-decoration: underline; color:#17319f;}
+.modal-body .verify_btn{padding: 6px 24px;}
+.mobile_details_panel .login_mobile_nmr{ display: inline-block; text-align: left; color: #000; font-size:14px; padding: 10px 0px; }
+.modal-body label {font-weight: 200;}
+.modal-body input, .modal-body textarea {width:100%;border: 1px solid #ccc;padding: 10px;outline: none;font-size: 14px;margin:8px 0px;}
+.modal-footer {padding:10px 15px;}
+.mobile_details_panel .password_box{border: 1px solid #ccc;padding: 10px;outline: none;font-size: 14px;width: 100%;margin: 10px 10px 10px 0;}
+.delivery_box label {font-weight: 200;}
+.delivery_box input, .modal-body textarea {border: 1px solid #ccc;padding: 10px;outline: none;font-size: 14px;margin: 10px 10px 10px 0;}
+.width30{width: 45.8%; display: inline-block;}
+.checkbox_information{ background:#f0f3ff; display: inline-block; margin: 7px 0px 7px 0px; width: 100%;padding: 5px 5px 5px 30px;position: relative}
+.checkbox_information input {opacity: 0;position: absolute;z-index: -1;}
+.checkbox_information label {cursor: pointer; display: block;}
+.control__indicator::after {content: "";display: none;position: absolute;}
+.checkbox_information input:checked ~ .control__indicator::after {display: block;}
+.control__indicator::after {border-color: #fff;border-image: none;border-style: solid;border-width: 0 2px 2px 0;height: 11px;left: 5px;top: 0px;transform: rotate(45deg);width: 5px;}
+.checkbox_information input:checked ~ .control__indicator { background: #504f4f;}
+.control__indicator {background:transparent;height: 15px;left: 6px;position: absolute;top: 6px;width: 15px;border:1px solid #504f4f;}
+.popup-title{padding: 15px 10px !important; font-size: 20px; background-color: #17319f;}
+.modal-body{padding: 10px 10px !important;}
+.popup-title h2{font-size: 16px !important;
+    color: #fff !important; line-height: normal;}
+
+
+.pr_info_input:-moz-read-only { background: #e8e8e8; }
+.pr_info_input:read-only { background: #e8e8e8; }    
+.login_terms{display: inline !important;
+    width: 15px !important;
+    margin: 4px 4px 0px 10px !important;
+    line-height: normal !important;}
+.flag-select img {
+    width: 1.3em;
+    height: 1.3em;
+    position: relative;
+    top: .3em;
+}
+
+.seller_login{text-align: center; width: 100%;}
+
+.middle_title span::before {
+    border-top: 1px solid #ccc;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    width: 150px;
+    margin-right: 10px;
+    right: 100%;
+}
+.middle_title span::after {
+    border-top: 1px solid #ccc;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    width: 150px;
+    left: 100%;
+    margin-left: 10px;
+}
+.middle_title
+{
+    text-align: center;
+    margin-top: 20px; 
+}
+.middle_title span
+{  
+    display: inline-block;
+    position: relative;
+}

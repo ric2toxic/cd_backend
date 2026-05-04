@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+
+<script><![CDATA[
+	function FilterByFilterGroupId(row){
+
+		var filters = row.get('filter_ids').split(','); 
+		var arr = new java.util.ArrayList();
+		for(var i=0; i<filters.length;i++){
+			arr.add(filters[i]);
+		}
+		row.put('filter_group_df_' + row.get('filter_group_id'), arr);
+		row.remove('filter_group_id');
+		row.remove('filter_ids');
+		return row;
+	}
+	
+	function Searchable(row) {
+		var nickname = row.get('nickname').split('_');
+		row.put('nickname_delimited', nickname.join(''));
+		return row;
+	}
+]]></script>
+
+    <dataSource type="JdbcDataSource"
+                driver="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://localhost/wholesalebox"
+		batchSize="-1"
+		convertType="true"
+                user="root"
+                password="root"
+		zeroDateTimeBehavior="convertToNull"
+		/>
+
+ <document name="wholesalebox">
+  <entity name="products"
+	  transformer="RegexTransformer"
+          query="SELECT
+	   p.product_id as id,
+	   p.sku,
+	   p.model,
+	   p.price,
+	   p.selling_price,
+	   p.commission,
+	   p.is_single,
+	   p.status,
+	   p.quantity,
+	   p.sort_order,
+	   p.stock_status_id,
+	   p.date_available,
+	   p.date_added,
+	   p.minimum,
+	   p.viewed,
+	   p.piece_in_set,
+	   p.store_sales,
+	   p.exclusive,
+	   p.only_for_search,
+       p.hsn_code as hsn_code, 
+       p.tax_class_id as tax_class_id,
+	   pd.name,
+	   pd.set_description,
+	   pd.description,
+	   pd.tag,
+	   ss.name AS stock_status,
+	   p.is_archived,
+	   p.rating,
+	   p.is_associate,
+	   IFNULL(p.franchise_id,0) as franchise_id,
+	   GROUP_CONCAT(DISTINCT(pc.category_id) separator ',') as category_id,
+	   GROUP_CONCAT(DISTINCT(cd.name) separator ',') as categories,
+	   GROUP_CONCAT(DISTINCT(pf.filter_id) separator ',') as filter_id,
+	   GROUP_CONCAT(DISTINCT(fd.name) separator ',') as filters,
+	   GROUP_CONCAT(DISTINCT(p2s.store_id) separator ',') as store_id,
+           IFNULL(oph.hotness_points,0) as hotness_value
+	   FROM oc_product AS p
+	   LEFT JOIN oc_product_description AS pd ON p.product_id = pd.product_id
+	   LEFT JOIN oc_stock_status AS ss ON ss.stock_status_id = p.stock_status_id
+	   LEFT JOIN oc_product_to_category AS pc ON pc.product_id = p.product_id
+	   LEFT JOIN oc_category_description AS cd ON cd.category_id = pc.category_id
+	   LEFT JOIN oc_product_filter AS pf ON pf.product_id = p.product_id
+	   LEFT JOIN oc_filter_description AS fd ON fd.filter_id = pf.filter_id
+	   LEFT JOIN oc_product_to_store AS p2s ON p2s.product_id = p.product_id
+           LEFT JOIN oc_product_hotness AS oph ON oph.product_id = p.product_id
+	   GROUP BY p.product_id
+	   ORDER BY p.product_id DESC"
+
+   deltaImportQuery="SELECT
+	   p.product_id as id,
+	   p.sku,
+	   p.model,
+	   p.price,
+	   p.selling_price,
+	   p.commission,
+	   p.is_single,
+	   p.status,
+	   p.quantity,
+	   p.sort_order,
+	   p.stock_status_id,
+	   p.date_available,
+	   p.date_added,
+	   p.minimum,
+	   p.viewed,
+	   p.piece_in_set,
+	   p.store_sales,
+	   p.exclusive,
+	   p.only_for_search,
+	   p.hsn_code as hsn_code, 
+	   p.tax_class_id as tax_class_id,
+	   pd.name,
+	   pd.set_description,
+	   pd.description,
+	   pd.tag,
+	   ss.name AS stock_status,
+	   p.is_archived,
+	   p.rating,
+	   p.is_associate,
+	   IFNULL(p.franchise_id,0) as franchise_id,
+	   GROUP_CONCAT(DISTINCT(pc.category_id) separator ',') as category_id,
+	   GROUP_CONCAT(DISTINCT(cd.name) separator ',') as categories,
+	   GROUP_CONCAT(DISTINCT(pf.filter_id) separator ',') as filter_id,
+	   GROUP_CONCAT(DISTINCT(fd.name) separator ',') as filters,
+	   GROUP_CONCAT(DISTINCT(p2s.store_id) separator ',') as store_id,
+           IFNULL(oph.hotness_points,0) as hotness_value
+	   FROM oc_product AS p
+	   LEFT JOIN oc_product_description AS pd ON p.product_id = pd.product_id
+	   LEFT JOIN oc_stock_status AS ss ON ss.stock_status_id = p.stock_status_id
+	   LEFT JOIN oc_product_to_category AS pc ON pc.product_id = p.product_id
+	   LEFT JOIN oc_category_description AS cd ON cd.category_id = pc.category_id
+	   LEFT JOIN oc_product_filter AS pf ON pf.product_id = p.product_id
+	   LEFT JOIN oc_filter_description AS fd ON fd.filter_id = pf.filter_id
+	   LEFT JOIN oc_product_to_store AS p2s ON p2s.product_id = p.product_id
+           LEFT JOIN oc_product_hotness AS oph ON oph.product_id = p.product_id
+	   WHERE p.product_id='${products.id}'
+	   GROUP BY p.product_id"
+
+   deltaQuery="SELECT p.product_id as id,
+				p.hsn_code as hsn_code,
+                p.date_modified
+                FROM oc_product AS p
+                WHERE p.date_modified > '${products.last_index_time}'" >
+
+    <entity name="filter_group"
+            query="SELECT pf.product_id,
+                    f.filter_group_id,
+                    GROUP_CONCAT(pf.filter_id SEPARATOR ',') as filter_ids
+                    FROM oc_product_filter pf
+                    INNER JOIN oc_filter f
+                    ON f.filter_id=pf.filter_id
+                    WHERE pf.product_id=${products.id}
+                    GROUP BY pf.product_id, f.filter_group_id"
+            transformer="script:FilterByFilterGroupId" />
+
+    <entity name="special_price_data"
+            query="SELECT price as special_price, DATE_FORMAT(CONVERT_TZ(date_start,'+00:00','+01:00'),'%Y-%m-%dT%TZ') as date_start,
+                    DATE_FORMAT(CONVERT_TZ(date_end,'+00:00','+01:00'),'%Y-%m-%dT%TZ') as date_end
+                    FROM  oc_product_special
+                    WHERE product_id = ${products.id}" />
+
+    <entity name="seller"
+            query="SELECT ms.seller_id, ms.nickname, ms.city, ms.seller_status, ms.vacation_mode, ms.app_only, ms.non_serviceable_areas
+                    FROM oc_ms_seller ms
+		    LEFT JOIN oc_ms_product mp ON mp.seller_id = ms.seller_id
+                    WHERE mp.product_id = ${products.id}" transformer="script:Searchable" />
+                    
+   <!--<entity name="hsn_data" 
+      query="SELECT ifnull(oh.tax_class_id,0) as tax_class_id FROM oc_hsn oh 
+				INNER JOIN oc_product op on op.hsn_code = oh.hsn_code
+				WHERE op.product_id=${products.id}" />-->
+				
+    <field column="id" sourceColName="id" />
+    <field column="sku" sourceColName="sku" />
+    <field column="model" sourceColName="model" />
+    <field column="price" sourceColName="price" />
+    <field column="selling_price" sourceColName="selling_price" />
+    <field column="commission" sourceColName="commission" />
+    <field column="is_single" sourceColName="is_single" />
+    <field column="status" sourceColName="status" />
+    <field column="quantity" sourceColName="quantity" />
+    <field column="sort_order" sourceColName="sort_order" />
+    <field column="stock_status_id" sourceColName="stock_status_id" />
+    <field column="date_available" sourceColName="date_available"  />
+    <field column="date_added" sourceColName="date_added"  />
+    <field column="minimum" sourceColName="minimum"  />
+    <field column="viewed" sourceColName="viewed"  />
+    <field column="piece_in_set" sourceColName="piece_in_set"  />
+    <field column="store_sales" sourceColName="store_sales"  />
+    <field column="name" sourceColName="name" />
+    <field column="set_description" sourceColName="set_description" />
+    <field column="description" sourceColName="description" />
+    <field column="tag" sourceColName="tag" />
+    <field column="stock_status" sourceColName="stock_status" />
+    <field column="category_id" sourceColName="category_id" splitBy="," />
+    <field column="categories" sourceColName="categories" splitBy="," />
+    <field column="filter_id" sourceColName="filter_id" splitBy="," />
+    <field column="filters" sourceColName="filters" splitBy="," />
+    <field column="store_id" sourceColName="store_id" splitBy="," />
+    <field column="special_price" sourceColName="special_price"  />
+    <field column="date_start" sourceColName="date_start"  />
+    <field column="date_end" sourceColName="date_end"  />
+    <field column="seller_id" sourceColName="seller_id"  />
+    <field column="nickname" sourceColName="nickname"  />
+    <field column="city" sourceColName="city"  />
+    <field column="seller_status" sourceColName="seller_status"  />
+    <field column="vacation_mode" sourceColName="vacation_mode"  />
+    <field column="hotness_value" sourceColName="hotness_value"  />
+    <field column="app_only" sourceColName="app_only"  />
+    <field column="exclusive" sourceColName="exclusive"  />
+	<field column="hsn_code" sourceColName="hsn_code"  />
+	<field column="only_for_search" sourceColName="only_for_search"  />
+    <field column="non_serviceable_areas" sourceColName="non_serviceable_areas" splitBy="," />
+    <field column="tax_class_id" sourceColName="tax_class_id"  />
+    <field column="is_archived" sourceColName="is_archived"  />
+    <field column="franchise_id" sourceColName="franchise_id" />
+    <field column="rating" sourceColName="rating" />
+    <field column="is_associate" sourceColName="is_associate" />
+
+  </entity>
+ </document>
+</dataConfig>

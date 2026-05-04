@@ -1,0 +1,8 @@
+ALTER TABLE `oc_customer` ADD `is_dropshipper` TINYINT(1) NOT NULL AFTER `quality_expectation`;
+
+dropshipper Values:
+0 - --SELECT--- =  Not a Dropshipper.
+1 -   ACTIVE    =  Customer is dropshipper.
+2 -   Pending	=  Customer is pending for become a dropshipper.  
+3 -   Block		=  Customer is Block as dropshipper
+ 

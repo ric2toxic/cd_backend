@@ -1,0 +1,1 @@
+ALTER TABLE `oc_master_return` CHANGE `source` `source` ENUM('android_app','fornt_end','back_end','crm','ios_app') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'back_end';

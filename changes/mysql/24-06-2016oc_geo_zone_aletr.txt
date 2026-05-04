@@ -1,0 +1,1 @@
+ALTER TABLE `oc_geo_zone` ADD `store_id` INT NULL DEFAULT '0' , ADD `display_name_for_admin` VARCHAR(255) NOT NULL ;

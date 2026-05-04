@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer_wsb_credit` DROP `last_updated`, DROP `update_history`;

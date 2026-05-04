@@ -1,0 +1,49 @@
+// Pickup email ids
+$pickup_email_ids = array(
+	'JP' => array(
+					array(
+						'email_id' => 'jaipur.pickup1@wholesalebox.co',
+						'name'	   => ''	
+					),
+					array(
+						'email_id' => 'jaipur.pickup2@wholesalebox.co',
+						'name'	   => ''	
+					),
+					array(
+						'email_id' => 'jaipur.pickup3@wholesalebox.co',
+						'name'	   => ''	
+					),
+					array(
+						'email_id' => 'paliwalgayanaram@gmail.com',
+						'name'	   => 'Gyanaram'	
+					),
+					array(
+						'email_id' => 'rajtatawat8058@gmail.com',
+						'name'	   => 'Rajtatawat'	
+					),
+					array(
+						'email_id' => 'ashok.bairwa0610@gmail.com',
+						'name'	   => 'Ashok Bairwa'	
+					),
+				),
+	'ST' => array(
+					array(
+						'email_id' => 'surat.pickup1@wholesalebox.co',
+						'name'	   => ''	
+					),
+					array(
+						'email_id' => 'surat.operations@wholesalebox.in',
+						'name'	   => ''	
+					),
+				),
+
+	'DL' => array(
+					array(
+						'email_id' => 'delhi.operations@wholesalebox.in',
+						'name'	   => ''	
+					),
+				)
+
+);
+
+define('PICKUP_EMAIL_IDS', serialize($pickup_email_ids));

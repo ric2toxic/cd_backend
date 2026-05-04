@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `total_pieces_order` INT(8) NOT NULL AFTER `refund_status`;

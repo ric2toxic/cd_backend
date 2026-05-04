@@ -1,0 +1,3 @@
+ALTER TABLE `oc_affiliate` 
+ADD COLUMN `discount_amount` DECIMAL(6,2) NULL AFTER `code`,
+ADD COLUMN `uses_customer` INT(6) NULL AFTER `discount_amount`;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_sales_staff` ADD `store_code` ENUM('JP', 'DL', 'ST', 'BLR', 'N/A') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'N/A' AFTER `user_type`, ADD `store_voucher` VARCHAR(8) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `store_code`, ADD `store_voucher_last_updated` DATETIME NULL AFTER `store_voucher`;

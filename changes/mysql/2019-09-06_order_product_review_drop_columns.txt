@@ -1,0 +1,11 @@
+ALTER TABLE `oc_order_product_review` 
+DROP COLUMN `review_sync`,
+DROP COLUMN `previous_product_review_date`,
+DROP COLUMN `previous_product_review`;
+
+
+ALTER TABLE `oc_order_product` 
+DROP COLUMN `product_review_date`,
+DROP COLUMN `review_sync`,
+DROP COLUMN `previous_product_review`,
+DROP COLUMN `product_review`;

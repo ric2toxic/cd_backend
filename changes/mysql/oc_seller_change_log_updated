@@ -1,0 +1,1 @@
+ALTER TABLE `oc_seller_change_log` ADD `product` VARCHAR(200) NOT NULL AFTER `product_id`, ADD `mail` TINYINT(1) NOT NULL AFTER `modified`;

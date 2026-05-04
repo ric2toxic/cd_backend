@@ -1,0 +1,1 @@
+ALTER TABLE `oc_return` ADD `crm_user_id` INT(11) NOT NULL DEFAULT '0' AFTER `customer_id`;

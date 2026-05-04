@@ -1,0 +1,1 @@
+ALTER TABLE  `oc_warehouse_address` ADD  `nuvoex_vendor_code` VARCHAR( 100 ) NULL DEFAULT NULL AFTER  `gati_vendor_code` ;

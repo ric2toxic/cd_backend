@@ -1,0 +1,2 @@
+ALTER TABLE `oc_affiliate` 
+ADD COLUMN `share_link` VARCHAR(100) NULL AFTER `code`;

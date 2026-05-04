@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_history` ADD `notify_sms` TINYINT(1) NOT NULL DEFAULT '0'

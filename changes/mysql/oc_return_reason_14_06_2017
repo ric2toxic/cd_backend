@@ -1,0 +1,5 @@
+INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES ('9', '1', 'Rejected Wrong Product'), ('10', '1', '	
+Rejected Seller Damage'), ('11', '1', 'Rejected WSB Damage'), ('12', '1', 'Damaged By Courier Company');
+
+
+UPDATE  `wholesalebox`.`oc_return_reason` SET  `name` =  'Damaged/Loss By WSB' WHERE `oc_return_reason`.`return_reason_id` =11 AND  `oc_return_reason`.`language_id` =1;

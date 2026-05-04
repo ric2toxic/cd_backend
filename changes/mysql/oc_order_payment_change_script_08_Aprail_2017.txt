@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_payment` ADD `sales_staff_id` INT(11) NOT NULL AFTER `user_id`;

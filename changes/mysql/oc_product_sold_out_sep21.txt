@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `sold_out` INT(3) NOT NULL DEFAULT '0' ;

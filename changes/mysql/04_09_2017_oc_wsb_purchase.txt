@@ -1,0 +1,1 @@
+ALTER TABLE `oc_wsb_purchase` ADD `sor_purchase` TINYINT(1) NOT NULL DEFAULT '0' AFTER `trxn_date_added`;

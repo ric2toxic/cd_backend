@@ -1,0 +1,5 @@
+define('AAKARA_PRODUCT_IDS', array('61' => '159564,157450',
+				'125' => '159564,157450',
+				'70' => '159564,157450',
+				'73' => '159564,157450' ));
+define('PRIORITY_PRODUCTS_SHUFFLE', 1);

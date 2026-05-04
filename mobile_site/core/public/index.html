@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="http://localhost:3000/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Wholesalebox">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#17319f">
+     <!-- Windows Phone -->
+     <meta name="msapplication-navbutton-color" content="#17319f"> 
+    <!-- iOS Safari -->
+     <meta name="apple-mobile-web-app-status-bar-style" content="#17319f">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="https://d36qiqd7gl7e25.cloudfront.net/static/manifest.json">
+    <link rel="shortcut icon" href="https://d36qiqd7gl7e25.cloudfront.net/img/catalog/16_by_16_wsbIcon.png">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+     <title>Wholesalebox</title>
+     <!-- Bootstrap Core CSS -->
+    <link href="https://d36qiqd7gl7e25.cloudfront.net/static/css/bootstrap.css" rel="stylesheet">
+    <link href="https://d36qiqd7gl7e25.cloudfront.net/static/touchspin/jquery.bootstrap-touchspin.css" rel="stylesheet">
+    <link href="https://d36qiqd7gl7e25.cloudfront.net/static/css/font-awesome/css/font-awesome.min.css?v=0.1" rel="stylesheet" type="text/css">
+    <link href="https://d36qiqd7gl7e25.cloudfront.net/static/css/product-color.css" rel="stylesheet">
+    
+        <!-- Demo styles -->
+<style type="text/css">
+body.loaded .global-ajax-loader{ display: none; }
+body.loading .global-bg-layer{height:100%;left:0;opacity:0.5;position:fixed;top:0;width:100%;z-index:9999;  background: #000 none repeat scroll 0 0;}
+body.loading .global-ajax-loader{background-position:15px 15px;border-radius:5px;height:70px;width:70px;}
+body.loading .global-ajax-loader{background: rgba(255,255,255,0) url(https://d36qiqd7gl7e25.cloudfront.net/css/image/loading_balls.gif) no-repeat scroll 0 -6px;
+    height: 48px;
+    left: 35%;
+    margin-top: 20px;
+    position: fixed;
+    top: 40%;
+    width: 120px;
+    z-index: 10000;
+    background-size: 100%;
+    padding-top: 35px;
+    padding-left: 48px;
+     font-size: 0px;
+}
+.loading_img{width: 15px;}
+.fc_client_mobile_design_landscape
+{
+    display: none;
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) and (orientation: landscape) {
+
+    .fc_client_mobile_design_landscape
+    {
+        display: block;
+        width: 100%;
+        float: left;
+        margin: auto;
+        background: rgb(2,0,36);
+       background: linear-gradient(185deg, #FE237A 0%, #FF6B3C 100%);
+       height: 350px;
+       padding-top: 8%;
+       text-align:center;
+    }
+    .fc_client_mobile_design_landscape .flip_image img
+    {
+        width: 100px;
+    }
+    .flip_image
+     {
+         text-align: center;
+         font-size: 15px;
+         color: #fff;
+
+     }
+    #root {display: none;}
+}
+</style>
+  </head>
+  <body class="loaded">
+  <div class="global-bg-layer"></div>
+  <div class="global-ajax-loader">Loading...</div>
+  
+  <div class="fc_client_mobile_design_landscape container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="flip_image">
+                <img src="https://d36qiqd7gl7e25.cloudfront.net/img/mobile_flip.png">
+                <h3>Please rotate your device</h3>
+                <p>We don't support landscape mode yet. Please go back to portrait mode for the best experience</p>
+            </div>
+        </div>
+    </div>
+ </div>
+
+  <div id="root">
+    <div class="loading_data" style="width: 100%;">
+     <img src="https://d36qiqd7gl7e25.cloudfront.net/img/splash_screen_icon.png" alt="wholesalebox" style="width: 50%; margin-top:50%; margin-left: 25% "  /> 
+    </div>
+  </div>
+
+  </body>
+</html>

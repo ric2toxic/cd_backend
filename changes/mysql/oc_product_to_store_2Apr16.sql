@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product_to_store` ADD `store_price` VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;

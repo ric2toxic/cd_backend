@@ -1,0 +1,1 @@
+ALTER TABLE `oc_sales_staff` ADD `imei_number` VARCHAR(200) CHARACTER SET utf8 COLLATE utf8_general_ci ;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_vat_input_rules` ADD `purchase_firm_zone_id` INT(11) NOT NULL AFTER `purchase_firm_state`;

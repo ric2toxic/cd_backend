@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `should_download` TINYINT NOT NULL DEFAULT '0';

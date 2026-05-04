@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer_login` ADD `mobile` VARCHAR(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `email`; 
+ALTER TABLE `oc_customer_login`  ADD `total_mobile` INT NOT NULL  AFTER `total`;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_wsb_questions` ADD `date_added` DATETIME NOT NULL AFTER `question`;

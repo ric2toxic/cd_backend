@@ -1,0 +1,4 @@
+ALTER TABLE  `oc_nuvoex_dockets` ADD  `master_return_id` INT( 11 ) NULL DEFAULT NULL ,
+ADD  `req_res` TEXT NULL DEFAULT NULL;
+
+ALTER TABLE  `oc_nuvoex_dockets` CHANGE  `req_res`  `req_res` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;

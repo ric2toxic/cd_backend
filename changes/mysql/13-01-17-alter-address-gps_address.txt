@@ -1,0 +1,1 @@
+ALTER TABLE `oc_address` ADD `gps_address` TEXT NOT NULL COMMENT 'Store address which get by GPS from APP - Might be incorrect, store just for information' AFTER `custom_field`;

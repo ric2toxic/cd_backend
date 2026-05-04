@@ -1,0 +1,44 @@
+/*---About pages---*/
+.about_img{text-align: center;margin: auto;}
+.about_content_text{ font-size: 14px; line-height: 1.8; text-align: center; }
+.about_team{display: block; padding: 10px; background: #f1f1f1; margin-bottom: 10px;}
+.about_team h3{ font-size: 22px; color: #17319f;text-align: center;} 
+.about_team ul{display: block; padding: 10px; margin: 0px;}
+.about_team ul li{ text-align: center; display: block; width: 50%; float: left; margin: auto; }
+.about_team ul li .about_team_photo{ border-radius: 115px; display: block; margin: auto;  padding: 10px;}
+.about_team ul li span{clear: both; text-align: center; display: block; font-size: 16px; padding: 10px; }
+
+.contact_sanction h4{text-align: center;}
+.text_center{text-align: center; margin-top: 0px;}
+.about_img{padding-top:10px; }
+.account_info label{background-color: rgb(255, 255, 255) !important;}
+.address_select_input {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin: 10px 10px 10px 0;
+    outline: medium none;
+    padding: 10px;
+    width: 100%;
+}
+.order_history_card_view {
+    background: #fff;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+    margin: 5px 15px 15px;
+}
+.cart_table_title_seller {
+    background: #f9f9f9;
+    display: block;
+    padding: 8px;
+}
+.cart_table_title_seller h3 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.account_info textarea {
+    width: 100%;
+    padding: 5px;
+}

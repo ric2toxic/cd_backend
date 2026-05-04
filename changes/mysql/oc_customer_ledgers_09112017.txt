@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer_ledgers` ADD `ledger_id` INT(11) NULL DEFAULT NULL AFTER `ledger_name`, ADD UNIQUE `ledger_id` (`ledger_id`);

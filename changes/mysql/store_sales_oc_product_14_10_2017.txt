@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` CHANGE `store_sales` `store_sales` ENUM('NO','BLR','DL','JP','ST','MB') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'NO';

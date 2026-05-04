@@ -1,0 +1,1 @@
+ALTER TABLE `oc_currency` ADD `conversion_rate` FLOAT(15,8) NULL DEFAULT NULL ;

@@ -1,0 +1,3 @@
+ALTER TABLE `oc_popular_search` ADD `link` TEXT NOT NULL AFTER `popular_search`;
+
+ALTER TABLE `oc_popular_search` CHANGE `popular_tag` `popular_search` VARCHAR(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `refund_status` ENUM('refunded','not_refunded','not_applicable') NOT NULL DEFAULT 'not_applicable' COMMENT 'Refund status of Form C submitted case' AFTER `refundable_cform`;

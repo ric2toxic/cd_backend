@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer_wsb_credit` ADD `auto_nach_enabled` TINYINT(1) NOT NULL DEFAULT '1' AFTER `schedule_days_for_nach`;

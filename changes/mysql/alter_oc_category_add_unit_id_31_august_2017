@@ -1,0 +1,1 @@
+ALTER TABLE `oc_category` ADD `unit_id` INT(11) NOT NULL DEFAULT '1' AFTER `parent_id`;

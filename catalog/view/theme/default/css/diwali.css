@@ -1,0 +1,53 @@
+.home_title span::before {
+
+    border: none;
+    content: "";
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    width: 45px;
+    background-image: url('https://cdnimages.net/diwali-diya.gif');
+    background-size: 40px 50px;
+    background-repeat: no-repeat;
+}
+.home_title span::after {
+
+    border: none;
+    content: "";
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    width: 45px;;
+    background-image: url('https://cdnimages.net/diwali-diya.gif');
+    background-size: 40px 50px;
+    background-repeat: no-repeat;
+}
+.home_category_section h2,.footer_home h2
+{
+	margin-bottom: 10px;
+	color:#000;
+}
+.home_category_section h2 span,.footer_home h2 span
+{
+	border-bottom: dotted #f13041;
+	padding-bottom: 5px;
+}
+.header_heart {
+  display: inline-block;
+  padding: 10px;
+  background: url(https://cdnimages.net/heart.png) no-repeat center;
+  width: 37px;
+  height: 30px;
+  position: relative;
+  margin-right: 20px;
+}
+.header_cart {
+  display: inline-block;
+  padding: 10px;
+  background: url(https://cdnimages.net/cart
+  .png) no-repeat center;
+  width: 37px;
+  height: 33px;
+  position: relative;
+}
+

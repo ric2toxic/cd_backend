@@ -1,0 +1,8 @@
+RENAME TABLE `oc_neogrowth_transaction_logs` TO `oc_transaction_logs`;
+
+ALTER TABLE `oc_transaction_logs` ADD `type` ENUM('NEOGROWTH','WSB_CREDIT') NOT NULL DEFAULT 'NEOGROWTH' AFTER `log_id`;
+
+ALTER TABLE `oc_transaction_logs` ADD `order_id` INT(11) NULL DEFAULT NULL AFTER `response`;
+
+
+UPDATE `oc_transaction_logs` AS tl SET tl.`order_id` = (SELECT order_id FROM oc_order where order_no = tl.order_no) WHERE tl.order_no = 20180726422

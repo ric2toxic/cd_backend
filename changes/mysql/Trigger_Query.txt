@@ -1,0 +1,6 @@
+
+Query for trigger (Before Update) -
+
+
+DROP TRIGGER IF EXISTS `update_product_trigger`;CREATE DEFINER=`root`@`localhost` TRIGGER `update_product_trigger` BEFORE UPDATE ON `oc_product` FOR EACH ROW set new.date_modified = NOW()
+

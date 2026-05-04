@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_note` ADD `invoice_shipping` FLOAT(11,2) NULL DEFAULT '0.00' AFTER `net_refundable`;

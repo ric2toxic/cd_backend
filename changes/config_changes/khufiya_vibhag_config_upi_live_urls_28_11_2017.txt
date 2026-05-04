@@ -1,0 +1,6 @@
+//UPI Constants
+define('UPI_INITIATE_COLLECT_URL_STAGING','http://180.92.171.239:8080/upi/Merchant/Services/InitiateCollect/V1/WholesaleBox');
+define('UPI_QUERY_TRANSACTION_URL_STAGING','http://180.92.171.239:8080/upi/Merchant/Services/QueryTransaction/V1/WholesaleBox');
+define('UPI_INITIATE_COLLECT_URL','https://upiapp.infrasofttech.com/upi/Merchant/Services/InitiateCollect/V1/WholesaleBox');
+define('UPI_QUERY_TRANSACTION_URL','https://upiapp.infrasofttech.com/upi/Merchant/Services/QueryTransaction/V1/WholesaleBox');
+

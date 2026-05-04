@@ -1,0 +1,4 @@
+ALTER TABLE  `oc_credit_note` ADD  `credit_note_amount` DECIMAL( 10, 2 ) NULL DEFAULT NULL ;
+
+
+ALTER TABLE  `oc_credit_note` ADD  `is_cod_failed` TINYINT( 1 ) NOT NULL DEFAULT  '0';

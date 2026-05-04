@@ -1,0 +1,1 @@
+INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES ('11', '1', 'Goods to Debit Note');

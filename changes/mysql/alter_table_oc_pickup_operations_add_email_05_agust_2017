@@ -1,0 +1,1 @@
+ALTER TABLE `oc_pickup_operations` ADD `email` VARCHAR(255) NOT NULL AFTER `phone_no`;

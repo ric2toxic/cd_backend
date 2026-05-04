@@ -1,0 +1,4 @@
+RewriteRule  ^store/([a-zA-Z]*)/storesuper$ index.php?route=product/category&store_product=1&store_code=$1&purchase_days=120 [QSA,L]
+RewriteRule  ^store/([a-zA-Z]*)/([0-9]*)$ index.php?route=product/category&store_product=1&store_code=$1&purchase_days=$2 [QSA,L]
+RewriteRule  ^store/storesuper$ index.php?route=product/category&store_product=1&purchase_days=120 [QSA,L]
+RewriteRule  ^store/([0-9]*)$ index.php?route=product/category&store_product=1&purchase_days=$1 [QSA,L]

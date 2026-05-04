@@ -1,0 +1,2 @@
+ALTER TABLE  `oc_warehouse_address` ADD  `gstin` VARCHAR( 15 ) NULL DEFAULT NULL AFTER  `warehouse_name` ;
+

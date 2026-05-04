@@ -1,0 +1,1 @@
+ALTER TABLE `oc_pickup_operations` CHANGE `password` `password` VARCHAR(255) NOT NULL;

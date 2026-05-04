@@ -1,0 +1,2 @@
+
+CREATE TABLE `oc_share_templates` ( `template_id` INT NOT NULL AUTO_INCREMENT COMMENT 'id of the template' , `title`VARCHAR(200) NOT NULL COMMENT 'title of the templete' , `template` TEXT NOT NULL COMMENT 'share text' , `status` TINYINT(1) NOT NULL DEFAULT '0' COMMENT 'enabled/disabled' , `customer_id` VARCHAR(200) NOT NULL COMMENT 'customer id' , PRIMARY KEY (`template_id`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci;

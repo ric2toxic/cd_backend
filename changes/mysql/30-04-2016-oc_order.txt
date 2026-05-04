@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `weight` DECIMAL(15,8) NULL DEFAULT NULL , ADD `weight_class_id` DECIMAL(15,8) NULL DEFAULT NULL , ADD `live_conversion_rate` FLOAT(15,8) NULL DEFAULT NULL ;

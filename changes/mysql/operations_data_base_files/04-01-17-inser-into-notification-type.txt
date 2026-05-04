@@ -1,0 +1,2 @@
+ALTER TABLE `oc_notification_message` ADD `notes` VARCHAR(255) NULL AFTER `send_date`;
+

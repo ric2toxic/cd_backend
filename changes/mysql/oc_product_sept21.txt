@@ -1,0 +1,3 @@
+ALTER TABLE `oc_product` CHANGE `price_per_piece` `price_per_set` DECIMAL(15,4) NOT NULL DEFAULT '0.0000' COMMENT 'This represents price of a set, inclusive of seller tax';
+ALTER TABLE `oc_product` CHANGE `price` `price` DECIMAL(15,4) NOT NULL DEFAULT '0.0000' COMMENT 'Per piece price, inclusive of seller taxes';
+ALTER TABLE `oc_product` ADD `seller_tax` DECIMAL(15,4) NOT NULL DEFAULT '0.0' COMMENT 'Tax added by seller on unit price' AFTER `piece_in_set`, ADD `commission` DECIMAL(15,4) NOT NULL DEFAULT '0.0' COMMENT 'Commission to be added on this product by us' AFTER `seller_tax`;

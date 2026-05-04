@@ -1,0 +1,16 @@
+
+ALTER TABLE `oc_order_product` CHANGE `edit_type` `edit_type` ENUM('YES','REJECTED_WRONG_PRODUCT','REJECTED_SELLER_DAMAGE','REJECTED_WSB_DAMAGE','DAMAGE_BY_COURIER_COMPANY','SELLER_APPROVED','SELLER_PARTIAL','SELLER_NOT_SUPPLIED','SELLER_LATER_DISPATCH') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+
+ALTER TABLE `oc_seller_invoice` ADD `seller_invoice_id` INT(11) NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`seller_invoice_id`);
+
+ALTER TABLE `oc_order_product` ADD `seller_invoice_id` INT(11) NOT NULL AFTER `product_id`;
+
+ALTER TABLE `oc_order_product` CHANGE `edit_type` `edit_type` ENUM('YES','REJECTED_WRONG_PRODUCT','REJECTED_SELLER_DAMAGE','REJECTED_WSB_DAMAGE','DAMAGE_BY_COURIER_COMPANY','SELLER_APPROVED','SELLER_PARTIAL','SELLER_NOT_SUPPLIED','SELLER_LATER_DISPATCH') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'YES';
+
+ALTER TABLE `oc_order_product` CHANGE `customer_comment` `customer_comment` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+ALTER TABLE `oc_order_product` CHANGE `edit_history` `edit_history` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+
+ALTER TABLE `oc_seller_invoice` CHANGE `seller_invoice_no` `seller_invoice_no` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;

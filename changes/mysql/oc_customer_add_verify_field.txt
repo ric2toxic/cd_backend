@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `mobile_verified` INT(11) NOT NULL AFTER `otp`, ADD `email_verified` INT(11) NOT NULL AFTER `mobile_verified`;

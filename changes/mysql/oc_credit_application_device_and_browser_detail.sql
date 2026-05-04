@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_application` ADD `device_id` VARCHAR(100) NULL DEFAULT NULL AFTER `source`, ADD `os` VARCHAR(50) NULL DEFAULT NULL AFTER `device_id`, ADD `browser` VARCHAR(50) NULL DEFAULT NULL AFTER `os`, ADD `ip` VARCHAR(50) NULL DEFAULT NULL AFTER `browser`;

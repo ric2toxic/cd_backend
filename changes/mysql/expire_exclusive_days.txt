@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer` ADD `start_exclusive_date` DATETIME NOT NULL AFTER `exclusive`;
+ALTER TABLE `oc_customer` ADD `expire_exclusive_date` DATETIME NOT NULL AFTER `start_exclusive_date`;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_admin_change_log` CHANGE `source_field` `source_field` ENUM('product_edit','break_suborder','product_list','not_applicable','cron/disableWrongPricedGarmentProductPerGST') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'not_applicable';

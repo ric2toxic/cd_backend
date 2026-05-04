@@ -1,0 +1,2 @@
+ALTER TABLE `oc_seller_invoice` ADD `seller_invoice_meta` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `date_modified`;
+ALTER TABLE `oc_seller_invoice` DROP `seller_invoice_pdf`;

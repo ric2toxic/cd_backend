@@ -1,0 +1,52 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 11, 2017 at 02:19 PM
+-- Server version: 5.7.17-0ubuntu0.16.04.1
+-- PHP Version: 7.0.8-0ubuntu0.16.04.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `wholesalebox`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_wsb_log_product_detail_view`
+--
+
+CREATE TABLE `oc_wsb_log_product_detail_view` (
+  `detail_view_id` int(11) NOT NULL,
+  `session_id` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `customer_id` int(11) NOT NULL,
+  `product_ids` text COLLATE utf8_unicode_ci NOT NULL,
+  `no_of_products` int(4) NOT NULL,
+  `timestamp` timestamp NULL DEFAULT NULL,
+  `source` enum('desktop','mweb','androidapp','') COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `oc_wsb_log_product_detail_view`
+--
+ALTER TABLE `oc_wsb_log_product_detail_view`
+  ADD PRIMARY KEY (`detail_view_id`),
+  ADD KEY `Foregin` (`customer_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oc_wsb_log_product_detail_view`
+--
+ALTER TABLE `oc_wsb_log_product_detail_view`
+  MODIFY `detail_view_id` int(11) NOT NULL AUTO_INCREMENT;

@@ -1,0 +1,32 @@
+<?php
+// Text
+$_['text_home']          = 'Home';
+$_['text_wishlist']      = 'WishList';
+$_['text_shopping_cart'] = 'Shopping Cart';
+$_['text_category']      = 'Categories';
+$_['text_account']       = 'My Account';
+$_['text_register']      = 'Register';
+$_['text_login']         = 'Login';
+$_['text_order']         = 'Order History';
+$_['text_transaction']   = 'Transactions';
+$_['text_download']      = 'Downloads';
+$_['text_logout']        = 'Logout';
+$_['text_checkout']      = 'Checkout';
+$_['text_search']        = 'Search';
+$_['text_all']           = 'Show All';
+$_['text_single_store']  = 'Go to Singles Store'; //<sup class="highlight">new</sup>';
+$_['text_wholesale_set_store'] = 'Go to Wholesale Set Store'; //<sup class="highlight">new</sup>';
+$_['text_login_signup']        = 'Login/Signup';
+$_['refer_eran']               = 'Follow these steps to earn';
+$_['manufacturer']             = 'Sell';
+$_['manufacturer2']            = 'Manufacturer ? Register here';
+$_['dashboard']                = 'Dashboard';
+$_['text_sor']                 = 'Sale or Return';
+$_['text_back_to_website']     = 'Back to main website';
+$_['text_users']           	   = 'Shops';
+$_['text_designs']             = 'Designs';
+$_['text_latest_stats']        = 'Latest Stats';
+$_['text_we_are_hiring']       = 'Hiring';
+$_['text_my_orders']      = 'Orders';
+$_['text_singles_store']        = 'Go To Singles Store';
+$_['text_wholesale_store']      = 'Go To Wholesale Set Store';

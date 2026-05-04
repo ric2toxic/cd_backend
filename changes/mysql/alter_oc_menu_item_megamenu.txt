@@ -1,0 +1,2 @@
+ALTER TABLE `oc_menu_item` ADD `megamenu` TEXT NOT NULL AFTER `store_id`;
+ALTER TABLE `oc_menu_item` CHANGE `link_type` `link_type` ENUM('category','page','others','megamenu') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;

@@ -1,0 +1,10 @@
+ALTER TABLE 
+`oc_order_product`  
+ADD `fulfillment` ENUM('YES','REJECTED_WRONG_PRODUCT','REJECTED_SELLER_DAMAGE','REJECTED_WSB_DAMAGE','DAMAGE_BY_COURIER_COMPANY') NOT NULL DEFAULT 'YES'  AFTER `store_pickup`,  
+ADD `fulfillment_last_updated` TIMESTAMP NULL DEFAULT NULL  AFTER `fulfillment`,  
+ADD `fulfillment_history` TEXT NULL DEFAULT NULL AFTER `fulfillment_last_updated`;
+
+
+ALTER TABLE `oc_order_product`
+  DROP `fulfillment_last_updated`;
+

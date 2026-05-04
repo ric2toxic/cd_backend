@@ -1,0 +1,1 @@
+INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES (NULL, '0', 'coupon', 'coupon_az_discount_five', 'a2z#5', '0'), (NULL, '0', 'coupon', 'coupon_az_discount_seven', 'a2z#7', '0');

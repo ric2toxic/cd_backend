@@ -1,0 +1,226 @@
+/*
+Animated skeleton screen using CSS.
+
+Create shapes using gradients that simulate solids.
+
+Use `:empty` pseduo-class to show skeleton screen background only while container has no content (ex: for the "loading" state). When content is added to the container element, the pseudo-class selector won't match anymore and the skeleton screen will be removed automatically; no need to toggle a separate class on the container.
+
+See: https://developer.mozilla.org/en-US/docs/Web/CSS/:empty
+
+Animating one layer of the background which is a tilted linear gradient with white in the middle to achieve shine effect.
+*/
+	.item:empty {
+    margin: auto;
+		width: 100%;
+		height: 124px; /* change height to see repeat-y behavior */
+		background-color: #ffffff;
+		position: relative;
+
+		background-image:
+			linear-gradient( lightgray 80%, transparent 0 ),
+			linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+			linear-gradient( lightgray 15px, transparent 0 ),
+			linear-gradient( lightgray 12px, transparent 0 );
+			/*linear-gradient( lightgray 8px, transparent 0 );*/
+
+		background-repeat:no-repeat;
+
+		background-size:
+			74px 128px, /* square */
+			50px 100px, /* highlight */
+			300px 100px,
+			120px 100px;
+			/*250px 100px;*/
+
+		background-position:
+			10px 10px, /* square */
+			0 0, /* highlight */
+			125px 14px,
+			125px 45px;
+			/*70px 54px;*/
+
+		animation: shine_item 1s infinite;
+	}
+
+	@keyframes shine_item {
+		to {
+			background-position:
+				10px 10px,
+				50% 0, /* move highlight to right */
+				125px 14px,
+				125px 45px;
+				/*70px 54px;*/
+		}
+	}
+
+	.order_summary:empty {
+	    margin-left: 0%;
+			margin-right: 0%;
+			width: 25%;
+			height: 550px; /* change height to see repeat-y behavior */
+			background-color: #ffffff;
+			border:solid lightgray 1px;
+
+			background-image:
+				linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+				linear-gradient( lightgray 18px, transparent 0 ),
+				linear-gradient( lightgray 10px, transparent 0 ),
+				linear-gradient( lightgray 10px, transparent 0 ),
+        linear-gradient( lightgray 18px, transparent 0 );
+
+			background-repeat: no-repeat;
+
+			background-size:
+				50px 500px, /* highlight */
+				270px 20px,
+				160px 200px,
+				200px 200px,
+				280px 270px;
+
+			background-position:
+				0 0, /* highlight */
+				18px 110,
+				15px 170px,
+	      15px 250px,
+				15px 310px;
+
+			animation: shine_summary 1s infinite;
+		}
+
+		@keyframes shine_summary {
+			to {
+				background-position:
+					100% 0, /* move highlight to right */
+					18px 110,
+					15px 170px,
+		      15px 250px,
+					15px 310px;
+			}
+		}
+
+		.total_quantity:empty {
+	    margin: auto;
+			width: 100%;
+			height: 64px; /* change height to see repeat-y behavior */
+			background-color: #ffffff;
+			background-image:
+				linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+				linear-gradient( lightgray 15px, transparent 0 );
+				/*linear-gradient( lightgray 8px, transparent 0 );*/
+
+			background-repeat:no-repeat;
+
+			background-size:
+				50px 100px, /* highlight */
+				190px 50px;
+				/*250px 100px;*/
+
+			background-position:
+				0 0, /* highlight */
+				10px 20px;
+				/*70px 54px;*/
+
+			animation: shine_quantity 1s infinite;
+
+		}
+		@keyframes shine_quantity {
+			to {
+				background-position:
+					50% 0, /* move highlight to right */
+					10px 20px;
+					/*70px 54px;*/
+			}
+		}
+
+
+		.shopping_cart:empty {
+	    margin: auto;
+			width: 100%;
+			height: 54px; /* change height to see repeat-y behavior */
+			background-color: #ffffff;
+			border-bottom: solid black 2px;
+
+
+		}
+
+
+
+		.pickup_city:empty {
+	    margin: auto;
+			width: 100%;
+			height: 54px; /* change height to see repeat-y behavior */
+			background-color: #f9f9f9;
+			border-bottom: solid lightgray 1px;
+
+			background-image:
+				linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+				linear-gradient( lightgray 20px, transparent 0 );
+				/*linear-gradient( lightgray 8px, transparent 0 );*/
+
+			background-repeat:no-repeat;
+
+			background-size:
+				50px 100px, /* highlight */
+				210px 50px;
+				/*250px 100px;*/
+
+			background-position:
+				0 0, /* highlight */
+				15px 15px;
+				/*70px 54px;*/
+
+			animation: shine_city 1s infinite;
+		}
+
+		@keyframes shine_city {
+			to {
+				background-position:
+					50% 0, /* move highlight to right */
+					15px 15px;
+					/*70px 54px;*/
+			}
+		}
+
+		.table_head:empty {
+
+			width: 100%;
+			height: 43px; /* change height to see repeat-y behavior */
+			background-color: #f0f3ff;
+			border-bottom: solid lightgray 1px;
+		}
+
+		.comments_done_box{
+			font-size: 13px;
+		}
+		.product_dec{
+			margin-bottom: 0px;
+		}
+		.success_notification_dialog {
+	        position:fixed;
+	        bottom:2%;
+	        right:30%;
+	        margin:0px;
+					z-index: +10;
+	    }
+			.cart_statement_pree_load{width: 25%;min-height: 100px; margin-top: 8px;}
+			.cart_full_box .cart_box .cart_main_title{border-radius: 0;}
+			.panel-body .cart_table .cart_table_height{ min-height: 400px; }
+
+
+		#notification {
+	    position:fixed;
+	    top:33%;
+	    width:40%;
+		left: 33%;
+	    z-index:105;
+	    text-align:center;
+	    font-weight:normal;
+	    font-size:15px;
+	    font-weight:bold;
+
+	    padding:15px;
+		}
+
+	#name {
+	    text-transform: capitalize;
+	}

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_ms_seller` CHANGE `bank_state` `bank_state` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

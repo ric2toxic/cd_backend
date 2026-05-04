@@ -1,0 +1,1 @@
+ALTER TABLE  `oc_stanc_payment_breakup` ADD  `payment_type` ENUM(  'SELLER_PAYMENT',  'CUSTOMER_REFUND' ) NOT NULL DEFAULT 'SELLER_PAYMENT';

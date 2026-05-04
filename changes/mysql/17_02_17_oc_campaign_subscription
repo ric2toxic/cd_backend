@@ -1,0 +1,15 @@
+CREATE TABLE `oc_campaign_subscription` (
+  `subscriber_id` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(96) NOT NULL,
+  `telephone` varchar(20) NOT NULL,
+  `ip` varchar(40) NOT NULL,
+  `date_added` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT;
+
+ALTER TABLE `oc_campaign_subscription`
+  ADD PRIMARY KEY (`subscriber_id`);
+
+ALTER TABLE `oc_campaign_subscription`
+  MODIFY `subscriber_id` int(11) NOT NULL AUTO_INCREMENT;

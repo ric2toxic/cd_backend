@@ -1,0 +1,5 @@
+ALTER TABLE `oc_product_image` ADD `design_group_id` INT(11) NULL DEFAULT '0' AFTER `image_dimensions`, ADD `design_group_title`  VARCHAR(255) NULL AFTER `design_group_id`, ADD `default_image` INT(1) NULL DEFAULT '0' AFTER `design_group_title`, ADD `group_sort_order` INT(4) NULL DEFAULT '0' AFTER `default_image`;
+
+ALTER TABLE `oc_product_image` ADD `front_image` TINYINT(2) NULL DEFAULT '0' AFTER `design_group_title`;
+
+ALTER TABLE `oc_product_image` DROP `design_group_id`;

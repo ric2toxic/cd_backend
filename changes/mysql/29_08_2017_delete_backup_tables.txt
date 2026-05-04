@@ -1,0 +1,1 @@
+DROP TABLE `oc_order_backup`, `oc_order_option_backup`, `oc_order_product_backup`, `oc_suborder_backup`;

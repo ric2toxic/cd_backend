@@ -1,0 +1,23 @@
+ALTER TABLE  `oc_seller_invoice` CHANGE  `trxn_utr`  `trxn_utr_internal` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+ALTER TABLE  `oc_seller_invoice` ADD  `trxn_utr` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER  `trxn_utr_internal` ;
+
+
+ALTER TABLE  `oc_seller_debit_note` CHANGE  `trxn_utr`  `trxn_utr_internal` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+ALTER TABLE  `oc_seller_debit_note` ADD  `trxn_utr` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER  `trxn_utr_internal` ;
+
+
+ALTER TABLE  `oc_wsb_purchase` CHANGE  `trxn_utr`  `trxn_utr_internal` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+ALTER TABLE  `oc_wsb_purchase` ADD  `trxn_utr` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER  `trxn_utr_internal` ;
+
+
+ALTER TABLE  `oc_credit_note` 
+ADD  `trxn_done` ENUM(  'NOT_APPLICABLE',  'NOT_DONE',  'FAILURE',  'BANK_REQUESTED', 'BANK_PROCESSED',  'BANK_SUCCESS',  'BANK_FAILURE',  'INVALID_NO_GOODS',  'FAILED_ORDER' ) NOT NULL DEFAULT  'NOT_DONE',
+ADD  `trxn_amount` DECIMAL( 10, 2 ) NULL DEFAULT NULL ,
+ADD  `trxn_utr_internal` VARCHAR( 128 ) NULL DEFAULT NULL ,
+ADD  `trxn_utr` VARCHAR( 128 ) NULL DEFAULT NULL ,
+ADD  `trxn_utr_date` DATE NULL DEFAULT NULL ,
+ADD  `trxn_bank` ENUM(  'icici',  'stanc' ) NULL DEFAULT NULL ,
+ADD  `trxn_response` TEXT NULL DEFAULT NULL ,
+ADD  `trxn_date_added` DATETIME NULL DEFAULT NULL ; 
+
+

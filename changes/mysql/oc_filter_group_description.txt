@@ -1,0 +1,1 @@
+ALTER TABLE `oc_filter_group_description` ADD `description` TEXT NULL DEFAULT NULL ;

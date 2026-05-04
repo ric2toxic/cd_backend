@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `payment_info` TEXT NOT NULL AFTER `sales_staff_id`; 

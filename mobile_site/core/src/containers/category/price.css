@@ -1,0 +1,38 @@
+.input-range__label--min, .input-range__label--max{bottom: -21px;}
+.input-range__label-container{font-size: 14px;}
+.input-range{margin-top: 10px;}
+.input-range__label--value{top: -27px;}
+.range_filter_input_box{width: 90%; margin-left: 4%;}
+.filter_price_btn {
+    width: 35%;
+    display: inline-block;
+    background: #337ab7;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px;
+    float: left;
+    display: block;
+    margin-top: 45px;
+    float: right;
+}
+
+.clear-price-all {
+    width: 35%;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #9e9e9e;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px;
+    float: left;
+    display: block;
+    margin: auto;
+    margin-top: 45px;
+    float: right;
+    margin-right: 10px;
+}
+.input-range__track{height: 7px;}
+.input-range__slider{margin-top:-0.90rem;}

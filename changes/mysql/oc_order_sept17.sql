@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` ADD `cst_with_cform` DECIMAL(15,4) NULL DEFAULT '0.0000' COMMENT 'if cform submitted then changed vat to cst' , ADD `refundable_cform` DECIMAL(15,4) NOT NULL DEFAULT '0.0000' COMMENT 'refundable amt due to CST' ;

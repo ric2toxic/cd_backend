@@ -1,0 +1,35 @@
+/*---Contact Us pages---*/
+/*.page_title {color: #17319f;font-size: 26px;margin: 0;padding: 15px 0;}*/
+.contact_subtitle{color: #17319f;font-size: 20px;margin: 0;padding: 6px 0;}
+.contact_info{display: block; padding-left: 0px; padding-bottom: 15px;}
+.contact_info .contact_info_icon{padding: 10px 0px 0px 0px; text-align: center; color: #ee333e; font-size: 22px; display: block; margin: auto;}
+.contact_info .contact_info_text{margin: 0px; padding: 0px;}
+.contact_info .contact_info_text .sub_contact_title{display: block; color: #ccc; font-weight:bold;}
+.contact_info .contact_info_text .contact_info_id{display: block;}
+.contact_info .contact_info_text .contact_info_id a{display: block; color: #565656;  font-size: 1.2em;}
+.contact_info .contact_info_text .contact_info_id a:hover{display: block; color: #17319f;}
+.contact_head_office{ background: #f9f9f9; padding: 10px;}
+.contact_we_text{margin: 0px;}
+.contact_box h4{text-align: center; font-size: 21px; color: #17319f;}
+.contact_card_logo{ display: block; text-align: center; padding: 0px 10px; color: #ee333e; font-size: 25px;  }
+.contact_card_logo .fa{ border: 1px solid #ee333e; border-radius: 40px; padding: 14px; width: 60px; height: 60px; }
+.contact_box{ border: 1px solid #ddd; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 5px 0 rgba(0, 0, 0, 0.08) !important;  margin-bottom:10px; padding:15px;}
+.contact_box label{font-weight: normal;;}
+.contact_input_box{margin: 5px 0; width: 100%; padding-left:0px; padding-right:0px; }
+.contact_teaxtarea_box{ margin: 5px 0; width: 100%; padding-left:0px; padding-right:0px;}
+.has-error .password_box {border: 1px solid #d41a21;}
+.contact_input_box .password_box{border: 1px solid #ccc;font-size: 14px;margin:0px;outline: medium none;padding: 10px; width: 100%;}
+.contact_send_btn{background: #ee333e none repeat scroll 0 0;box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);color: #fff;margin: 15px 30px 15px 0px;text-align: center; text-transform:uppercase; display: inline; border-radius:40px; width: 50px; height: 50px;}
+.contact_send_btn:hover{box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), 0 5px 5px rgba(0, 0, 0, 0.2); color: #fff;}
+.head_office_contact .head_office_box{color: #17319f; font-size: 22px; display: block; padding: 0px; text-align: center;margin: auto;}
+.head_office_contact{font-size: 16px; padding-bottom: 18px; }
+.head_office_contact h3 { font-size: 22px;margin: 3px 0;}
+.head_office_contact .head_office_text{ padding-left: 0px; }
+.store_details{display: block; padding: 10px;}
+.store_details ul{display: block; padding: 0px; margin: 0px;}
+.store_details ul li{display: inline-block; width: 100%}
+.store_details ul li .store_details_box{padding:0px; margin-bottom: 15px; }
+.store_details ul li .store_details_box h3{margin: 3px 0px; font-size: 22px;}
+.store_details ul li .store_details_box p{ font-size: 16px; color: #666; }
+.store_details ul li .store_details_box .head_office_box{font-size: 22px;padding: 0;text-align: center; color: #d6d6d6;}
+.password_box {border: 1px solid #ccc;font-size: 14px;margin:0px !important;outline: medium none;padding: 10px;width: 100%;}

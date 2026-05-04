@@ -1,0 +1,1 @@
+ALTER TABLE `oc_admin_product_change_log` CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set','set_description','store_sales','exclusive','custom_rating','seller_change','hsn_code','sort_order') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

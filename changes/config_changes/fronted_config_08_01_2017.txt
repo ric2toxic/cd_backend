@@ -1,0 +1,49 @@
+// store email ids
+// store email ids
+$store_email_ids = array(
+    'JP' => array(
+                    array(
+                        'email_id' => 'jaipur.storeTest1@wholesalebox.co',
+                        'name'     => ''    
+                    ),
+                    array(
+                        'email_id' => 'jaipur.storeTest2@wholesalebox.co',
+                        'name'     => ''    
+                    ),
+                    array(
+                            'email_id' => 'jaipur.storeTest3@wholesalebox.co',
+                            'name'     => ''    
+                        ),
+                ),
+    'ST' => array(
+                    array(
+                        'email_id' => 'surat.storeTest1@wholesalebox.co',
+                        'name'     => ''    
+                    ),
+                    array(
+                        'email_id' => 'surat.storeTest2@wholesalebox.in',
+                        'name'     => ''    
+                    ),
+                ),
+
+    'DL' => array(
+                    array(
+                        'email_id' => 'delhi.storeTest1@wholesalebox.in',
+                        'name'     => 'Delhi Store1'    
+                    ), 
+                    array(
+                        'email_id' => 'delhi.storeTest2@wholesalebox.in',
+                        'name'     => 'Delhi Store2'    
+                    ),
+                ),
+    'MU' => array(
+                    array(
+                        'email_id' => 'vikas.agrawal@wholesalebox.co',
+                        'name'     => 'vikas agrawal [mumbai]'    
+                    ),
+
+                )
+
+);
+
+define('STORE_EMAIL_IDS', $store_email_ids);

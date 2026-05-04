@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `oc_wsb_seller_to_store` (
+  `seller_id` int(11) NOT NULL,
+  `store_id` int(11) NOT NULL,
+  `seller_markup_over_tp` float NOT NULL COMMENT 'Markup on transfer price ',
+  `wsb_commission_over_tp` float NOT NULL COMMENT 'commision in tp+markup',
+  `date_added` datetime NOT NULL,
+  `date_modified` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `oc_ms_seller` ADD `sor_enabled` BOOLEAN NOT NULL DEFAULT FALSE ;

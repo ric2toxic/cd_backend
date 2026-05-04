@@ -1,0 +1,121 @@
+/*---------- css for left navigation(start) ----------------*/
+.side-collapse-container{width:100%;position:relative;left:0;transition:left .4s; background-color: #fff;}
+.side-collapse {top:50px;bottom:0;left:0;position:fixed;overflow:hidden;transition:width .4s !important;margin-bottom: 0px !important;width: 100%; background: rgba(0, 0, 0, 0.8) !important;}
+.side-collapse.in {width:0;}
+.mobile_nav_colllapse{ overflow-x: scroll; width:70%; background: #fff;}
+.offer_zone{background: #f06292; padding: 10px; position: absolute;  left: 0px;  width: 100%;}
+.offer_zone a{color: #fff; display: block;  text-align: center;  }
+.navmenu-nav a{ color: #000; }
+.nav_singles_store_btn a{background: #5f5aca; color: #fff;}
+.nav_singles_store_btn a:hover{background-color: #5f5aca!important; color: #cdcdcd!important;}
+.highlighted .icono-plus:before, .highlighted .icono-plus:after {background-color: #ababab;}
+.highlighted .icono-minus:before, .highlighted .icono-minus:after {background-color: #17319f;}
+.icono-plus{ position: relative; width: 16px;height: 30px;}
+.icono-plus:before, .icono-plus:after{  content: "";position: absolute; transition: transform 0.25s ease-out;}
+.icono-plus:before{height: 38%;left: 31%;margin-left: -2px;top: 8px; width: 1px;}
+.icono-plus:after{ height: 1px;left: -2px;margin-top: -2px;top: 48%; width: 70%;}
+.icono-minus{ position: relative; width: 16px;height: 30px;}
+.icono-minus:before, .icono-plus:after{  content: "";position: absolute; background-color: #fff;  transition: transform 0.25s ease-out;}
+.icono-minus:before{height: 1px;left: -2px;margin-top: -2px;top: 48%; width: 70%;}
+
+.parrent_link, .parrent_link_static {float: left; width: 85%;}
+.parent_menu_icon{
+    float: left;
+    font-size: 17px;
+    color: #000;
+    width: 10%;
+    height: 40px;
+    padding: 10px 8px;
+}
+#side-collapse .nav > li{width: 100%; float: left;}
+
+.child_menu_container{background: #fff;
+    display: none;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    top: 1px;
+    z-index: 999999;
+    width: 100%;
+}
+
+.submenu_parent {
+    width:90% !important;
+}
+.submenu_parent_link {
+    display : inline-block;
+}
+
+.ListItemOnClick {
+    font-size: 14px !important;
+}
+.submenuWidth {
+    width : 100% !important;
+}
+
+.SubMenuHeader,.HomeMenu {
+    background-color: #17319f!important;
+
+    
+}
+.SubMenuHeader
+{
+    text-align: center !important;
+    padding: 15px 0px !important;
+    line-height:normal !important;
+}
+
+.SubMenuHeading {
+    font-size : 16px !important;
+    color: #fff !important;
+}
+
+.close_submenu {
+    color: #fff !important;
+    font-size: 20px;
+    float: left;
+    padding: 0px;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.menu_div > div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.HomeLink, #store_switch {
+    color : #fff !important;
+    display: inline-block;
+}
+.submenu_list {padding: 0px;}
+.submenu_list li{list-style: none; }
+.submenu_title { padding: 10px 0px 10px 17px; }
+.lastmenu_list {padding: 0px 0px 0px 10px; display: none; background-color: #f3f3f3;}
+.lastmenu_list li{list-style: none;}
+.sub_menu_icon{ float: right;
+    font-size: 18px;
+    color: #000;
+    width: 10%;
+    height: 40px;
+    padding: 0px 0px;
+    font-weight: bold;}
+.submenu_list .active{border-bottom: 0px !important;
+    padding: 10px 0px 10px 17px; color: #17319f;}
+.submenu_list .active i {color:#17319f; } 
+.sub_link{width: 100%; display: block; padding: 10px 0px 10px 17px;}
+.HomeMenu .flag-select { float: right; margin-top: 10px; width: auto !important; } 
+.HomeMenu .flag-select .selected--flag--option { color: #fff; }
+.flag-select img {top: 0px !important;}
+.flag-select .selected--flag--option .country-label {padding-left: 4px;}
+.HomeMenu .flag-select .arrow-down{color: #fff; padding-left: 4px;}
+.flag-select .flag-options{margin-top:0px !important; padding:0px !important; font-size: 13px !important;}
+.flag-select .flag-option.has-label {padding:2px 8px !important;}
+.flag-select .country-flag .country-label {font-size: 13px !important;}
+.parrent_link_static{position: relative;
+    display: block;
+    padding: 10px 15px;}
+.sale_link{ background-color: #e89e2f !important; }

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_sales_staff` ADD `user_type` ENUM( 'BD', 'DirectSale', '', '' ) NOT NULL DEFAULT 'DirectSale' AFTER `role` ;

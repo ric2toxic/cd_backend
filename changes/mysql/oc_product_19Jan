@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `is_single` INT(1) NOT NULL DEFAULT '0' COMMENT 'whether the product is available in singles';

@@ -1,0 +1,17 @@
+.big-heading {
+    text-align: center;
+}
+.display_none {
+    display: none;
+}
+#content {
+    min-height: 400px;
+    margin-bottom: 10px;
+}
+.signup-form-wrapper .contentblock {
+    margin-top: 15px;
+    padding: 0 10px;
+}
+.signup-form-wrapper .form-element-part {
+    padding: 10px;
+}

@@ -1,0 +1,4 @@
+CREATE TABLE `wholesalebox_5`.`oc_telecallers_monitoring` ( `tele_tracking_id` INT NOT NULL AUTO_INCREMENT , `imei_number` VARCHAR(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'imei number of tele caller mobile' , `date` DATETIME NOT NULL COMMENT 'date of tracking' , `tracking_json` VARCHAR(2500) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'tracking data' , PRIMARY KEY (`tele_tracking_id`)) ENGINE = InnoDB;
+ALTER TABLE `oc_telecallers_monitoring` CHANGE `tracking_json` `tracking_json` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'tracking data';
+ALTER TABLE `oc_telecallers_monitoring` CHANGE `date` `date` VARCHAR(20) NOT NULL COMMENT 'date of tracking';
+ALTER TABLE `oc_telecallers_monitoring` ADD `last_updated` DATETIME NOT NULL AFTER `tracking_json`;

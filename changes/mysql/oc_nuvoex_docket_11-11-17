@@ -1,0 +1,3 @@
+RENAME TABLE oc_nuvoex_dockets TO oc_return_dockets;
+
+ALTER TABLE  `oc_return_dockets` CHANGE  `master_return_id`  `master_return_id` VARCHAR( 50 ) NULL DEFAULT NULL ;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_sales_staff` ADD `teletracking_version_code` INT(11) NOT NULL DEFAULT '0' AFTER `store_delivery_last_updated`, ADD `device_manufacturer_info` TEXT NOT NULL AFTER `teletracking_version_code`, ADD `play_store_email` TEXT NOT NULL AFTER `device_manufacturer_info`;

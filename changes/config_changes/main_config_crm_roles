@@ -1,0 +1,2 @@
+define('CRM_ROLE_ADMIN', '1');
+define('CRM_ROLE_TEAM_LEAD', '5');

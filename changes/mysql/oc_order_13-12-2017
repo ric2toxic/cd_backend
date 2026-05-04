@@ -1,0 +1,4 @@
+ALTER TABLE  `oc_order` CHANGE  `excess_payment_cleared`  `excess_payment_cleared` ENUM(  'YES',  'NO',  'PENDING_APPROVAL' ) NOT NULL DEFAULT  'NO';
+
+
+UPDATE  `oc_order` SET  `excess_payment_cleared` =  'NO' WHERE excess_payment_cleared IS NULL OR  `excess_payment_cleared` =  '';

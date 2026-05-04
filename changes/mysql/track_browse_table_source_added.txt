@@ -1,0 +1,1 @@
+ALTER TABLE `oc_browsemore_usage`  ADD `source` ENUM('desktop','mobile','app') NOT NULL  AFTER `no_clicks`;

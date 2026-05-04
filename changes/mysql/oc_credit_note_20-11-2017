@@ -1,0 +1,10 @@
+ALTER TABLE  `oc_credit_note` DROP  `trxn_done` ,
+DROP  `trxn_amount` ,
+DROP  `trxn_utr_internal` ,
+DROP  `trxn_utr` ,
+DROP  `trxn_utr_date` ,
+DROP  `trxn_bank` ,
+DROP  `trxn_response` ,
+DROP  `trxn_date_added` ;
+
+

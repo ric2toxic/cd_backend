@@ -1,0 +1,194 @@
+/******************Account Statement***************************************************************/
+      .account_statement .input-group select
+      {
+        width: 100%;
+
+      }
+      .account_statement
+      {
+        margin-top: 10px;
+      }
+  
+      .input-group-prepend
+      {
+        margin-bottom: 5px;
+      }
+      .Total_summary_of_order
+      {
+        background-color: #fff;
+        width: 100%;
+        float: left;
+        margin: auto;
+        margin-bottom: 5px;
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+      }
+
+      .all_summary_of_order
+      {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        border-radius: 3px;
+        width: 100%;
+        float: left;
+        margin: auto;
+        margin-bottom: 15px;
+      }
+
+      .summary_of_order
+      {
+        text-align: center;
+      }
+      .Total_summary_of_order p,.order_details_summary p
+      {
+        font-size: 12px;
+        color:#636363;
+        margin-top: 10px
+      }
+      .Total_summary_of_order h4, .order_details_summary h4
+      {
+        color:#262626;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .Total_summary_of_order .outstanding_bal p,.Total_summary_of_order .outstanding_bal h4
+      {
+        color:#fff;
+      }
+      .all_summary_of_order button
+      {
+        background-color: #fff;
+        color:#000;
+        border:none;
+        border-radius: 0px;
+        padding:10px;
+      }
+      .outstanding_bal
+      {
+        background-color: #6EC300;
+        color: #fff;
+        text-align: center;
+        padding: 2px;
+        border-radius: 0px 3px 3px 0px;
+      }
+      .no-padding
+      {
+        padding: 0px!important;
+      }
+      .order_data tbody tr td
+      {
+        padding: 8px 30px;
+      }
+      .select:after {
+        content: "▼";
+        padding: 5px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        z-index: 1;
+        text-align: center;
+        width: 10%;
+        height: 100%;
+        pointer-events: none;
+        color:#233c98;
+        font-size: 10px
+      }
+.select__field {
+  margin-bottom: 25px;
+  height: 25px;
+  width: 100%;
+  padding: 0px;
+  color: #636363;
+  border-bottom: 1px solid #233c98;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  outline: none;
+  font-size: 12px;
+  -webkit-appearance: none;
+  /* for webkit browsers */
+  -moz-appearance: none;
+  /* for firefox */
+  appearance: none;
+  /* for modern browsers */
+}
+.report_download
+{
+  background-color: #f2f2f2;
+  border:1px solid #cccccc;
+  padding: 5px 8px;
+  text-align: center;
+  color: #233c98;
+}
+.blue_color_theme
+{
+  color:#233c98;
+}
+.account_statement_btn_group button
+{
+  background-color: #233c98;
+  color:#fff;
+  padding: 10px;
+  border:none;
+  width: 50%
+}
+.clear_search{background-color: #e2e2e2 !important; color: #233c98 !important;}
+.pull-right
+{
+  float: right;
+}
+.account_statement_heading p
+{
+  font-weight: bold;
+  font-size: 15px;
+}
+.action_btn_group button
+{
+  width: 119px;
+  background-color: transparent;
+  border:1px solid #636363;
+  border-radius: 3px;
+  color:#636363;
+}
+.order_detail_btn
+{
+  margin-top: 10px;
+}
+.all_summary_of_order table tr td{
+vertical-align: inherit;
+}
+.order_detail_btn
+{
+  margin-top: 10px;
+  border-top: 1px solid #cccccc;
+}
+.all_summary_of_order .order_breakup_button
+{
+  border-right: 1px solid #cccccc;
+}
+.filter_icon{position: absolute; top: 10px; right: 10px;}
+.filter_btn_popup{width: 50%;
+    background-color: #17319f;
+    color: #fff;
+    margin: 0px;}
+.filter_btn_popup_download{width: 50%;
+    background-color: #e2e2e2;
+    color: #17319f;
+    margin: 0px;}
+.negative_bal {background-color: #ff0000;}
+.react-datepicker-wrapper{width: 50%;}
+
+.react-datepicker-popper{z-index: 9 !important;}
+.breakup_left_section{padding: 7px 0px 7px 25px; border-right: 1px solid #ccc;}
+.breakup_left_section h4 {font-size: 14px;}
+.breakup_right_section{padding: 5px 0px; text-align: center;}
+.breakup_right_section h4 {font-size: 14px;}
+.breakup_section{border-top: 1px solid #ccc;}
+.breakup_title{font-size: 10px;}
+
+.download_btn{cursor: pointer;
+    background-color: #f2f2f2 !important;
+    color: #17319f !important;
+    padding: 8px 32% !important;
+    border: 1px solid #ccc !important;
+    }

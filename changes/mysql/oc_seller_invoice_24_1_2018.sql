@@ -1,0 +1,1 @@
+ALTER TABLE `oc_seller_invoice` ADD `invoice_physically_received` TINYINT(1) NOT NULL DEFAULT '0' AFTER `trxn_date_added`, ADD `invoice_received_comment` VARCHAR(500) NULL DEFAULT NULL 'AFTER' `invoice_physically_received`;

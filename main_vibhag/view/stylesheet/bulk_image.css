@@ -1,0 +1,130 @@
+	.seller_inventory {
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			
+		}
+		.row {
+		  display: flex; /* equal height of the children */
+		}
+
+		
+		.bt {
+			font-size: 12px; !important
+		}
+		.btn-sm, .btn-group-sm > .btn {
+			padding: 5px 9px; 
+			font-size: 11px;
+			line-height: 1.5;
+			border-radius: 2px;
+		}
+		.panel-custom>.panel-cheading {
+				color: #fff; !important
+				background-color: #337ab7; !important
+				border-color: #337ab7;
+				/* background-color: #5bb75b; */
+				/* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351)); */
+				/* background-image: -webkit-linear-gradient(top, #62c462, #51a351); */
+				background-image: linear-gradient(to bottom, #07335a, #597b98); !important
+		}
+		.btn-danger {
+			color: #ffffff;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+			background-color: #da4f49;
+			background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+			background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+			background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+			background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+			background-repeat: repeat-x;
+			border-color: #bd362f #bd362f #802420;
+			border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+			filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		}
+		.btn {
+			margin-right : 15px;
+			display: inline-block;
+			margin-bottom: 0;
+			font-weight: normal;
+			text-align: center;
+			vertical-align: middle;
+			touch-action: manipulation;
+			cursor: pointer;
+			background-image: none;
+			border: 1px solid transparent;
+			white-space: nowrap;
+			padding: 8px 13px;
+			font-size: 12px;
+			line-height: 1.42857143;
+			border-radius: 3px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.glyphiconm {
+			position: relative;
+			top: 6px; !important
+			display: inline-block;
+			font-family: 'Glyphicons Halflings';
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		.color1 {
+			
+			background-color : gray;
+		}
+		.panel-custom {
+			 border-color: #e9eef3; !important
+		}
+		.font {
+			font-size: 11px; !important
+		}
+		.card-5 {
+		 
+		 box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+		}
+		
+		.body {
+			#EAE3E3
+		}
+		
+		.panel-cheading {
+			padding: 8px 12px;
+			border-bottom: 1px solid transparent;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			text-align : center;
+		}
+		.form1 {
+			
+			left-margin : 0px;
+		}
+		#height {
+			height : 2vh;
+		}
+		
+		.row1 {
+			margin-left: 6px; !important
+			margin-right: 5px; !important
+			display : flex;
+		}
+		#height {
+			height : 5vh;
+		}
+		.error {
+			color : red;
+		}
+		
+		.common {
+			
+			color : black;
+			
+		}
+

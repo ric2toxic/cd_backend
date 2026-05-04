@@ -1,0 +1,1 @@
+ALTER TABLE `oc_wsb_credit_nach_schedule` ADD `status` ENUM('ON_HOLD','FAILD','SUDDEN_BANK_HOLIDAY','SHIFT_SCHEDULE','NOT_APPLICABLE') NOT NULL AFTER `deffered_by_customer`;

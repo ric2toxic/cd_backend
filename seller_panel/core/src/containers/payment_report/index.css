@@ -1,0 +1,22 @@
+.inner_row th, .inner_row td{ padding: 5px; }
+.inner_row td span{ font-size: 10px; }
+.green{color: #006400; font-size: 11px !important; font-weight: 800;}
+.link{color: #000080; font-size: 11px !important; font-weight: 800;}
+.red{color: #ff0000; font-size: 11px !important; font-weight: 800;}
+
+.parent_row th{font-size: 13px !important; text-align: center;}
+.inner_row thead{display: none;}
+.parent_row tr:first-child .inner_row thead {
+    display: table-caption;
+}
+
+.parent_row tr:first-child .inner_row tr th {
+    width: 33.33%;
+    font-size: 12px !important;
+    text-align: center;
+    border-bottom: none;
+}
+
+.parent_row tr:first-child .inner_row tr:last-child td {
+    border-bottom: none;
+}

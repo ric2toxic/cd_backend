@@ -1,0 +1,1 @@
+INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES (NULL, '0', 'credit', 'credit_neo_partner_id', '6', '0'), (NULL, '0', 'credit', 'credit_neo_partner_key', 'eoxgFbSc8kj45OqwvXn9yg', '0');

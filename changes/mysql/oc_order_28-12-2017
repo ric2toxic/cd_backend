@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` CHANGE `excess_payment_cleared` `excess_payment_cleared` ENUM('YES','NO','NOT_APPLICABLE','PENDING_APPROVAL') NOT NULL DEFAULT 'NO';

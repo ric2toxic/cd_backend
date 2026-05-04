@@ -1,0 +1,41 @@
+CREATE TABLE `oc_order_product_review` (
+  `order_product_id` int(11) NOT NULL,
+  `product_review` enum('like','dislike') DEFAULT NULL,
+  `product_review_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `previous_product_review` enum('like','dislike') DEFAULT NULL,
+  `previous_product_review_date` datetime DEFAULT NULL,
+  `ip` varchar(32) DEFAULT NULL,
+  `user_agent` varchar(255) DEFAULT NULL,
+  `review_sync` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `oc_order_product_review`
+  ADD PRIMARY KEY (`order_product_id`);
+
+ALTER TABLE `oc_order_product_review`
+  ADD CONSTRAINT `oc_order_product_review_ibfk_1` FOREIGN KEY (`order_product_id`) REFERENCES `oc_order_product` (`order_product_id`);
+
+
+//////////////////////////////////Update Script to oc_order_product_review table
+
+INSERT INTO 
+	oc_order_product_review
+		(
+			order_product_id, 
+			product_review,
+			product_review_date, 
+			previous_product_review,
+            previous_product_review_date,
+            review_sync
+        )
+SELECT 
+	order_product_id, 
+	product_review,
+	product_review_date, 
+	previous_product_review,
+	product_review_date,
+	review_sync
+FROM 
+	oc_order_product
+WHERE 
+	product_review IS NOT NULL;

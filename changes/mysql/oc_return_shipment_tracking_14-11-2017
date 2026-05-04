@@ -1,0 +1,1 @@
+ALTER TABLE  `oc_return_shipment_tracking` CHANGE  `equivalent_status`  `equivalent_status` ENUM(  'Generated',  'Picked_Up',  'In_Transit', 'Problem',  'Delivered',  'New' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT  'Generated';

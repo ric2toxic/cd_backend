@@ -1,0 +1,1 @@
+define('COD_BLOCKED_CUSTOMERS', array(1,2,3));

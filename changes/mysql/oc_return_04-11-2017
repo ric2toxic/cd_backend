@@ -1,0 +1,2 @@
+ALTER TABLE  `oc_return` CHANGE  `payment_method`  `payment_method` ENUM(  'credit_note',  'refund',  'not_decided',  'replacement' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT  'not_decided';
+

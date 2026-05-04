@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `ws_access_token` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `signup_from`, ADD `device_id` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `ws_access_token`; 

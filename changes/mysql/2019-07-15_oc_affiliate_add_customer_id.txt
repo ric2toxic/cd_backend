@@ -1,0 +1,2 @@
+ALTER TABLE `oc_affiliate` 
+ADD COLUMN `customer_id` INT(11) NULL AFTER `affiliate_id`;

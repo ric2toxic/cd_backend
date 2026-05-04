@@ -1,0 +1,16 @@
+ALTER TABLE  `oc_return_shipment_tracking` ADD  `order_no` INT( 11 ) NULL ,
+ADD  `weight` VARCHAR( 50 ) NULL ,
+ADD  `value` FLOAT( 10, 2 ) NULL ,
+ADD  `package_description` VARCHAR( 150 ) NULL ,
+ADD  `qty` INT( 5 ) NULL ,
+ADD  `return_reason` VARCHAR( 100 ) NULL ,
+ADD  `preferred_date` DATE NULL ;
+
+
+ALTER TABLE  `oc_return_shipment_tracking` ADD  `preferred_time` VARCHAR( 10 ) NULL ,
+ADD  `vendor_code` VARCHAR( 50 ) NULL ,
+ADD  `request_param` TEXT NULL DEFAULT NULL ;
+
+ALTER TABLE  `oc_return_shipment_tracking` ADD  `remarks` VARCHAR( 100 ) NULL DEFAULT NULL ;
+
+ALTER TABLE  `oc_return_shipment_tracking` CHANGE  `tracking_no`  `tracking_no` VARCHAR( 32 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT  'NuvoEx Docket/AWB';

@@ -1,0 +1,12 @@
+ALTER TABLE `oc_admin_change_log` CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set',
+'set_description','store_sales','custom_rating','seller_change','only_for_search','hsn_code','options','sort_order',
+'stock_status_id','status','shipping','date_available','subtract','minimum','expected_dispatch_date','is_single','mrp',
+'cod_available','is_archived','shipping_collected','cod_failed_penalty','email','telephone','non_returnable','gst_number',
+'customer_group_id','firstname','lastname','fax','password','confirm','newsletter','approved','safe','is_dropshipper',
+'show_full_sku','should_download','country_code','exclusive','expire_exclusive_date','credit_status','franchise_status',
+'wsb_credit_card_payment','franchise_coupon','franchise_discount','franchise_prefix','bank_ac_holder_name','bank_ac_number',
+'ifsc_code','ws_access_token','invoice_physically_received_and_comment','debit_note_received_and_comment','amount',
+'credit_limit','neogrowth_registration_number','neogrowth_account_number') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+
+ALTER TABLE `oc_admin_change_log` CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set','set_description','store_sales','custom_rating','seller_change','only_for_search','hsn_code','options','sort_order','stock_status_id','status','shipping','date_available','subtract','minimum','expected_dispatch_date','is_single','mrp','cod_available','is_archived','shipping_collected','cod_failed_penalty','email','telephone','non_returnable','gst_number','customer_group_id','firstname','lastname','fax','password','confirm','newsletter','approved','safe','is_dropshipper','show_full_sku','should_download','country_code','exclusive','expire_exclusive_date','credit_status','franchise_status','wsb_credit_card_payment','franchise_coupon','franchise_discount','franchise_prefix','bank_ac_holder_name','bank_ac_number','ifsc_code','ws_access_token','invoice_physically_received_and_comment','debit_note_received_and_comment','amount','credit_limit','neogrowth_registration_number','neogrowth_account_number','lazypay_mobile','lazypay_email') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;

@@ -1,0 +1,3 @@
+ALTER TABLE `oc_ms_seller` ADD `address1` TEXT NOT NULL , ADD `address2` TEXT NULL DEFAULT NULL , ADD `pincode` VARCHAR(6) NOT NULL , ADD `city` VARCHAR(50) NOT NULL , ADD `pan` VARCHAR(10) NULL DEFAULT NULL , ADD `tin` VARCHAR(20) NULL DEFAULT NULL , ADD `tan` VARCHAR(50) NULL DEFAULT NULL ;
+
+ALTER TABLE `oc_ms_seller` ADD `bank_ac_holder_name` VARCHAR(100) NOT NULL , ADD `bank_ac_number` VARCHAR(20) NOT NULL , ADD `retype_ac_number` VARCHAR(20) NOT NULL , ADD `ifsc_code` VARCHAR(20) NOT NULL , ADD `bank_name` VARCHAR(100) NOT NULL , ADD `bank_state` INT(11) NOT NULL , ADD `bank_city` VARCHAR(100) NOT NULL , ADD `bank_branch` TEXT NULL ;

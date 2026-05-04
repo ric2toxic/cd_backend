@@ -1,0 +1,2 @@
+ALTER TABLE `oc_wsb_purchase_return_breakup` ADD `base_price_per_piece` DECIMAL(10,2) NULL DEFAULT NULL AFTER `quantity`, ADD `tax_rate` DECIMAL(10,2) NULL DEFAULT NULL AFTER `base_price_per_piece`, ADD `transfer_price_per_piece` DECIMAL(10,2) NULL DEFAULT NULL AFTER `tax_rate`;
+

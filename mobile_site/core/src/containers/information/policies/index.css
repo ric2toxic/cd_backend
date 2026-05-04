@@ -1,0 +1,48 @@
+/*---About pages---*/
+.about_img{text-align: center;margin: auto;}
+.about_content_text{ font-size: 14px; line-height: 1.8; text-align: left; }
+.about_team{display: block; padding: 10px; background: #f1f1f1; margin-bottom: 10px;}
+.about_team h3{ font-size: 22px; color: #17319f;text-align: center;} 
+.about_team ul{display: block; padding: 10px; margin: 0px;}
+.about_team ul li{ text-align: center; display: block; width: 50%; float: left; margin: auto; }
+.about_team ul li .about_team_photo{ border-radius: 115px; display: block; margin: auto;  padding: 10px;}
+.about_team ul li span{clear: both; text-align: center; display: block; font-size: 16px; padding: 10px; }
+.contact_sanction h4{text-align: center;}
+.text_center{text-align: center; margin-top: 0px;}
+.about_img{padding-top:10px; }
+.privacy_data{display: none;}
+.privacy_data.active{display: block;}
+.read_more{float: right;}
+.navbar_header
+{
+  background-color: #fff;
+
+}
+.navbar_header ul li a
+{
+  padding-bottom: 6px;
+}
+.navbar_header ul li a,.navbar_header ul li a:focus,.navbar_header ul li a:hover,.category a,.category a:hover,.category a:focus
+{
+  text-decoration: none;
+  color:#000;
+  font-size: 14px;
+}
+
+.navbar_header ul li span,.navbar_header ul li span:focus,.navbar_header ul li span:hover
+{
+  text-decoration: none;
+  color:#000;
+  font-size: 14px;
+}
+
+.navbar_header ul li
+{
+  text-decoration: none;
+  display: inline-block;
+  padding:10px;
+}
+.navbar_header .active
+{
+  border-bottom: 2px solid #f13041;
+}

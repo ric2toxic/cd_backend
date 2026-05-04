@@ -1,0 +1,2 @@
+define('RDS_WSB_DB','wsb_staging'); // in staging config
+define('RDS_WSB_DB','wsb'); // in live config

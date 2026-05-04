@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_edit_history` ADD `name` VARCHAR(20) NULL AFTER `user_id`, ADD `user_name` VARCHAR(20) NULL AFTER `name`;

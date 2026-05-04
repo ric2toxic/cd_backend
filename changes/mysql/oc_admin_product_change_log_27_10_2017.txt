@@ -1,0 +1,4 @@
+ALTER TABLE `oc_admin_product_change_log` CHANGE `source_field` `source_field` ENUM('product_edit','break_suborder','product_list') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'product_edit';
+
+
+ALTER TABLE `oc_admin_product_change_log` CHANGE `field_name` `field_name` ENUM('price','quantity','seller_tax','commission','tax_class_id','weight','title','description','model','sku','piece_in_set','set_description','store_sales','exclusive','custom_rating','seller_change','only_for_search','hsn_code','options','sort_order','stock_status_id','status','shipping','date_available','subtract','minimum','expected_dispatch_date','is_single','mrp','cod_available','is_archived') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

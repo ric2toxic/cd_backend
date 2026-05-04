@@ -1,0 +1,6 @@
+CREATE TABLE `oc_abandoned_users` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `phone` VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'mobile number of the user' , 
+	`email` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'email of the user' ,
+	`os` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'os of the user' , 
+	`browser` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'browser of the user' , 
+	`ip` VARCHAR(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'ip address of the user' , 
+	`date_added` DATETIME NULL DEFAULT NULL COMMENT 'date of addition' , PRIMARY KEY (`id`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT = 'Table for abandoned users on the site';

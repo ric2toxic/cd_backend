@@ -1,0 +1,1 @@
+ALTER TABLE `oc_wsb_prefixes` ADD `financial_year` VARCHAR(100) NULL DEFAULT NULL AFTER `prefix_type`, ADD `available_no` INT(11) NOT NULL DEFAULT '0' AFTER `financial_year`;

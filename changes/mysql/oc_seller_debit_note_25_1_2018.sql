@@ -1,0 +1,1 @@
+ALTER TABLE `oc_seller_debit_note` ADD `debit_note_physically_received` TINYINT(1) NOT NULL DEFAULT '0' AFTER `trxn_date_added`, ADD `debit_note_received_comment` VARCHAR(500) NULL DEFAULT NULL AFTER `debit_note_physically_received`;

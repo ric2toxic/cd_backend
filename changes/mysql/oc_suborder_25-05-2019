@@ -1,0 +1,1 @@
+ALTER TABLE `oc_suborder` ADD `wsb_credit_nach_done` ENUM('YES','NO') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'NO' AFTER `delivered_date`;

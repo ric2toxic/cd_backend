@@ -1,0 +1,7 @@
+//For currency exchangeconversion
+define('OPEN_EXCHANGE_CURRENCY_CONVERSION_URL', 'https://openexchangerates.org/api/latest.json?app_id=');
+define('OPEN_EXCHANGE_CURRENCY_CONVERSION_KEY', 'd29a906a05c648a7974155c1ca277d8c');
+
+// need to add this in backend config also
+define('DUMMY_INR_CURRENCY', 'IND');
+

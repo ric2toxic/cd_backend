@@ -1,0 +1,1 @@
+ALTER TABLE `oc_category` ADD `naming_filters` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `taxable`, ADD `tax_rates` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL AFTER `naming_filters`;

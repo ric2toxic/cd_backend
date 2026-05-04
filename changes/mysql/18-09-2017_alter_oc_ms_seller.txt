@@ -1,0 +1,2 @@
+ALTER TABLE `oc_ms_seller` ADD `purchase_firm_id` INT(11) NULL DEFAULT NULL AFTER `gst_certificate_image`;
+ALTER TABLE `oc_ms_seller` ADD UNIQUE(`purchase_firm_id`);

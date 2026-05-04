@@ -1,0 +1,3 @@
+ALTER TABLE `oc_seller_debit_note` ADD `payment_done` TINYINT(1) NOT NULL AFTER `debit_note_meta`, ADD `payment_mode` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `payment_done`, ADD `payment_ref` VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `payment_mode`, ADD `payment_date` DATETIME NOT NULL AFTER `payment_ref`;
+
+ALTER TABLE `oc_seller_debit_note` ADD `payment_json_request` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `payment_date`; 

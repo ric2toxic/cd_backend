@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_payment` CHANGE `payment_type` `payment_type` ENUM('advance','full','refund','others','cod','cashback','coupon') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'others';

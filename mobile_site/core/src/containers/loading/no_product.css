@@ -1,0 +1,25 @@
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.wrong_search_box {
+    background: #fcf3f3;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #cf080d;
+}
+.wrong_search_text {
+    color: #cf080d!important;
+    font-weight: 400;
+    font-size: 18px!important;
+    margin: 8px 0;
+}
+.wrong_search_box_ul {
+    margin: 0;
+    padding-left: 10px;
+    list-style: inside;
+}
+.wishlistPading{
+    padding-right: 15px;
+    padding-left: 15px;
+}

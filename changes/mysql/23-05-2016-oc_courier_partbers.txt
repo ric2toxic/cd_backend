@@ -1,0 +1,1 @@
+ALTER TABLE `oc_courier_partners` ADD `tracking_url` VARCHAR(255) NULL DEFAULT NULL ;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_product` ADD `sor_product` TINYINT(1) NOT NULL DEFAULT '0' AFTER `pickup_history`, ADD `sor_invoice_id` INT NULL DEFAULT NULL AFTER `sor_product`;

@@ -1,0 +1,2 @@
+ALTER TABLE `oc_coupon` 
+ADD COLUMN `allowed_from` ENUM('ALL', 'ANDROID_APP', 'IOS_APP', 'WEB', 'MOBILE_WEB') NOT NULL DEFAULT 'ALL' AFTER `store_id`;

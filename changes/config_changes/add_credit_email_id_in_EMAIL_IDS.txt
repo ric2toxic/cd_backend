@@ -1,0 +1,4 @@
+'credit' => array(
+                        'email_id' => 'credit@wholesalebox.in',
+                        'name'     => 'Credit WholesaleBox'   
+                    )

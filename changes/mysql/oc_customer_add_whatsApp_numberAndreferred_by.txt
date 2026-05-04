@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer` ADD `customer_whatsapp_mobile` VARCHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `telephone` ;
+ALTER TABLE `oc_customer` ADD `referred_by` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `device_id` ;

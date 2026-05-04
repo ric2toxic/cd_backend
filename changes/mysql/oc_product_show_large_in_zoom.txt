@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `show_large_image_in_zoom` TINYINT(1) NOT NULL DEFAULT '0' AFTER `mrp`;

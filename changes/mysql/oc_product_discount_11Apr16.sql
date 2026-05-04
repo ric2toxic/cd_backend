@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product_discount` ADD `store_id` INT(10) NOT NULL;

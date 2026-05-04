@@ -1,0 +1,6 @@
+ALTER TABLE `oc_admin_info_log` CHANGE `field_type` `field_type` ENUM('email','telephone') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+ALTER TABLE `oc_admin_info_log` ADD `admin_log_id` INT(11) NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`admin_log_id`);
+
+
+ALTER TABLE `oc_admin_info_log` CHANGE `admin_log_id` `log_id` INT(11) NOT NULL AUTO_INCREMENT;

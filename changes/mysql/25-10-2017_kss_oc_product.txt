@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` CHANGE `sor_invoice_id` `wsb_purchase_id` INT(11) NULL DEFAULT NULL;

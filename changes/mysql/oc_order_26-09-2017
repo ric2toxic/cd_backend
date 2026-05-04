@@ -1,0 +1,1 @@
+ALTER TABLE  `oc_order` ADD  `excess_payment_cleared` TINYINT( 1 ) NOT NULL DEFAULT  '0' COMMENT '0->Not Clear, 1->Cleared, 2->Any Issue';

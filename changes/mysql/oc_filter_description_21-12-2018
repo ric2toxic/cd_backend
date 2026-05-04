@@ -1,0 +1,1 @@
+ALTER TABLE `oc_filter_description` DROP `filter_group_id`;

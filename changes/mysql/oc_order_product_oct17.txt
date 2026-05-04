@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_product` ADD `order_no` BIGINT(11) UNSIGNED NOT NULL AFTER `reward`, ADD `seller_id` INT(11) NOT NULL AFTER `order_no`, ADD `transfer_price_per_piece` DECIMAL(15,4) NOT NULL AFTER `seller_id`, ADD `comment` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `transfer_price_per_piece`;

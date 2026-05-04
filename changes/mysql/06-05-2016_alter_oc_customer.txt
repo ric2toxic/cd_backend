@@ -1,0 +1,1 @@
+ALTER TABLE `oc_customer` ADD `last_cart_modified` DATETIME NULL DEFAULT NULL AFTER `date_added`;

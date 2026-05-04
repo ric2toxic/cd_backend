@@ -1,0 +1,1 @@
+ALTER TABLE `oc_user` ADD `access_token` VARCHAR(255) NULL DEFAULT NULL ;

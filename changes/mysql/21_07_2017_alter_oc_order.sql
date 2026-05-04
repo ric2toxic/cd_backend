@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order` CHANGE `order_from` `order_from` ENUM('WEB','ANDROIDAPP','MOBILE_WEB','IOSAPP') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'WEB';

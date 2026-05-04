@@ -1,0 +1,166 @@
+Query for oc_ms_product
+
+DROP TRIGGER IF EXISTS `trigger_ms_product`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_ms_product` AFTER UPDATE ON `oc_ms_product` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_ms_product_attribute
+
+DROP TRIGGER IF EXISTS `trigger_ms_product_attribute`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_ms_product_attribute` AFTER UPDATE ON `oc_ms_product_attribute` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_attribute
+
+DROP TRIGGER IF EXISTS `trigger_product_attribute`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_attribute` AFTER UPDATE ON `oc_product_attribute` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_discount
+
+DROP TRIGGER IF EXISTS `trigger_product_discount`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_discount` AFTER UPDATE ON `oc_product_discount` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_description
+
+DROP TRIGGER IF EXISTS `update_date_modified`;CREATE DEFINER=`root`@`localhost` TRIGGER `update_date_modified` AFTER UPDATE ON `oc_product_description` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_image
+
+DROP TRIGGER IF EXISTS `trigger_product_image`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_image` AFTER UPDATE ON `oc_product_image` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_filter
+
+DROP TRIGGER IF EXISTS `trigger_product_filter`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_filter` AFTER UPDATE ON `oc_product_filter` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_option
+
+DROP TRIGGER IF EXISTS `trigger_product_option`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_option` AFTER UPDATE ON `oc_product_option` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_option_value
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_option_value` AFTER UPDATE ON `oc_product_option_value` FOR EACH ROW UPDATE oc_product p set p.date_modified = NOW() where p.product_id = new.product_id;
+
+
+Query for oc_product_recurring 
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_recurring` AFTER UPDATE ON `oc_product_recurring` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_related
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_related` AFTER UPDATE ON `oc_product_related` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_special
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_special` AFTER UPDATE ON `oc_product_special` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_storeinfo
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_storeinfo` AFTER UPDATE ON `oc_product_storeinfo` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_to_category
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_to_category` AFTER UPDATE ON `oc_product_to_category` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_to_download
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_to_download` AFTER UPDATE ON `oc_product_to_download` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_to_store
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_to_store` AFTER UPDATE ON `oc_product_to_store` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for oc_product_to_layout
+
+CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_product_to_layout` AFTER UPDATE ON `oc_product_to_layout` FOR EACH ROW UPDATE oc_product p
+set p.date_modified = NOW()
+where p.product_id = new.product_id;
+
+
+Query for trigger_update_seller_status
+
+DROP TRIGGER IF EXISTS `trigger_update_seller_status`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_update_seller_status` AFTER UPDATE ON `oc_ms_seller` FOR EACH ROW BEGIN
+ IF NEW.seller_status <> OLD.seller_status THEN
+    UPDATE `oc_product` p
+    SET p.date_modified = NOW()
+    WHERE p.product_id IN 
+    (SELECT omp.product_id 
+     FROM `oc_ms_product` omp 
+     WHERE omp.seller_id = OLD.seller_id);
+ END IF;
+END
+
+
+
+Query for trigger_update_sor_enabled
+
+DROP TRIGGER IF EXISTS `trigger_update_sor_enabled`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_update_sor_enabled` AFTER UPDATE ON `oc_ms_seller` FOR EACH ROW BEGIN
+ IF NEW.sor_enabled <> OLD.sor_enabled THEN
+    UPDATE `oc_product` p
+    SET p.date_modified = NOW()
+    WHERE p.product_id IN 
+    (SELECT omp.product_id 
+     FROM `oc_ms_product` omp 
+     WHERE omp.seller_id = OLD.seller_id);
+ END IF;
+END
+
+
+
+Query for trigger_update_vacation_mode
+
+DROP TRIGGER IF EXISTS `trigger_update_vacation_mode`;CREATE DEFINER=`root`@`localhost` TRIGGER `trigger_update_vacation_mode` AFTER UPDATE ON `oc_ms_seller` FOR EACH ROW BEGIN
+ IF NEW.vacation_mode <> OLD.vacation_mode THEN
+    UPDATE `oc_product` p
+    SET p.date_modified = NOW()
+    WHERE p.product_id IN 
+    (SELECT omp.product_id 
+     FROM `oc_ms_product` omp 
+     WHERE omp.seller_id = OLD.seller_id);
+ END IF;
+END
+
+
+
+
+
+
+

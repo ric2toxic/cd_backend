@@ -1,0 +1,1 @@
+ALTER TABLE `oc_review` ADD `store_id` INT NOT NULL AFTER `customer_id`; 

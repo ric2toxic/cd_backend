@@ -1,0 +1,1 @@
+ALTER TABLE `oc_warehouse_address` ADD `gati_vendor_code` VARCHAR(8) NOT NULL AFTER `telephone`;

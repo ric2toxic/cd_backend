@@ -1,0 +1,2 @@
+ALTER TABLE `oc_product` ADD `mrp` DECIMAL(15,4) NOT NULL AFTER `expected_dispatch_date`;
+ALTER TABLE `oc_product` CHANGE `mrp` `mrp` DECIMAL(15,4) NULL DEFAULT NULL;

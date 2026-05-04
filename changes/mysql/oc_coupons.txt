@@ -1,0 +1,1 @@
+ALTER TABLE `oc_coupon`  ADD `store_id` INT NOT NULL  AFTER `date_added`;

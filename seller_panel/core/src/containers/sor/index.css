@@ -1,0 +1,53 @@
+.MuiTable-root {
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.MuiTableRow-root {
+    color: inherit;
+    height: 48px;
+    display: table-row;
+    vertical-align: middle;
+}
+
+
+.MuiTableCell-root {
+    display: table-cell;
+    padding: 4px 56px 4px 24px;
+    text-align: left;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    vertical-align: inherit;
+}
+
+.MuiTableCell-head {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.Datagrid-headerCell{
+    padding: 0 12px;
+}
+
+.MuiTableRow-root.MuiTableRow-hover:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.MuiTableCell-body {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.8125rem;
+}
+
+.Datagrid-rowCell {
+    padding: 0 12px;
+    max-width: 150px;
+}
+
+.price_cls{color: #006400;
+    font-size: 11px !important;
+    font-weight: 600;}  

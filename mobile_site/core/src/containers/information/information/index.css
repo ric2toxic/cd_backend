@@ -1,0 +1,20 @@
+/*---terms_&_conditions pages---*/
+.privacy_note{ text-align: center; background: #dfe6ff; color: #233c98; text-transform: uppercase; padding: 10px; border: 1px solid #233c98; margin: 10px 0px; font-size: 15px; }
+.privacy_text p{font-size: 16px; line-height: 1.4;}
+.page_subtitle{ color: #17319f;font-size: 18px; margin: 0;padding: 15px 0;}
+.tc_update{ text-align: center; font-size: 16px; padding:10px 0px 0px;  }
+.privacy_text .privacy_text_padding_none{ padding-left: 15px; margin-left: 0px; list-style: outside none disc;  }
+/*---Delivery Information pages---*/
+.delivery_inform_left{padding: 15px;}
+.delivery_inform_left .delivery_inform_boxi{display: block; list-style: none; padding: 10px;}
+.delivery_inform_left .delivery_inform_box label{padding:0px 10px; display: inline-block; }
+.delivery_inform_left .delivery_inform_box span{display: inline-block; vertical-align: top; max-width: 73%;}
+.delivery_inform_left .delivery_inform_box .cash_on{ background:url("/image/sprite_icons.png") no-repeat scroll  -194px -164px; width:60px; height: 60px; }
+.delivery_inform_left .delivery_inform_box .trackable_service{ background:url("/image/sprite_icons.png") no-repeat scroll -266px -167px; width:60px; height: 60px;}
+.delivery_inform_left .delivery_inform_box .delivery_time{ background:url("/image/sprite_icons.png") no-repeat scroll -356px -167px; width:60px; height: 60px;}
+.delivery_inform_left .delivery_inform_box .easy_return{ background:url("/image/sprite_icons.png") no-repeat scroll -445px -162px; width:60px; height: 60px;}
+.delivery_inform_left .delivery_inform_box span h3{font-size: 16px;color:#17319f; font-weight: 600;margin: 4px 0; padding: 0; }
+.delivery_inform_right{border: 1px solid #ddd; margin: 0px 0px 10px; padding: 15px; right: 0px; position: fixed;}
+.delivery_inform_right h3{ font-size: 22px; }
+.delivery_inform_right .Partners_img_box{padding: 10px;}
+.delivery_inform_right ul{display: block; list-style: none;padding: 0px; margin: 0px}

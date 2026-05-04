@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_application_status_remarks` CHANGE `status` `status` ENUM('document_awaited','under_process','approved','rejected','customer_not_interested','approved_but_agreement_pending') NOT NULL;

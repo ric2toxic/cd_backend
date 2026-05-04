@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer_preference` ADD `sent_last_preference` DATETIME NOT NULL AFTER `max_price`;
+ALTER TABLE `oc_customer_preference` ADD `is_preferences_saved` TINYINT(2) NOT NULL AFTER `sent_last_preference`;

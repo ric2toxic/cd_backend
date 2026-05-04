@@ -1,0 +1,1 @@
+ALTER TABLE `oc_vat_input_rules` ADD `pickup_city_code` VARCHAR(4) NOT NULL AFTER `is_default`;

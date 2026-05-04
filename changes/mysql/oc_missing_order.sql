@@ -1,0 +1,1 @@
+CREATE TABLE `oc_missing_order` ( `id` INT NOT NULL AUTO_INCREMENT , `customer_id` INT NOT NULL , `date` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM CHARACTER SET utf8 COLLATE utf8_general_ci;

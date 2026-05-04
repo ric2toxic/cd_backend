@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_product` ADD `discount_breakup` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `price_per_piece`, ADD `weight_per_piece` DECIMAL(15,8) NOT NULL AFTER `discount_breakup`;

@@ -1,0 +1,2 @@
+ALTER TABLE `oc_return_action` ADD `viewable_to_customer` TINYINT(1) NOT NULL DEFAULT '1' AFTER `post_actions`;
+

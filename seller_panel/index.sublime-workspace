@@ -1,0 +1,545 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"s",
+				"span"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"bac",
+				"background-origin"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"bo",
+				"border-left-style"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pre",
+				"preferences"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"bor",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 272.0,
+		"last_filter": "git",
+		"selected_items":
+		[
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/html/wsb_mobile/src/containers/header/index.css",
+		"/var/www/html/wsb_mobile/src/containers/header/index.js",
+		"/var/www/html/wsb_mobile/src/containers/footer/index.js",
+		"/var/www/html/wsb_mobile/src/containers/app/index.js",
+		"/var/www/html/wsb_mobile/public/css/style_mobile.css",
+		"/var/www/html/html_for_mobile_website/index.html",
+		"/var/www/html/wsb_mobile/src/containers/footer/index.css",
+		"/var/www/html/wsb_mobile/src/containers/menu/index.css",
+		"/var/www/html/wsb_mobile/public/index.html",
+		"/var/www/html/wsb_mobile/src/index.css",
+		"/var/www/html/wsb_mobile/src/containers/menu/index.js",
+		"/var/www/html/wsb_mobile/src/index.js",
+		"/var/www/html/wsb_mobile/src/store.js",
+		"/var/www/html/wsb_mobile/src/Reducers/index.js",
+		"/var/www/html/wsb_mobile/src/Reducers/counter.js",
+		"/var/www/html/wsb_mobile/src/actions/index.js",
+		"/var/www/html/wsb_mobile/src/containers/home/index.js",
+		"/var/www/html/wholesalebox_mobile2/src/containers/AddCounter.js",
+		"/var/www/html/wholesalebox_mobile2/src/actions/index.js",
+		"/var/www/html/wsb_mobile/src/actions/ActionType.js",
+		"/var/www/html/wholesalebox_mobile2/src/reducers/index.js",
+		"/var/www/html/wholesalebox_mobile2/src/containers/Counter.js",
+		"/var/www/html/wholesalebox_mobile2/src/index.js",
+		"/var/www/html/wholesalebox_mobile2/src/components/App.js",
+		"/var/www/html/wholesalebox_mobile2/src/reducers/counterReducer.js",
+		"/var/www/html/wsb_mobile/src/modules/index.js",
+		"/var/www/html/wsb_mobile/src/modules/counter.js",
+		"/var/www/html/wholesalebox_mobile/src_route/containers/app/index.js",
+		"/var/www/html/wholesalebox_mobile/src_route/index.js",
+		"/var/www/html/wholesalebox_mobile/src_route/store.js",
+		"/var/www/html/wsb_mobile/src/components/App.js",
+		"/var/www/html/wholesalebox_mobile/src_route/containers/header/index.js",
+		"/var/www/html/wholesalebox_mobile/src/index.js",
+		"/var/www/html/wholesalebox/catalog/controller/account/edit.php",
+		"/var/www/html/wholesalebox/catalog/view/theme_new_mobile/default/template/account/edit.tpl",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/template/account/edit.tpl",
+		"/var/www/html/wholesalebox/system/library/customer.php",
+		"/var/www/html/catbook-redux-blog-post/src/index.js",
+		"/var/www/html/wsb_mobile/src/routes.js",
+		"/var/www/html/wsb_mobile/src/components/App.css",
+		"/var/www/html/catbook-redux-blog-post/src/routes.js",
+		"/var/www/html/wsb_mobile/package.json",
+		"/var/www/html/wholesalebox_mobile/src/containers/App.js",
+		"/var/www/html/wsb_mobile/src/App.js",
+		"/var/www/html/wsb_mobile/src/App.test.js",
+		"/var/www/html/wsb_mobile/src/components/cats/CatPage.js",
+		"/var/www/html/wsb_mobile/src/components/common/Header.js",
+		"/var/www/html/catbook-redux-blog-post/public/index.html",
+		"/var/www/html/wsb_mobile/package-lock.json",
+		"/var/www/html/catbook-redux-blog-post/src/components/LogInPage.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/App.js",
+		"/var/www/html/catbook-redux-blog-post/src/api/CatsApi.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/cats/CatsPage.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/cats/CatList.js",
+		"/var/www/html/catbook-redux-blog-post/src/api/SessionApi.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/home/HomePage.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/common/TextInput.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/common/CheckBox.js",
+		"/var/www/html/catbook-redux-blog-post/src/reducers/initialState.js",
+		"/var/www/html/catbook-redux-blog-post/src/reducers/catReducer.js",
+		"/var/www/html/catbook-redux-blog-post/src/auth/authenticator.js",
+		"/var/www/html/catbook-redux-blog-post/src/api/HobbyApi.js",
+		"/var/www/html/catbook-redux-blog-post/src/components/common/Header.js",
+		"/var/www/html/catbook-redux-blog-post/src/reducers/sessionReducer.js",
+		"/var/www/html/catbook-redux-blog-post/src/reducers/hobbyReducer.js",
+		"/var/www/html/catbook-redux-blog-post/src/reducers/index.js",
+		"/var/www/html/catbook-redux-blog-post/src/store/configureStore.js",
+		"/var/www/html/wsb_mobile/src/containers/AddCounter.js",
+		"/var/www/html/wsb_mobile/src/containers/Counter.js",
+		"/var/www/html/wsb_mobile/src/reducers/counterReducer.js",
+		"/var/www/html/wsb_mobile/src/reducers/menuReducer.js",
+		"/var/www/html/wsb_mobile/src/containers/ChangeName.js",
+		"/var/www/html/wsb_mobile/src/reducers/index.js",
+		"/var/www/html/wsb_mobile/src/containers/RemoveCounter.js",
+		"/var/www/html/wholesalebox_mobile/package.json",
+		"/var/www/html/wholesalebox/catalog/model/restapi/service.php",
+		"/var/www/html/wholesalebox/catalog/controller/cron/cron.php",
+		"/var/www/html/wholesalebox/khufiya_vibhag/model/sale/customer.php",
+		"/var/www/html/wsb_mobile/index.html",
+		"/var/www/html/wholesalebox_mobile/src/reducers/index.js",
+		"/var/www/html/wholesalebox_mobile/src/reducers/products.js",
+		"/var/www/html/wsb_mobile/webpack.config.js",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/css/custom.css",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/css/style.css",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/stylesheet/stylesheet.css",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/template/react/home.tpl",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/template/account/credit_note.tpl",
+		"/var/www/html/redux-master/examples/shopping-cart/src/index.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/containers/App.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/containers/ProductsContainer.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/api/products.json",
+		"/var/www/html/redux-master/examples/shopping-cart/src/components/ProductItem.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/reducers/products.spec.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/api/shop.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/reducers/products.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/constants/ActionTypes.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/components/ProductsList.js",
+		"/var/www/html/redux-master/examples/shopping-cart/src/components/ProductItem.spec.js",
+		"/var/www/html/wholesalebox_mobile/public/index.html",
+		"/var/www/html/wholesalebox_mobile/src/containers/app/index.js",
+		"/var/www/html/wholesalebox_mobile/src/modules/counter.js",
+		"/var/www/html/redux-master/examples/shopping-cart/public/index.html",
+		"/var/www/html/wholesalebox_mobile/src/modules/index.js",
+		"/var/www/html/wholesalebox_mobile/src/containers/home/index.js",
+		"/var/www/html/redux-master/examples/shopping-cart/package.json",
+		"/var/www/html/wholesalebox/api/home.php",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/common_components/menu.jsx",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/home_components/banner.jsx",
+		"/var/www/html/wholesalebox/khufiya_vibhag/model/design/banner.php",
+		"/var/www/html/wholesalebox/khufiya_vibhag/controller/design/banner.php",
+		"/var/www/html/wholesalebox/api/header.php",
+		"/var/www/html/wholesalebox_mobile/src/containers/header/index.js",
+		"/var/www/html/wholesalebox_mobile/src/containers/about/index.js",
+		"/var/www/html/wholesalebox_mobile/src/store.js",
+		"/var/www/html/wholesalebox_mobile/src/index.css",
+		"/var/www/html/wholesalebox_mobile/src/App.css",
+		"/var/www/html/wholesalebox_mobile/src/App.js",
+		"/home/wholesalebox/Downloads/create-react-app-redux-master/src/index.js",
+		"/home/wholesalebox/Downloads/create-react-app-redux-master/src/containers/app/index.js",
+		"/home/wholesalebox/Downloads/create-react-app-redux-master/src/containers/about/index.js",
+		"/home/wholesalebox/Downloads/create-react-app-redux-master/public/index.html",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/common_components/menu_item.jsx",
+		"/var/www/html/wholesalebox/catalog/controller/react/home.php",
+		"/var/www/html/sw_test/index.html",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/product_detail_components/set_quantity_popup.jsx",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/product_detail_components/set_quantity_box.jsx",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/product_detail_components/color_quantity_popup.jsx",
+		"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/product_detail_components/set_quantity.jsx"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/var/www/html/wsb_mobile/src",
+			"/var/www/html/wholesalebox/",
+			"/var/www/html/wholesalebox/khufiya_vibhag/controller/common",
+			"/var/www/html/wholesalebox/khufiya_vibhag/view/template/common",
+			"/var/www/html/wholesalebox/catalog/controller",
+			"/var/www/html/wholesalebox/catalog/controller/common",
+			"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/cart_components",
+			"/var/www/html/wholesalebox",
+			"/var/www/html/wholesalebox/khufiya_vibhag",
+			"/var/www/html/wholesalebox/khufiya_vibhag/controller",
+			"/var/www/html/wholesalebox/catalog/",
+			"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/cart_components",
+			"/var/www/html/wholesalebox/",
+			"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/cart_components",
+			"/var/www/html/wholesalebox/",
+			"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/home_components",
+			"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/common_components",
+			"/var/www/html/wholesalebox/catalog/view/theme/default/javascript/product_detail_components",
+			"/var/www/html/wholesalebox/vendor/aws",
+			"/var/www/html/wholesalebox",
+			"/var/www/html/wholesalebox/catalog"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"class=",
+			".side-collapse",
+			".mobile_nav_colllapse",
+			".side-collapse",
+			"navbar-inverse",
+			".side-collapse",
+			"home_category_btn",
+			"category_section",
+			"class=",
+			"class",
+			"rootReducer",
+			"validate",
+			"browserHistory",
+			"ghanshyam.bohra@wholesalebox.in",
+			"@",
+			"roboto",
+			"gstatic",
+			"roboto",
+			"ColorQuantityList",
+			"international_store",
+			"reg_telephone_signup",
+			"cart_shopping_popup",
+			"cart_shopping_popup_open",
+			"redirect_cart",
+			"ColorQuantityList",
+			"SetQuantiyError",
+			"OrderOptions",
+			"is_popup",
+			"select_popup",
+			"setIncreaseNumber",
+			"updateState",
+			"SetQuantity",
+			"class",
+			"getOriginalImage",
+			"seller",
+			"config_icon",
+			"bar",
+			"resize",
+			"getOriginalImage",
+			"config_icon",
+			"resize",
+			"tool/image",
+			"config_icon",
+			"DIR_IMAGE",
+			"ColorQuantityList",
+			"QuantityList",
+			"SetQuantityBox",
+			"home_images",
+			"default_image",
+			"<img",
+			"move_uploaded_file",
+			"returnValue",
+			"image_name",
+			"DIR_UPLOAD",
+			"product_image",
+			"validateForm",
+			"<img",
+			"mobile_logo",
+			"DIR_IMAGE",
+			"<img",
+			"img",
+			"DIR_IMAGE",
+			"');\n",
+			"google-play-android-app",
+			"footer_images",
+			"informations",
+			"home_images",
+			"058gnrha",
+			"pagination_data_worker",
+			"cashback_on_delivery",
+			"www.wholesalebox.in",
+			"download_app_link",
+			"8696491521",
+			"generateOrderInvoiceHtml",
+			"saveBuyerInvoiceAsPdf",
+			"getcreditNoteDetails",
+			"getCreditNoteData",
+			"8696491521",
+			"521",
+			"8696491521",
+			"downloadFile",
+			"918696491521",
+			"Wholesalebox Jaipur Office:",
+			"text_customer_bank_tranfer",
+			"text_customer",
+			"For any assistance",
+			"For any assistance, Call",
+			"error_address_payment",
+			"Warning: You must select payment address",
+			"on_new_order",
+			"getSellerByPickupCityCode",
+			"disabled",
+			"selected_seller",
+			"support_number",
+			"access_token",
+			"8696491521",
+			"support_number",
+			"parent_category",
+			"support_number",
+			"CRM_URL",
+			"support_number",
+			"text_customer_bank_tranfer",
+			"For any assistance",
+			"text_customer_cod",
+			"For any assistance",
+			"text_customer",
+			"For any assistance",
+			"text_customer_cod",
+			"For any assistance",
+			"error_address_payment",
+			"You must select payment address",
+			"Warning",
+			"You must select payment address",
+			"cashback_on_delivery",
+			"You have received credit",
+			"on_new_order",
+			"error_no_pickup",
+			"validateForm",
+			"getForm",
+			"date",
+			"datetime",
+			"check_reg_telephone",
+			"international_store",
+			"reg_telephone",
+			".highlighted .icono-plus:before, .navigation_main .highlighted .icono-plus:after",
+			"getSellerByPickupCityCode",
+			"$i",
+			"product_info"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

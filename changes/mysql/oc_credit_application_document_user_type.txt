@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_application_document` ADD `user_id` INT(11) NULL AFTER `document_number`, ADD `user_type` ENUM('self','khufiya_vibhag','crm') NULL DEFAULT 'self' AFTER `user_id`;

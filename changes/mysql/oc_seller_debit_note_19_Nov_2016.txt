@@ -1,0 +1,2 @@
+ALTER TABLE `oc_seller_debit_note` ADD `debit_note_meta` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `user`;
+

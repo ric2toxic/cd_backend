@@ -1,0 +1,2 @@
+ALTER TABLE `oc_search_dictionary` CHANGE `word` `word` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `oc_search_dictionary` CHANGE `synonyms` `synonyms` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

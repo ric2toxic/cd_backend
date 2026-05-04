@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `unit_id` INT(11) NOT NULL AFTER `model`;

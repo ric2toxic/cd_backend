@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+
+
+
+    <dataSource type="JdbcDataSource"
+  driver="com.mysql.jdbc.Driver"
+  url="jdbc:mysql://localhost/wholesalebox"
+  batchSize="-1"
+  convertType="true"
+  user="root"
+  password="root"
+  zeroDateTimeBehavior="convertToNull"
+ />
+
+ <document name="wholesalebox">
+  <entity name="auto_suggester" transformer="RegexTransformer"
+   query="SELECT keyword as user_query, searched_term_id as id, count(keyword) as user_query_count 
+		  FROM oc_searched_terms WHERE keyword NOT LIKE '%\_%' AND keyword NOT LIKE '%-%' 
+		  GROUP BY keyword order by count DESC " >
+    
+        
+    <field column="id" sourceColName="id" />
+    <field column="user_query" name="user_query"/>
+    <field column="user_query_count" name="user_query_count"/>
+   
+  </entity>
+ </document>
+ 
+ 
+</dataConfig>

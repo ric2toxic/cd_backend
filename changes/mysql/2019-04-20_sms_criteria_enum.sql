@@ -1,0 +1,2 @@
+ALTER TABLE `oc_wsb_customer_to_sms_criteria_sync` 
+CHANGE COLUMN `criteria` `criteria` ENUM('all_sms', 'pos', 'gst', 'account', 'credit_card', 'bounce', 'loan', 'udaan', 'paytm', 'lazypay') NOT NULL ;

@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product_description` CHANGE `meta_description` `meta_description` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;

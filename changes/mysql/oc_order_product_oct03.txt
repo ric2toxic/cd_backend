@@ -1,0 +1,3 @@
+ALTER TABLE `oc_order_product` ADD `sku` VARCHAR(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `model`;
+ALTER TABLE `oc_order_product` ADD `piece_in_set` INT(8) NOT NULL AFTER `quantity`, ADD `total_pieces` INT(8) NOT NULL AFTER `piece_in_set`;
+ALTER TABLE `oc_order_product` ADD `price_per_piece` DECIMAL(15,4) NOT NULL AFTER `price`;

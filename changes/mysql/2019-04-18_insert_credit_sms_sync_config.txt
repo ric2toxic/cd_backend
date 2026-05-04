@@ -1,0 +1,1 @@
+INSERT INTO `wholesalebox`.`oc_wsb_credit_configs` (`config_keys`, `value`) VALUES ('last_track_id_customer_to_criteria_sync', '35212913');

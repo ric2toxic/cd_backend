@@ -1,0 +1,1 @@
+ALTER TABLE `oc_order_product` ADD `unit_id` INT(11) NOT NULL AFTER `seller_id`;

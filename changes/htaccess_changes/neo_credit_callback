@@ -1,0 +1,2 @@
+RewriteRule ^payment/credit/callback(.*) index.php?route=payment/credit/callback&$1 [QSA,L]
+RewriteRule ^payment/credit/neoTransactionCallback(.*) index.php?route=payment/credit/neoTransactionCallback&$1 [QSA,L]

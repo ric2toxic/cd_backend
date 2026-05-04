@@ -1,0 +1,96 @@
+
+--
+-- Table structure for table `oc_campus`
+--
+
+CREATE TABLE IF NOT EXISTS `oc_campus` (
+  `campus_id` int(11) NOT NULL,
+  `campus_name` varchar(100) NOT NULL,
+  `campus_state` varchar(100) NOT NULL,
+  `campus_city` varchar(100) NOT NULL,
+  `campus_contact_no` int(11) DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_campus_member`
+--
+
+CREATE TABLE IF NOT EXISTS `oc_campus_member` (
+  `member_id` int(11) NOT NULL,
+  `member_name` varchar(50) NOT NULL,
+  `member_email` varchar(50) NOT NULL,
+  `member_contact_no` varchar(10) NOT NULL,
+  `member_city` varchar(50) NOT NULL,
+  `team_id` int(11) DEFAULT '0',
+  `campus_id` int(11) NOT NULL,
+  `internship_company` varchar(255) DEFAULT NULL,
+  `internship_role` varchar(50) DEFAULT NULL,
+  `grade_point` varchar(100) DEFAULT NULL,
+  `desired_profile` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_campus_team`
+--
+
+CREATE TABLE IF NOT EXISTS `oc_campus_team` (
+  `team_id` int(11) NOT NULL,
+  `campus_id` int(11) NOT NULL,
+  `team_name` varchar(100) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `oc_campus`
+--
+ALTER TABLE `oc_campus`
+  ADD PRIMARY KEY (`campus_id`);
+
+--
+-- Indexes for table `oc_campus_member`
+--
+ALTER TABLE `oc_campus_member`
+  ADD PRIMARY KEY (`member_id`);
+
+--
+-- Indexes for table `oc_campus_team`
+--
+ALTER TABLE `oc_campus_team`
+  ADD PRIMARY KEY (`team_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oc_campus`
+--
+ALTER TABLE `oc_campus`
+  MODIFY `campus_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `oc_campus_member`
+--
+ALTER TABLE `oc_campus_member`
+  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `oc_campus_team`
+--
+ALTER TABLE `oc_campus_team`
+  MODIFY `team_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+TRUNCATE oc_campus;
+TRUNCATE oc_campus_team;
+TRUNCATE oc_campus_member;
+
+

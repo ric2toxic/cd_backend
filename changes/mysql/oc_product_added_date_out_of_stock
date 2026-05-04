@@ -1,0 +1,1 @@
+ALTER TABLE `oc_product` ADD `date_out_of_stock` DATETIME NOT NULL AFTER `singles_product_id`, ADD `out_of_stock_email` TINYINT NOT NULL AFTER `date_out_of_stock`;

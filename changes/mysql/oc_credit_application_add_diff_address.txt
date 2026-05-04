@@ -1,0 +1,1 @@
+ALTER TABLE `oc_credit_application` ADD `diffrent_address` TINYINT(4) NULL DEFAULT '0' AFTER `form_action`;

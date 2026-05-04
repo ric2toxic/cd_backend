@@ -1,0 +1,3 @@
+ALTER TABLE `oc_seller_debit_note` ADD `sac_code` VARCHAR(16) NULL DEFAULT NULL AFTER `custom_debit_note_meta`, ADD `sac_tax_rate` FLOAT(10,2) NULL DEFAULT NULL AFTER `sac_code`;
+
+

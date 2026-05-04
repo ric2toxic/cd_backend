@@ -1,0 +1,2 @@
+ALTER TABLE `oc_customer` ADD `freshdesk_id` BIGINT(20) NOT NULL AFTER `lead_inserted`;
+ALTER TABLE `oc_customer` ADD `gst_number` VARCHAR(15) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `freshdesk_id`;

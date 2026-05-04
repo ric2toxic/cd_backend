@@ -1,0 +1,1 @@
+ALTER TABLE `oc_ms_seller` ADD `access_token` TEXT NULL DEFAULT NULL ;

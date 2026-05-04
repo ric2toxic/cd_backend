@@ -1,0 +1,3 @@
+ALTER TABLE `oc_wsb_credit_nach_schedule` ADD `order_payment_id` INT(11) NULL DEFAULT NULL AFTER `customer_nach_details_id`;
+
+ALTER TABLE `oc_wsb_credit_nach_schedule` ADD CONSTRAINT `fk_order_payment_id` FOREIGN KEY (`order_payment_id`) REFERENCES `oc_order_payment`(`payment_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;

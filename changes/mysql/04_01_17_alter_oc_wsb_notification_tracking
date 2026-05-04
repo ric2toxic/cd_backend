@@ -1,0 +1,1 @@
+ ALTER TABLE `oc_wsb_notification_tracking` ADD `message` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `date_added`, ADD `image` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `message`, ADD `url` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `image`;

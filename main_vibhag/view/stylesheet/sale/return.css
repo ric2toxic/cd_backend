@@ -1,0 +1,108 @@
+/* The switch - the box around the slider (CSS for Mode on/off Button) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.product_quantity{ min-width:60px }
+.quantity_substracted{
+  line-height: 27px;
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 10px;
+  text-align: center;
+  border: solid 1px rgba(255, 1, 1, 0.35);
+  background: #fff;
+  font-size: 14px;
+}
+.value_changed{
+  border-color: rgba(189, 0, 0, 0.42);
+  border-width: 2px;
+}
+.value_changed:hover{
+  border-width: 2px;
+}
+.error{
+  border-color: rgba(189, 0, 0, 0.42);
+  border-width: 2px;
+  color:         red;
+}
+.bank_detail{width: 60%;margin: auto;}
+.bank_detail tr td{border: 0px;}
+.bank_detail tr td input{border-radius: 0px; background: #f8f8f8; border: 1px solid #ddd; width:80%; padding: 4px; }
+.tbl-content-scroll{
+  overflow-x: scroll;
+  width: 100%;
+}
+.addForm textarea, .statusForm textarea{ width: 160PX; }
+.addForm .return_reason, .statusForm .return_action,.shipping_methods,.payment_methods{width: 140px;}
+.fieldset{border: 1px groove #000;display: inline-block;padding: 0 5px 5px;}
+.fieldset legend{border: 0 none;font-size: 14px;padding: 0;width: auto;margin-bottom:0;}
+.or{text-align: center;width: 35%;}
+
+.overlay-screen{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 20000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
